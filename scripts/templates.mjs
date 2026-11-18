@@ -18,7 +18,8 @@ export const peso = value => typeof value === "number" && Number.isFinite(value)
 export const fold = text => String(text ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
 export const photo = s => base + "media/" + s + ".webp";
 export const safeExternal = link => /^(https?:\/\/|tel:|mailto:)/.test(link ?? "") ? link : "";
-export const sectionLink = (slug, label) => `<a class="text-link" href="${url(slug)}">${esc(label)} <span aria-hidden="true">↗</span></a>`;
+export const icon = name => `<svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/iconos.svg#${name}"></use></svg>`;
+export const sectionLink = (slug, label) => `<a class="text-link" href="${url(slug)}">${esc(label)} ${icon("arrow-up-right")}</a>`;
 export const image = (src, alt, attrs = "") => src ? `<img src="${esc(src)}" alt="${esc(alt)}" decoding="async" ${attrs}>` : "";
 export const crumbs = items => `<nav class="crumbs" aria-label="Ruta de navegación"><a href="${url("")}">Inicio</a>${items.map(([slug,label])=>`<span aria-hidden="true">/</span>${slug ? `<a href="${url(slug)}">${esc(label)}</a>` : `<span aria-current="page">${esc(label)}</span>`}`).join("")}</nav>`;
 export const searchForm = (label="Buscar un regalo", placeholder="Fresas, rosas, desayunos…") => `<form class="shop-search" role="search" action="${url(paths.search)}#contenido-seccion" method="get"><label><span class="sr">${esc(label)}</span><input type="search" name="q" placeholder="${esc(placeholder)}" autocomplete="off"></label><button type="submit">Buscar</button></form>`;
@@ -43,7 +44,7 @@ export function grid(items, label = "Regalos", withSearch = true) {
     <div class="browse-head"><h2>${esc(label)}</h2><p class="browse-count" aria-live="polite"><span data-count>${items.length}</span> regalos</p></div>
     <div class="browse-tools enhanced">
       ${withSearch ? `<label class="browse-filter">Buscar en esta selección<input type="search" data-filter-products placeholder="Nombre del regalo" autocomplete="off"></label>` : ""}
-      <label class="browse-sort">Ordenar por<select data-sort><option value="featured">Selección de la tienda</option><option value="low">Menor precio</option><option value="high">Mayor precio</option><option value="name">Nombre de A a Z</option></select></label>
+      <label class="browse-sort">Ordenar por<span class="sort-control"><select data-sort><option value="featured">Selección de la tienda</option><option value="low">Menor precio</option><option value="high">Mayor precio</option><option value="name">Nombre de A a Z</option></select>${icon("chevron-down")}</span></label>
     </div>
     <div class="s-grid" data-products>${items.map(card).join("")}</div>
     <p class="browse-empty" data-no-results hidden>No encontramos regalos con esas palabras. Prueba con otro nombre.</p>
@@ -52,11 +53,11 @@ export function grid(items, label = "Regalos", withSearch = true) {
 }
 export function pageTiles(pages, title, extra = "") {
   if (!pages.length) return "";
-  return `<section class="directory-section wrap"><div class="directory-head"><h2>${esc(title)}</h2>${extra}</div><div class="tile-grid">${pages.map(item => `<a class="page-tile" href="${url(item.slug)}">${image(item.cover, "", 'width="600" height="420" loading="lazy"')}<span>${esc(item.title)} <b aria-hidden="true">↗</b></span></a>`).join("")}</div></section>`;
+  return `<section class="directory-section wrap"><div class="directory-head"><h2>${esc(title)}</h2>${extra}</div><div class="tile-grid">${pages.map(item => `<a class="page-tile" href="${url(item.slug)}">${image(item.cover, "", 'width="600" height="420" loading="lazy"')}<span>${esc(item.title)} ${icon("arrow-up-right")}</span></a>`).join("")}</div></section>`;
 }
 export function linkList(pages, title) {
   if (!pages.length) return "";
-  return `<section class="link-journal"><h2>${esc(title)}</h2><ul>${pages.map(p=>`<li><a href="${url(p.slug)}">${esc(p.title)} <span aria-hidden="true">↗</span></a></li>`).join("")}</ul></section>`;
+  return `<section class="link-journal"><h2>${esc(title)}</h2><ul>${pages.map(p=>`<li><a href="${url(p.slug)}">${esc(p.title)} ${icon("arrow-up-right")}</a></li>`).join("")}</ul></section>`;
 }
 export function textBlocks(page, known) {
   const blocks = (page.sections || []).filter(s=>s.heading || s.text || s.links?.length);
@@ -86,7 +87,7 @@ export function sectionLayout(parts, page, label, content, { tools = "", next, t
         <figure class="scene-subject"><div class="scene-arrival"><div class="scene-piece">${image(subject.src,subject.alt,imageAttrs+' fetchpriority="high"')}</div></div></figure>
       </div>
       <div class="scene-foot"><a href="#contenido-seccion" class="scene-next"><span class="scene-rule" aria-hidden="true"></span>${esc(next)}</a>
-        <button type="button" class="scene-pause" aria-label="Pausar movimiento" title="Pausar movimiento" hidden><span aria-hidden="true"></span></button>
+        <button type="button" class="scene-pause" aria-label="Pausar movimiento" title="Pausar movimiento" hidden>${icon("pause")}</button>
       </div>
     </div>
   </section>`;

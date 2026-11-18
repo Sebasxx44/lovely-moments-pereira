@@ -89,11 +89,6 @@
   border: 1px solid color-mix(in srgb, currentColor 38%, transparent); color: inherit;
 }
 .scene-pause:hover, .scene-pause:focus-visible { border-color: currentColor; }
-.scene-pause span { width: 8px; height: 10px; border-inline: 2px solid currentColor; }
-.scene-pause[data-paused] span {
-  width: 9px; height: 11px; border: 0; margin-left: 2px; background: currentColor;
-  clip-path: polygon(0 0, 100% 50%, 0 100%);
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .studio-scene .scene-light { animation: window-light 13s ease-in-out infinite alternate paused; }

@@ -25,6 +25,10 @@
 
   const bag = $("#bag-dialog");
   const trigger = $("[data-open-bag]");
+  const count = $(".bag-count", trigger);
+  const unitTemplate = $("#quantity-button", bag).content.firstElementChild;
+  const icons = "/assets/iconos.svg#";
+  const confirmationTimers = new WeakMap();
   const storageKey = "lovely-moments/selection/v1";
   function read() {
     const selection = new Map();
@@ -42,28 +46,48 @@
   let timer;
   function change(id, delta) {
     if (!products.has(id)) return 0;
-    const n = Math.max(0, Math.min(99, (selection.get(id) || 0) + delta));
+    const previous = selection.get(id) || 0;
+    const n = Math.max(0, Math.min(99, previous + delta));
+    if (n === previous) return n;
     if (n) selection.set(id,n); else selection.delete(id);
     try { localStorage.setItem(storageKey,JSON.stringify(Object.fromEntries(selection))); } catch {
       // The in-memory selection still works when storage is unavailable.
     }
-    showCount();
+    showCount(n > previous);
     return n;
   }
-  function showCount() {
+  function showCount(added = false) {
     const n = [...selection.values()].reduce((sum, i) => sum + i, 0);
-    $(".bag-count",trigger).textContent = n;
+    count.replaceChildren(element("span", n, added ? "count-in" : undefined));
     trigger.setAttribute("aria-label",`Mi selección, ${n} ${n === 1 ? "regalo" : "regalos"}`);
   }
-  function add(id) {
-    id = canonical(id);
-    const product = products.get(id);
-    if (!product) return;
-    const quantity = change(id,1), status = $(".notice");
-    status.textContent = `${product.name} · ${quantity} en tu selección`;
+  function announce(message) {
+    const status = $(".notice");
+    status.textContent = message;
     status.classList.add("show");
     clearTimeout(timer);
     timer=setTimeout(()=>status.classList.remove("show"),2200);
+  }
+  function add(button) {
+    const id = canonical(button.dataset.add || button.closest(".product").dataset.id);
+    const product = products.get(id);
+    if (!product) return;
+    if (selection.get(id) === 99) {
+      announce("Ya tienes 99 unidades de este regalo en tu selección.");
+      return;
+    }
+
+    const quantity = change(id, 1);
+    announce(`${product.name} · ${quantity} en tu selección`);
+    const glyph = $("use", button);
+    glyph.setAttribute("href", icons + "check");
+    button.classList.add("is-added");
+    clearTimeout(confirmationTimers.get(button));
+    confirmationTimers.set(button, setTimeout(() => {
+      button.classList.remove("is-added");
+      glyph.setAttribute("href", icons + "plus");
+      confirmationTimers.delete(button);
+    }, 1200));
   }
   function element(tag, text, className) {
     const node=document.createElement(tag);
@@ -72,15 +96,15 @@
     return node;
   }
   function unit(id, delta, name) {
-    const button=element("button",delta < 0 ? "−" : "+");
-    button.type="button";
+    const button = unitTemplate.cloneNode(true);
+    $("use", button).setAttribute("href", icons + (delta < 0 ? "minus" : "plus"));
     button.dataset.id=id;
     button.dataset.by=delta;
     button.disabled=delta>0 && selection.get(id)===99;
     button.setAttribute("aria-label",(delta<0?"Quitar una unidad de ":"Añadir una unidad de ")+name);
     return button;
   }
-  function renderBag() {
+  function renderBag(addedId) {
     const lines = $("#bag-lines"), frag=document.createDocumentFragment();
     const message=["Hola, Lovely Moments. Quisiera consultar por estos regalos:", ""];
     let total=0;
@@ -92,7 +116,7 @@
       link.href=base+id+"/";
       copy.append(link,element("small",typeof price==="number" ? cash.format(price)+" por unidad" : "Precio a consultar"));
       const stepper=element("div",undefined,"quantity");
-      stepper.append(unit(id,-1,name),element("output",n),unit(id,1,name));
+      stepper.append(unit(id,-1,name),element("output",n,id === addedId ? "count-in" : undefined),unit(id,1,name));
       line.append(img,copy,stepper); frag.append(line);
       total+=n*(price||0);
       message.push(`${n} × ${name}`);
@@ -106,13 +130,14 @@
   }
   document.addEventListener("click",event=>{
     const addButton=event.target.closest("[data-add],.quick-add");
-    if (addButton) add(addButton.dataset.add || addButton.closest(".product").dataset.id);
+    if (addButton) add(addButton);
   });
   $("#bag-lines").addEventListener("click",event=>{
     const control=event.target.closest("button[data-by]");
     if (!control) return;
-    change(control.dataset.id,Number(control.dataset.by));
-    renderBag();
+    const delta = Number(control.dataset.by);
+    change(control.dataset.id,delta);
+    renderBag(delta > 0 ? control.dataset.id : undefined);
     const next=all("button[data-by]",bag).find(el=>!el.disabled && el.dataset.id===control.dataset.id && el.dataset.by===control.dataset.by);
     (next || $("[data-close]",bag)).focus({preventScroll:true});
   });

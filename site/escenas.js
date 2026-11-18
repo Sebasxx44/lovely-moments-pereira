@@ -61,6 +61,7 @@
     scene.classList.toggle("is-playing", playing);
     control.hidden = reduced.matches;
     control.toggleAttribute("data-paused", paused);
+    control.querySelector("use").setAttribute("href", paused ? "/assets/iconos.svg#play" : "/assets/iconos.svg#pause");
     control.title = paused ? "Reanudar movimiento" : "Pausar movimiento";
     control.setAttribute("aria-label", control.title);
     if (reduced.matches) {

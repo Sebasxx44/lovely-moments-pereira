@@ -98,7 +98,7 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
   align-items: center; gap: 16px; border-top: 1px solid rgb(255 238 218 / 31%);
 }
 .scroll-hint { display: flex; align-items: center; gap: 12px; font-size: 12px; }
-.scroll-hint > span:first-child { font-size: 18px; line-height: 1; }
+.scroll-hint .ui-icon { width: 22px; height: 22px; }
 .rail-object:focus-visible { outline-offset: -8px; border-radius: 12px; }
 @media (min-width: 2000px) {
   .rail-object { width: min(45vw, 1450px); }
@@ -135,8 +135,6 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
 .wordmark { font: 580 clamp(22px,2.2vw,34px)/1 "Bricolage Grotesque", sans-serif; letter-spacing: -.033em; word-spacing: .04em; }
 .catalogue h2, .delivery h2, .product-dialog h2, .bag-sheet h2 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; letter-spacing: -.065em; }
 .product h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 530; font-size: clamp(21px,1.9vw,33px); letter-spacing: -.04em; }
-.scroll-symbol { width: 15px; height: 22px; border: 1px solid currentColor; border-radius: 9px; position: relative; flex-shrink: 0; }
-.scroll-symbol::after { content: ""; position: absolute; left: 5px; top: 4px; width: 3px; height: 6px; border-radius: 2px; background: currentColor; }
 .showcase-board :focus-visible, body.in-showcase .masthead :focus-visible { outline-color: #fff4de; }
 @media (prefers-reduced-motion: no-preference) {
   .in-showcase .rail-object, .in-showcase .object-figure, .in-showcase .wrapping-ribbon { will-change: transform; }

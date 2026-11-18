@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { paths, base, esc, url, peso, fold, photo, sectionLink, image, crumbs, searchForm, shellParts, layout, sectionLayout, card, grid, pageTiles, linkList, textBlocks } from "./templates.mjs";
+import { paths, base, esc, url, peso, fold, photo, sectionLink, icon, image, crumbs, searchForm, shellParts, layout, sectionLayout, card, grid, pageTiles, linkList, textBlocks } from "./templates.mjs";
 import { courseForm, filmStrip, externalLinks, leadTime } from "./extras.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -24,7 +24,7 @@ function bagFacts(status) {
   return "Consulta la disponibilidad para tu fecha de entrega.";
 }
 function contactForm() {
-  return `<div class="contact-layout wrap"><section class="contact-methods"><h2>Hablemos</h2><a href="tel:+573213920327">+57 321 392 0327</a><a href="mailto:detalles@lovelymoments.com.co">detalles@lovelymoments.com.co</a><a href="https://www.instagram.com/bylovelymoments/">Instagram @ByLovelyMoments</a><p>Pereira, Dosquebradas y Santa Rosa de Cabal.</p></section><form class="contact-form" data-contact><h2>Escribe tu consulta</h2><div class="form-pair"><label>Nombre<input name="nombre" autocomplete="given-name" required maxlength="80"></label><label>Apellido (opcional)<input name="apellido" autocomplete="family-name" maxlength="80"></label></div><div class="form-pair"><label>Teléfono<input type="tel" name="telefono" autocomplete="tel" required maxlength="40"></label><label>Correo<input type="email" name="correo" autocomplete="email" required maxlength="150"></label></div><label>Mensaje<textarea name="mensaje" rows="4" required maxlength="2000" placeholder="Cuéntanos qué quieres regalar y para cuándo"></textarea></label><button type="submit" class="primary enhanced">Preparar en WhatsApp <span aria-hidden="true">↗</span></button><p>Se abrirá WhatsApp con tu consulta lista para revisar y enviar.</p><noscript><a href="https://wa.me/573213920327">Abrir WhatsApp</a></noscript></form></div>`;
+  return `<div class="contact-layout wrap"><section class="contact-methods"><h2>Hablemos</h2><a href="tel:+573213920327">+57 321 392 0327</a><a href="mailto:detalles@lovelymoments.com.co">detalles@lovelymoments.com.co</a><a href="https://www.instagram.com/bylovelymoments/">Instagram @ByLovelyMoments</a><p>Pereira, Dosquebradas y Santa Rosa de Cabal.</p></section><form class="contact-form" data-contact><h2>Escribe tu consulta</h2><div class="form-pair"><label>Nombre<input name="nombre" autocomplete="given-name" required maxlength="80"></label><label>Apellido (opcional)<input name="apellido" autocomplete="family-name" maxlength="80"></label></div><div class="form-pair"><label>Teléfono<input type="tel" name="telefono" autocomplete="tel" required maxlength="40"></label><label>Correo<input type="email" name="correo" autocomplete="email" required maxlength="150"></label></div><label>Mensaje<textarea name="mensaje" rows="4" required maxlength="2000" placeholder="Cuéntanos qué quieres regalar y para cuándo"></textarea></label><button type="submit" class="primary enhanced">Preparar en WhatsApp ${icon("arrow-up-right")}</button><p>Se abrirá WhatsApp con tu consulta lista para revisar y enviar.</p><noscript><a href="https://wa.me/573213920327">Abrir WhatsApp</a></noscript></form></div>`;
 }
 function productView(item, collectionLinks, matches) {
   const group = collectionLinks[0];
@@ -34,7 +34,7 @@ function productView(item, collectionLinks, matches) {
   const thumbButtons = item.photos.map((_, i)=>`<a class="photo-choice" href="${esc(original(i))}" data-view="${esc(gallery(item.slug,i))}" data-original="${esc(original(i))}" data-alt="${esc(item.name)} · Foto ${i+1}" aria-label="Ver foto ${i+1} de ${esc(item.name)}"${i===0 ? ' aria-current="true"' : ""}>${image(i===0 ? item.thumb : gallery(item.slug,i),"",'width="82" height="100" loading="lazy"')}</a>`).join("");
   return `<div class="wrap">${crumbs([[paths.catalog,"Catálogo"],...(group ? [[group.slug,group.title]] : []),[null,item.name]])}</div>
     <section class="product-layout wrap"><div class="product-gallery">
-      <figure class="product-plate">${image(gallery(item.slug,0),item.name,'id="full-product-photo" width="825" height="1050" fetchpriority="high"')}<a class="photo-full" id="full-product-link" href="${esc(firstPhoto)}" target="_blank" rel="noopener">Ampliar foto ↗</a></figure>
+      <figure class="product-plate">${image(gallery(item.slug,0),item.name,'id="full-product-photo" width="825" height="1050" fetchpriority="high"')}<a class="photo-full" id="full-product-link" href="${esc(firstPhoto)}" target="_blank" rel="noopener">Ampliar foto ${icon("arrow-up-right")}</a></figure>
       ${item.photos.length>1 ? `<nav class="product-thumbs" aria-label="Fotografías de ${esc(item.name)}">${thumbButtons}</nav>` : ""}
       ${filmStrip(item.films)}
     </div><div class="product-notes">
@@ -43,10 +43,10 @@ function productView(item, collectionLinks, matches) {
       <p class="product-story">${esc(item.description)}</p>
       ${item.includesDedicationCard && !/tarjeta/i.test(item.description) ? '<p class="dedication">Incluye tarjeta con dedicatoria.</p>' : ""}
       <p class="stock-note">${esc(stock)}</p>
-      <button class="primary enhanced" type="button" data-add="${esc(item.slug)}">Guardar en mi selección <span aria-hidden="true">+</span></button>
-      ${item.purchasable && item.availability==="InStock" ? `<a class="text-link product-ask" href="${esc(item.url)}" target="_blank" rel="noopener">Comprar en la tienda oficial <span aria-hidden="true">↗</span></a>` : ""}
-      <a class="product-ask text-link" href="${esc(wam("Hola, Lovely Moments. Quisiera consultar por "+item.name+". "+item.url))}" target="_blank" rel="noopener">Consultar este regalo <span aria-hidden="true">↗</span></a>
-      <details class="product-delivery"><summary>Entrega y reserva</summary><p>${esc(leadTime(item.minimumLeadHours))} Lovely Moments coordina los pedidos en Pereira, Dosquebradas y Santa Rosa de Cabal. El domicilio se cotiza por separado.</p>${sectionLink(paths.contact,"Contactar con la tienda")}</details>
+      <button class="primary enhanced" type="button" data-add="${esc(item.slug)}">Guardar en mi selección ${icon("plus")}</button>
+      ${item.purchasable && item.availability==="InStock" ? `<a class="text-link product-ask" href="${esc(item.url)}" target="_blank" rel="noopener">Comprar en la tienda oficial ${icon("arrow-up-right")}</a>` : ""}
+      <a class="product-ask text-link" href="${esc(wam("Hola, Lovely Moments. Quisiera consultar por "+item.name+". "+item.url))}" target="_blank" rel="noopener">Consultar este regalo ${icon("arrow-up-right")}</a>
+      <details class="product-delivery"><summary>${icon("chevron-down")} Entrega y reserva</summary><p>${esc(leadTime(item.minimumLeadHours))} Lovely Moments coordina los pedidos en Pereira, Dosquebradas y Santa Rosa de Cabal. El domicilio se cotiza por separado.</p>${sectionLink(paths.contact,"Contactar con la tienda")}</details>
       ${collectionLinks.length ? `<div class="product-collections"><p>Colecciones</p>${groupLinks(collectionLinks)}</div>` : ""}
     </div></section>
     ${matches.length ? `<section class="more-products wrap"><div class="directory-head"><h2>También puede gustarte</h2>${sectionLink(paths.all,"Ver todos los regalos")}</div><div class="s-grid">${matches.map(card).join("")}</div></section>` : ""}`;
@@ -105,7 +105,7 @@ export function prepare() {
   function renderPage(slug) {
     if (Object.hasOwn(aliases,slug)) return redirect(aliases[slug]);
     if (slug === paths.map) {
-      const main=`<div class="map-page wrap">${linkList(misc,"La tienda y sus entregas")}${linkList(collectionPages,"Colecciones y ocasiones")}${linkList(articles,"Guías y artículos")}<details class="map-products"><summary>Todos los productos (${items.length})</summary>${linkList(items.map(i=>({slug:i.slug,title:i.name})),"Fichas de producto")}</details></div>`;
+      const main=`<div class="map-page wrap">${linkList(misc,"La tienda y sus entregas")}${linkList(collectionPages,"Colecciones y ocasiones")}${linkList(articles,"Guías y artículos")}<details class="map-products"><summary>${icon("chevron-down")} Todos los productos (${items.length})</summary>${linkList(items.map(i=>({slug:i.slug,title:i.name})),"Fichas de producto")}</details></div>`;
       return sectionLayout(parts,{slug,title:"Mapa de la tienda",intro:"Directorio de páginas y fichas de Lovely Moments."},"Mapa de la tienda",main,{next:"Ir al directorio"});
     }
     if (slug===paths.search) {
