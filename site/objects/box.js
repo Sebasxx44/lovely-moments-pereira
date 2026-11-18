@@ -1,6 +1,7 @@
 /* Lovely Moments. Photographic planes from the Amor Infinito catalogue. */
 (function () {
   'use strict';
+  const assets = new URL('.', document.currentScript.src);
 
   function part(name, parent, tag = 'div') {
     const el = document.createElement(tag);
@@ -16,6 +17,20 @@
       part('face', block).classList.add('lovely-box__' + side);
     }
     return block;
+  }
+
+  function addTexture(block, name) {
+    const photo = document.createElement('img');
+    const preload = document.querySelector('link[data-box-face="' + name + '"]');
+    photo.alt = '';
+    photo.decoding = 'async';
+    if (preload) {
+      photo.sizes = preload.imageSizes;
+      photo.srcset = preload.imageSrcset;
+    }
+    photo.src = preload?.href || new URL(name + '.webp', assets).href;
+    block.querySelector('.lovely-box__top').append(photo);
+    return photo;
   }
 
   const clamp = (n, lo, hi) => Math.min(hi, Math.max(lo, Number(n) || 0));
@@ -36,6 +51,7 @@
     lidShadow.classList.add('lovely-box__shadow--lid');
     const tray = solid(world, 'tray');
     const lid = solid(world, 'lid');
+    const photos = [addTexture(tray, 'tray'), addTexture(lid, 'lid')];
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
     let last = [0, 0, 0];
     let width = 0, height = 0;
@@ -100,7 +116,9 @@
     }
 
     function update(progress = 0, tiltX = 0, tiltY = 0) {
-      last = [clamp(progress,0,1), clamp(tiltX,-1,1), clamp(tiltY,-1,1)];
+      const next = [clamp(progress,0,1), clamp(tiltX,-1,1), clamp(tiltY,-1,1)];
+      if (next.every((value, index) => value === last[index])) return;
+      last = next;
       render();
     }
     const observer = typeof ResizeObserver === 'function' ? new ResizeObserver(fit) : null;
@@ -109,6 +127,7 @@
     reduce.addEventListener('change', render);
     fit();
     return {
+      ready: Promise.all(photos.map(photo => photo.decode())),
       update,
       destroy() {
         if (observer) observer.disconnect();

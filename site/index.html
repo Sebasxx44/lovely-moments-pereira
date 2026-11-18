@@ -13,12 +13,12 @@
   <link rel="stylesheet" href="tienda.css">
   <link rel="stylesheet" href="escaparate.css">
   <link rel="stylesheet" href="interiores.css">
-  <link rel="preload" as="image" href="objects/tray.webp">
-  <link rel="preload" as="image" href="objects/lid.webp">
+  <link rel="preload" as="image" data-box-face="tray" href="objects/tray.webp" imagesrcset="objects/tray-1200.webp 1200w, objects/tray.webp 2120w" imagesizes="(max-width: 650px) 80vw, (min-width: 2000px) min(45vw, 1450px), 52vw" fetchpriority="high">
+  <link rel="preload" as="image" data-box-face="lid" href="objects/lid.webp" imagesrcset="objects/lid-1200.webp 1200w, objects/lid.webp 2120w" imagesizes="(max-width: 650px) 80vw, (min-width: 2000px) min(45vw, 1450px), 52vw" fetchpriority="high">
   <script src="objects/box.js" defer></script>
+  <script src="escaparate.js" defer></script>
   <script src="inventario.js" defer></script>
   <script src="tienda.js" defer></script>
-  <script src="escaparate.js" defer></script>
   <!-- Dirección de interfaz con Unslop de Damir Sokolovsky, CC BY 4.0 · https://github.com/heydamir/unslop -->
 </head>
 <body class="in-showcase">
@@ -46,13 +46,15 @@
   </header>
   <main>
     <section class="showcase-runway" id="inicio" aria-label="Regalos de Lovely Moments en Pereira">
-      <div class="showcase-board" role="region" aria-roledescription="carrusel" aria-label="Escaparate de cuatro regalos">
+      <div class="showcase-board" data-arrival role="region" aria-roledescription="carrusel" aria-label="Escaparate de cuatro regalos">
         <div class="set-heading wrap">
           <p>Floristería y chocolatería</p><p>Pereira, Colombia</p>
         </div>
         <div class="product-set" aria-label="Productos en el escaparate">
-          <canvas class="wrapping-ribbon" aria-hidden="true"></canvas>
-          <div class="set-props" aria-hidden="true"><img class="prop-near" src="assets/hero/corazon.webp" alt=""><img class="prop-far" src="assets/hero/fresa.webp" alt=""></div>
+          <picture class="wrapping-ribbon" aria-hidden="true">
+            <source media="(max-width: 650px) and (orientation: portrait)" srcset="assets/hero/cinta-vertical.webp">
+            <img src="assets/hero/cinta.webp" alt="" decoding="async">
+          </picture>
           <div class="set-floor" aria-hidden="true"></div>
           <div class="product-rail">
               <button class="rail-object" type="button" data-id="amor-infinito" data-title="Amor infinito" data-paper="#842c47" aria-label="Ver Amor Infinito">
