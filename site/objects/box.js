@@ -21,14 +21,11 @@
 
   function addTexture(block, name) {
     const photo = document.createElement('img');
-    const preload = document.querySelector('link[data-box-face="' + name + '"]');
     photo.alt = '';
     photo.decoding = 'async';
-    if (preload) {
-      photo.sizes = preload.imageSizes;
-      photo.srcset = preload.imageSrcset;
-    }
-    photo.src = preload?.href || new URL(name + '.webp', assets).href;
+    photo.sizes = '(max-width: 650px) 80vw, (min-width: 2000px) min(45vw, 1450px), 52vw';
+    photo.srcset = new URL(name + '-1200.webp', assets).href + ' 1200w, ' + new URL(name + '.webp', assets).href + ' 2120w';
+    photo.src = new URL(name + '.webp', assets).href;
     block.querySelector('.lovely-box__top').append(photo);
     return photo;
   }

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#783877">
+  <meta name="theme-color" content="#992a39">
   <meta name="robots" content="noindex, nofollow">
   <title>Lovely Moments · Flores y chocolates en Pereira</title>
   <meta name="description" content="Explora un concepto de tienda para Lovely Moments. Flores, chocolates, desayunos y anchetas con entrega en Pereira, Dosquebradas y Santa Rosa de Cabal.">
@@ -13,8 +13,7 @@
   <link rel="stylesheet" href="tienda.css">
   <link rel="stylesheet" href="escaparate.css">
   <link rel="stylesheet" href="interiores.css">
-  <link rel="preload" as="image" data-box-face="tray" href="objects/tray.webp" imagesrcset="objects/tray-1200.webp 1200w, objects/tray.webp 2120w" imagesizes="(max-width: 650px) 80vw, (min-width: 2000px) min(45vw, 1450px), 52vw" fetchpriority="high">
-  <link rel="preload" as="image" data-box-face="lid" href="objects/lid.webp" imagesrcset="objects/lid-1200.webp 1200w, objects/lid.webp 2120w" imagesizes="(max-width: 650px) 80vw, (min-width: 2000px) min(45vw, 1450px), 52vw" fetchpriority="high">
+  <script src="objects/regalo.js" defer></script>
   <script src="objects/box.js" defer></script>
   <script src="escaparate.js" defer></script>
   <script src="inventario.js" defer></script>
@@ -46,9 +45,11 @@
   </header>
   <main>
     <section class="showcase-runway" id="inicio" aria-label="Regalos de Lovely Moments en Pereira">
-      <div class="showcase-board" data-arrival role="region" aria-roledescription="carrusel" aria-label="Escaparate de cuatro regalos">
+      <div class="showcase-board" data-arrival role="region" aria-roledescription="carrusel" aria-label="Escaparate de seis regalos">
         <div class="set-backdrop" aria-hidden="true">
-          <div class="set-wash" data-scene="amor-infinito"><picture class="set-photo"><source media="(max-width: 650px) and (orientation: portrait)" srcset="assets/hero/papel-orquidea-movil.webp"><img src="assets/hero/papel-orquidea.webp" alt="" decoding="async" fetchpriority="low"></picture></div>
+          <div class="set-wash" data-scene="oso-chocolates"><picture class="set-photo"><source media="(max-width: 650px) and (orientation: portrait)" srcset="assets/hero/papel-carmesi-movil.webp"><img src="assets/hero/papel-carmesi.webp" alt="" decoding="async" fetchpriority="low"></picture></div>
+          <div class="set-wash" data-scene="cumple-stitch"><template><picture class="set-photo"><source media="(max-width: 650px) and (orientation: portrait)" srcset="assets/hero/papel-azul-movil.webp"><img src="assets/hero/papel-azul.webp" alt="" decoding="async" fetchpriority="low"></picture></template></div>
+          <div class="set-wash" data-scene="amor-infinito"><template><picture class="set-photo"><source media="(max-width: 650px) and (orientation: portrait)" srcset="assets/hero/papel-orquidea-movil.webp"><img src="assets/hero/papel-orquidea.webp" alt="" decoding="async" fetchpriority="low"></picture></template></div>
           <div class="set-wash" data-scene="bombonita"><template><picture class="set-photo"><source media="(max-width: 650px) and (orientation: portrait)" srcset="assets/hero/cacao-movil.webp"><img src="assets/hero/cacao.webp" alt="" decoding="async" fetchpriority="low"></picture></template></div>
           <div class="set-wash" data-scene="corazon-sorpresa"></div>
           <div class="set-wash" data-scene="ancheta-deluxe"><template><picture class="set-photo"><source media="(max-width: 650px) and (orientation: portrait)" srcset="assets/hero/canasta-movil.webp"><img src="assets/hero/canasta.webp" alt="" decoding="async" fetchpriority="low"></picture></template></div>
@@ -58,28 +59,62 @@
         </div>
         <div class="product-set" aria-label="Productos en el escaparate">
           <div class="set-floor" aria-hidden="true"></div>
+          <div class="gift-props" data-props="oso-chocolates" aria-hidden="true">
+            <span class="prop prop-a"><img src="assets/hero/trufa-dorada.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-b"><img src="assets/hero/corazon-confeti.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-c"><img src="assets/hero/ramita-blanca.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-d"><img src="assets/hero/corazon.webp" alt="" decoding="async" fetchpriority="low"></span>
+          </div>
+          <div class="gift-props" data-props="cumple-stitch" aria-hidden="true">
+            <template><span class="prop prop-a"><img src="assets/hero/hibisco.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-b"><img src="assets/hero/fresa-azul.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-c"><img src="assets/hero/orquidea.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-d"><img src="assets/hero/corazon-confeti.webp" alt="" decoding="async" fetchpriority="low"></span></template>
+          </div>
           <div class="gift-props" data-props="amor-infinito" aria-hidden="true">
-            <span class="prop prop-a"><img src="assets/hero/orquidea.webp" alt="" decoding="async" fetchpriority="low"></span>
+            <template><span class="prop prop-a"><img src="assets/hero/orquidea.webp" alt="" decoding="async" fetchpriority="low"></span>
               <span class="prop prop-b"><img src="assets/hero/corazon.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-c"><img src="assets/hero/ramita-blanca.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-d"><img src="assets/hero/trufa-dorada.webp" alt="" decoding="async" fetchpriority="low"></span></template>
           </div>
           <div class="gift-props" data-props="bombonita" aria-hidden="true">
             <template><span class="prop prop-a"><img src="assets/hero/viruta.webp" alt="" decoding="async" fetchpriority="low"></span>
-              <span class="prop prop-b"><img src="assets/hero/fresa.webp" alt="" decoding="async" fetchpriority="low"></span></template>
+              <span class="prop prop-b"><img src="assets/hero/fresa.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-c"><img src="assets/hero/trufa-dorada.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-d"><img src="assets/hero/corazon.webp" alt="" decoding="async" fetchpriority="low"></span></template>
           </div>
           <div class="gift-props heart-ornaments" data-props="corazon-sorpresa" aria-hidden="true">
             <template><picture class="wrapping-ribbon"><source media="(max-width: 650px) and (orientation: portrait)" srcset="assets/hero/cinta-vertical.webp"><img src="assets/hero/cinta.webp" alt="" decoding="async" fetchpriority="low"></picture>
-              <span class="prop prop-a gold-key"><img src="assets/hero/llave-dorada.webp" alt="" decoding="async" fetchpriority="low"></span>
-              <span class="prop prop-b gold-truffle"><img src="assets/hero/trufa-dorada.webp" alt="" decoding="async" fetchpriority="low"></span></template>
+              <span class="prop prop-a"><img src="assets/hero/llave-dorada.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-b"><img src="assets/hero/trufa-dorada.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-c"><img src="assets/hero/corazon-confeti.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-d"><img src="assets/hero/viruta.webp" alt="" decoding="async" fetchpriority="low"></span></template>
           </div>
           <div class="gift-props" data-props="ancheta-deluxe" aria-hidden="true">
             <template><span class="prop prop-a"><img src="assets/hero/naranja.webp" alt="" decoding="async" fetchpriority="low"></span>
-              <span class="prop prop-b"><img src="assets/hero/hoja.webp" alt="" decoding="async" fetchpriority="low"></span></template>
+              <span class="prop prop-b"><img src="assets/hero/hoja.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-c"><img src="assets/hero/fresa.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-d"><img src="assets/hero/ramita-blanca.webp" alt="" decoding="async" fetchpriority="low"></span></template>
           </div>
           <div class="product-rail">
+              <button class="rail-object" type="button" data-id="oso-chocolates" data-title="Oso y chocolates" data-description="Un osito con bufanda roja y catorce Ferrero Rocher en un carrito de madera." data-href="/ancheta-amor-y-amistad-or-peluche-y-ferrerros-or-detalles-pereira/" data-paper="#992a39" data-light="#ec786e" aria-label="Ver Oso y chocolates">
+                <span class="object-ground" aria-hidden="true"></span>
+                <span class="object-figure">
+                  <img src="assets/hero/oso-chocolates-medio.webp" srcset="assets/hero/oso-chocolates-540.webp 540w, assets/hero/oso-chocolates-medio.webp 760w, assets/hero/oso-chocolates-hd.webp 1202w" sizes="(max-width: 650px) 76vw, (max-width: 800px) 53vw, (min-width: 2000px) min(45vw, 1450px), 44vw" alt="Osito de bufanda roja con un carrito de bombones dorados sobre una base de madera" fetchpriority="high" decoding="async">
+                  <canvas class="gift-model" data-model="/objects/oso-chocolates.glb" data-geometry-end="148003" aria-hidden="true"></canvas>
+                </span>
+              </button>
+              <button class="rail-object" type="button" data-id="cumple-stitch" data-title="Cumple con Stitch" data-description="Stitch, fresas de chocolate y un globo de cumpleaños en una caja personalizada." data-href="/ancheta-de-regalo-para-ninos-y-ninas-en-pereira-dosquebradas/" data-paper="#494698" data-light="#a3a8fa" aria-label="Ver Cumple con Stitch">
+                <span class="object-ground" aria-hidden="true"></span>
+                <span class="object-figure">
+                  <img src="assets/hero/cumple-stitch-lateral.webp" data-srcset="assets/hero/cumple-stitch-540.webp 540w, assets/hero/cumple-stitch-medio.webp 760w, assets/hero/cumple-stitch-hd.webp 823w" sizes="(max-width: 650px) 76vw, (max-width: 800px) 53vw, (min-width: 2000px) min(45vw, 1450px), 44vw" alt="Arreglo de cumpleaños con peluche Stitch, globo lila y fresas de chocolate de colores" fetchpriority="low" decoding="async">
+                  <canvas class="gift-model" data-model="/objects/cumple-stitch.glb" data-geometry-end="100063" aria-hidden="true"></canvas>
+                </span>
+              </button>
               <button class="rail-object" type="button" data-id="amor-infinito" data-title="Amor infinito" data-paper="#783877" data-light="#e096c4" aria-label="Ver Amor Infinito">
                 <span class="object-ground" aria-hidden="true"></span>
                 <span class="object-figure">
-                  <img src="assets/hero/amor-infinito-900.webp" srcset="assets/hero/amor-infinito-900.webp 900w, assets/escenas/amor-infinito-1440.webp 1440w, assets/hero/amor-infinito-hd.webp 2790w" sizes="(max-width: 650px) 76vw, (max-width: 800px) 53vw, (min-width: 2000px) min(45vw, 1450px), 44vw" alt="Estuche de bombones de corazón y tapa floral de Lovely Moments" fetchpriority="high">
+                  <img src="assets/hero/amor-infinito-lateral.webp" data-srcset="assets/hero/amor-infinito-900.webp 900w, assets/escenas/amor-infinito-1440.webp 1440w, assets/hero/amor-infinito-hd.webp 2790w" sizes="(max-width: 650px) 76vw, (max-width: 800px) 53vw, (min-width: 2000px) min(45vw, 1450px), 44vw" alt="Estuche de bombones de corazón y tapa floral de Lovely Moments" fetchpriority="low">
                   <span id="hero-box" class="object-model" aria-hidden="true"></span>
                 </span>
               </button>
@@ -105,13 +140,13 @@
         </div>
         <div class="set-caption wrap">
           <div class="caption-content" aria-live="polite" aria-atomic="true">
-            <h1 id="hero-title">Amor infinito</h1>
+            <h1 id="hero-title">Oso y chocolates</h1>
           </div>
-          <p class="set-description">Nueve corazones de chocolate rellenos de ganache, con llavero.</p>
+          <p class="set-description">Un osito con bufanda roja y catorce Ferrero Rocher en un carrito de madera.</p>
         </div>
         <div class="set-navigation wrap">
           <span class="scroll-hint"><svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/iconos.svg#scroll"></use></svg><span class="scroll-caption">Desliza para recorrer</span></span>
-          <a class="set-detail" data-hero-detail="amor-infinito" href="/caja-de-bombones-amor-infinito-caja-de-chocolates-pereira/">Ver el regalo</a>
+          <a class="set-detail" data-hero-detail="oso-chocolates" href="/ancheta-amor-y-amistad-or-peluche-y-ferrerros-or-detalles-pereira/">Ver el regalo</a>
         </div>
       </div>
     </section>

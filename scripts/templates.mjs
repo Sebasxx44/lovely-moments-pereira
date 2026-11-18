@@ -33,7 +33,7 @@ export function shellParts(home) {
 }
 export function layout(parts, title, desc, main, theme = "orquidea", tone = "") {
   const palette = tone || theme;
-  const swatches = { orquidea: "#783877", cacao: "#943e32", rubi: "#ac1231", miel: "#825315" };
+  const swatches = { orquidea: "#783877", cacao: "#943e32", rubi: "#ac1231", miel: "#825315", azul: "#494698" };
   const sceneAssets = tone ? '<link rel="preload" href="/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/escenas.css"><script src="/escenas.js" defer></script>' : "";
   return `<!doctype html><html lang="es-CO"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="${swatches[palette]}"><title>${esc(title)} · Lovely Moments</title><meta name="description" content="${esc(desc)}"><link rel="icon" href="${base}assets/sello.webp"><link rel="preload" href="${base}fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="${base}tienda.css"><link rel="stylesheet" href="${base}escaparate.css"><link rel="stylesheet" href="${base}interiores.css">${sceneAssets}<script src="${base}inventario.js" defer></script><script src="${base}tienda.js" defer></script><script src="${base}interiores.js" defer></script></head><body class="store-interior palette-${palette}${tone ? " scene-page scene-at-top tono-"+tone : ""}"><a class="skip" href="#${tone ? "contenido-seccion" : "contenido"}">Saltar al contenido</a>${parts.header}<main id="contenido">${main}</main>${parts.footer}${parts.bag}<p class="notice" role="status" aria-live="polite"></p></body></html>`;
 }

@@ -39,6 +39,7 @@ const scenes = new Map([
 const tones = new Map([[bouquet,"orquidea"], [bonbons,"orquidea"], [heart,"rubi"], [berries,"cacao"], [basket,"miel"], [breakfast,"miel"]]);
 
 export function paletteFor(name) {
+  if (name.includes("ancheta-de-regalo-para-ninos-y-ninas-en-pereira-dosquebradas")) return "azul";
   if (/amor.infinito/.test(name)) return "orquidea";
   if (/corazon|aniversario|valentin|amor.y.amistad|rosas? rojas?/.test(name)) return "rubi";
   if (/ancheta|desayuno|fruta|girasol|miel|brunch|cerveza|vino|whisky/.test(name)) return "miel";

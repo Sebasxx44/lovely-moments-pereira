@@ -1,7 +1,7 @@
 @font-face { font-family: "Bricolage Grotesque"; src: url("fonts/bricolage.woff2") format("woff2"); font-style: normal; font-weight: 400 800; font-display: swap; }
 :root {
-  --set-paper: #783877;
-  --set-light: #e096c4;
+  --set-paper: #992a39;
+  --set-light: #ec786e;
   --set-ink: #fff4de;
 }
 .masthead { transition: background-color 420ms var(--ease), color 240ms var(--ease); }
@@ -13,7 +13,7 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
   --gift-spacing: .455;
   position: relative;
   /* Reserve the pin before first paint, including when restoring browser history. */
-  height: calc(var(--board-h) + 3 * var(--stride));
+  height: calc(var(--board-h) + var(--steps, 5) * var(--stride));
   color: var(--set-ink);
   background: var(--set-paper);
 }
@@ -58,21 +58,29 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
 }
 .product-set { position: relative; min-height: 0; }
 .gift-props { position: absolute; inset: 0; pointer-events: none; opacity: 0; }
-.gift-props[data-props="amor-infinito"] { opacity: 1; }
+.gift-props[data-props="oso-chocolates"] { opacity: 1; }
 .wrapping-ribbon { position: absolute; inset: -5% -8%; opacity: .68; }
 .wrapping-ribbon img { width: 100%; height: 100%; max-width: none; filter: sepia(.95) saturate(2.2) brightness(1.13); }
-.prop { display: block; position: absolute; }
-.prop img { width: 100%; height: auto; }
-.prop-a { left: 19%; top: 13%; width: clamp(63px, 7.4vw, 142px); }
-.prop-b { right: 21%; bottom: 14%; width: clamp(40px, 4.2vw, 82px); }
-[data-props="amor-infinito"] .prop-a { rotate: -16deg; }
-[data-props="amor-infinito"] .prop-b { rotate: 14deg; }
-[data-props="bombonita"] .prop-a { left: auto; right: 20%; top: 9%; rotate: 18deg; }
-[data-props="bombonita"] .prop-b { right: auto; left: 22%; rotate: -18deg; }
-[data-props="ancheta-deluxe"] .prop-a { top: 57%; rotate: -23deg; }
-[data-props="ancheta-deluxe"] .prop-b { bottom: auto; top: 12%; width: clamp(52px, 6vw, 112px); rotate: 20deg; }
-.gold-key { left: 15%; top: 10%; width: clamp(60px, 7.7vw, 148px); }
-.gold-truffle { right: 19%; bottom: 16%; width: clamp(38px, 4.6vw, 92px); }
+.gift-props { --orbit-x: 29%; --orbit-y: 35%; --period: 23s; }
+[data-props="cumple-stitch"] { --orbit-x: 25%; --orbit-y: 37%; --period: 21s; }
+[data-props="bombonita"] { --orbit-y: 38%; --period: 20s; }
+[data-props="corazon-sorpresa"] { --orbit-x: 32%; --orbit-y: 36%; }
+[data-props="ancheta-deluxe"] { --orbit-x: 26%; --period: 24s; }
+.prop {
+  display: block; position: absolute; left: var(--x); top: var(--y); width: var(--size);
+  transform: translate(-50%, -50%); pointer-events: none;
+}
+.prop img { width: 100%; height: auto; rotate: var(--angle); }
+.prop-a { --phase: 57%; --x: 24%; --y: 28%; --angle: -16deg; --size: clamp(76px, 8.7vw, 160px); }
+.prop-b { --phase: 12%; --x: 72%; --y: 73%; --angle: 12deg; --size: clamp(54px, 6.7vw, 127px); }
+.prop-c { --phase: 85%; --x: 67%; --y: 21%; --angle: 21deg; --size: clamp(44px, 5.5vw, 106px); }
+.prop-d { --phase: 36%; --x: 33%; --y: 78%; --angle: -13deg; --size: clamp(38px, 4vw, 78px); }
+@supports (offset-path: ellipse(30% 35% at 50% 50%)) {
+  .prop {
+    left: 0; top: 0; transform: none; offset-path: ellipse(var(--orbit-x) var(--orbit-y) at 50% 49%);
+    offset-distance: var(--phase); offset-anchor: center; offset-rotate: 0deg;
+  }
+}
 .set-floor {
   pointer-events: none; position: absolute; left: -14%; right: -14%; bottom: -4%; height: 36%;
   border-radius: 50%;
@@ -87,10 +95,10 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
   border: 0; background: transparent; color: inherit;
   cursor: pointer; touch-action: pan-y pinch-zoom; user-select: none; -webkit-user-select: none;
 }
-.rail-object:nth-child(2) { --offset: calc(100vw * var(--gift-spacing)); --scale: .74; --turn: -10deg; --roll: 3deg; }
-.rail-object:nth-child(3) { --offset: 100vw; opacity: 0; pointer-events: none; }
-.rail-object:nth-child(4) { --offset: calc(-100vw * var(--gift-spacing)); --scale: .74; --turn: 10deg; --roll: -3deg; }
-.rail-object:is(:nth-child(2), :nth-child(4)) { opacity: .16; --scale: .70; }
+.rail-object:not(:first-child) { opacity: 0; pointer-events: none; }
+.rail-object:nth-child(2), .rail-object:last-child { opacity: .16; --scale: .7; }
+.rail-object:nth-child(2) { --offset: calc(100vw * var(--gift-spacing)); --turn: -10deg; --roll: 3deg; }
+.rail-object:last-child { --offset: calc(-100vw * var(--gift-spacing)); --turn: 10deg; --roll: -3deg; }
 .object-figure {
   position: absolute; inset: 4% 1% 7%; display: block;
   transform: perspective(1200px) rotateY(var(--turn,0deg)) rotateZ(var(--roll,0deg));
@@ -103,8 +111,9 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
 }
 .rail-object[data-id="corazon-sorpresa"] .object-figure > img { filter: none; }
 .object-model { position: absolute; inset: 0 -3% -1%; display: block; opacity: 0; }
-.object-model, .rail-object:first-child .object-figure > img { transition: opacity 240ms var(--ease); }
-.has-model .object-model { opacity: 1; }
+.gift-model { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; }
+.gift-model, .object-model, .rail-object:has(canvas, .object-model) .object-figure > img { transition: opacity 240ms var(--ease); }
+.has-model :is(.object-model, .gift-model) { opacity: 1; }
 .has-model .object-figure > img { opacity: 0; }
 .object-ground {
   position: absolute; left: 17%; right: 17%; bottom: 2.5%; height: 9%;
@@ -152,12 +161,11 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
   .rail-object { width: 76vw; }
   .object-figure { inset: 4% 0 6%; }
   .object-ground { bottom: 5.5%; }
-  .prop-a { left: 7%; top: 10%; width: clamp(46px, 13vw, 72px); }
-  .prop-b { right: 9%; bottom: 10%; width: clamp(32px, 8.5vw, 46px); }
-  [data-props="bombonita"] .prop-a { right: 9%; top: 11%; }
-  [data-props="bombonita"] .prop-b { left: 10%; }
-  [data-props="ancheta-deluxe"] .prop-a { top: auto; bottom: 8%; }
-  [data-props="ancheta-deluxe"] .prop-b { top: 10%; width: clamp(39px, 11vw, 68px); }
+  .gift-props[data-props] { --orbit-x: 39%; --orbit-y: 36%; }
+  .prop-a { --size: clamp(49px,16vw,80px); }
+  .prop-b { --size: clamp(39px,13.5vw,67px); }
+  .prop-c { --size: clamp(32px,10.9vw,52px); }
+  .prop-d { --size: clamp(26px,8.8vw,44px); }
   .set-caption { gap: 8px; padding: 4px 0 16px; }
   .set-caption h1 { margin-top: 4px; font-size: clamp(39px, 10.3vw, 64px); }
   .set-description { font-size: 14px; max-width: 43ch; }
@@ -172,8 +180,7 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
   .set-description { display: none; }
   .set-navigation { min-height: 43px; }
   .object-figure { inset-block: 0 4%; }
-  .gold-key { left: 18%; top: 6%; width: min(9vw, 62px); }
-  .gold-truffle { right: 19%; top: 65%; width: min(5vw, 36px); }
+  .prop { max-width: 13svh; }
 }
 .wordmark { font: 580 clamp(22px,2.2vw,34px)/1 "Bricolage Grotesque", sans-serif; letter-spacing: -.033em; word-spacing: .04em; }
 .catalogue h2, .delivery h2, .product-dialog h2, .bag-sheet h2 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; letter-spacing: -.065em; }
@@ -181,18 +188,22 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
 .showcase-board :focus-visible, body.in-showcase .masthead :focus-visible { outline-color: #fff4de; }
 @media (prefers-reduced-motion: no-preference) {
   .in-showcase .rail-object, .in-showcase .object-figure { will-change: transform; }
-  .in-showcase .gift-props[data-floating] .prop-a img { animation: prop-drift 5.5s ease-in-out -1s infinite alternate; }
-  .in-showcase .gift-props[data-floating] .prop-b img { animation: prop-turn 6.5s ease-in-out -2.5s infinite alternate; }
+  .gift-props[data-floating] .prop img { animation: turn-prop 6s ease-in-out infinite alternate paused; }
+  .prop-b img, .prop-d img { animation-direction: alternate-reverse; }
+  .in-showcase .gift-props[data-floating] .prop img { animation-play-state: running; }
+  @supports (offset-path: ellipse(30% 35% at 50% 50%)) {
+    .gift-props .prop { animation: gift-orbit var(--period) linear infinite paused; }
+    .in-showcase .gift-props[data-floating] .prop { animation-play-state: running; }
+  }
   [data-arrival] .product-set { animation: unwrap-set 760ms var(--ease) both; }
   [data-arrival] .set-caption { animation: unwrap-caption 580ms 70ms var(--ease) both; }
 }
-@keyframes prop-drift {
-  from { transform: translate3d(0, 3px, 0) rotate(-5deg); }
-  to { transform: translate3d(3px, -6px, 0) rotate(3deg); }
+@keyframes gift-orbit {
+  from { offset-distance: var(--phase); } to { offset-distance: calc(var(--phase) + 100%); }
 }
-@keyframes prop-turn {
-  from { transform: translate3d(0, -3px, 0) rotate(4deg); }
-  to { transform: translate3d(-3px, 5px, 0) rotate(-3deg); }
+@keyframes turn-prop {
+  from { transform: perspective(480px) rotateY(-12deg) rotate(-6deg) scale(.96); }
+  to { transform: perspective(480px) rotateY(12deg) rotate(8deg) scale(1.04); }
 }
 @keyframes unwrap-set {
   from { opacity: .32; transform: translate3d(0, 18px, 0) scale(.982); }

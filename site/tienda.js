@@ -30,6 +30,7 @@
   const icons = "/assets/iconos.svg#";
   const motion = matchMedia("(prefers-reduced-motion: reduce)");
   const flights = new Map();
+  let burst = null;
   const storageKey = "lovely-moments/selection/v1";
   function read() {
     const selection = new Map();
@@ -71,6 +72,31 @@
   }
   function endFlights() {
     for (const animation of flights.values()) animation.cancel();
+    burst?.remove();
+    burst = null;
+  }
+  function popAtBag(target, layer) {
+    if (motion.matches || !target.isConnected || (bag.open && layer !== bag)) return;
+    const rect = target.getBoundingClientRect();
+    if (!rect.width || rect.bottom < 0 || rect.top > innerHeight) return;
+    burst?.remove();
+    const pop = element("span", undefined, "bag-pop");
+    pop.setAttribute("aria-hidden","true");
+    pop.style.left = (rect.left + rect.width / 2) + "px";
+    pop.style.top = (rect.top + rect.height / 2) + "px";
+    for (const [i,angle] of [-113,-52,10,65,132,182].entries()) {
+      const drop = element("i");
+      drop.style.setProperty("--angle", angle + "deg");
+      drop.style.setProperty("--reach", (i % 2 ? 24 : 30) + "px");
+      pop.append(drop);
+    }
+    burst = pop;
+    layer.append(pop);
+    pop.addEventListener("animationend", event => {
+      if (event.animationName !== "bag-ripple") return;
+      pop.remove();
+      if (burst === pop) burst = null;
+    }, {capture: true});
   }
   function flyToBag(button, photo, target, layer) {
     if (motion.matches || !button.animate || !photo?.src || (photo.complete && !photo.naturalWidth)) return false;
@@ -80,43 +106,49 @@
     const endX = to.left + to.width / 2, endY = to.top + to.height / 2;
     if (endY < 0 || endY > innerHeight || !to.width) return false;
     if (flights.size >= 3) {
-      const [oldPhoto, oldFlight] = flights.entries().next().value;
+      const [oldBubble, oldFlight] = flights.entries().next().value;
       oldFlight.cancel();
-      oldPhoto.remove();
-      flights.delete(oldPhoto);
+      oldBubble.remove();
+      flights.delete(oldBubble);
     }
-    const img = element("img", undefined, "bag-flight");
+    const bubble = element("span", undefined, "bag-flight");
+    bubble.setAttribute("aria-hidden", "true");
+    const img = element("img");
     img.alt = "";
-    img.setAttribute("aria-hidden", "true");
     img.src = photo.currentSrc || photo.src;
-    const size = Math.min(72, Math.max(54, innerWidth * .059));
-    img.style.width = img.style.height = size + "px";
+    bubble.append(img);
+    const size = Math.min(78, Math.max(58, innerWidth * .062));
+    bubble.style.width = bubble.style.height = size + "px";
     const dx = endX - startX, dy = endY - startY;
     const distance = Math.hypot(dx, dy);
     const bendX = dx * .26 - Math.min(62, distance * .13);
     const bendY = Math.min(-36, dy * .82);
-    const frames = Array.from({ length: 13 }, (_, i) => {
-      const t = i / 12, arc = 2 * t * (1 - t);
+    const frames = Array.from({ length: 19 }, (_, i) => {
+      const progress = i / 18;
+      const t = Math.max(0, (progress - .08) / .92), arc = 2 * t * (1 - t);
       const x = startX + arc * bendX + t * t * dx - size / 2;
       const y = startY + arc * bendY + t * t * dy - size / 2;
-      const scale = 1 - .86 * t * t;
-      return { offset: t, transform: `translate3d(${x}px,${y}px,0) scale(${scale})`, opacity: Math.min(1, (1 - t) * 3.6) };
+      const inflate = progress < .17 ? .76 + .30 * Math.sin(progress / .17 * Math.PI / 2) : 1.06;
+      const scale = inflate - .91 * t * t;
+      return { offset: progress, transform: `translate3d(${x}px,${y}px,0) scale(${scale})`, opacity: Math.min(1, (1 - t) * 6) };
     });
-    layer.append(img);
-    const animation = img.animate(frames, {
-      duration: Math.min(720, 420 + distance * .25), easing: "cubic-bezier(.32,.03,.36,1)", fill: "both"
+    layer.append(bubble);
+    const animation = bubble.animate(frames, {
+      duration: Math.min(1020, 705 + distance * .31), easing: "cubic-bezier(.33,.06,.49,.98)", fill: "both"
     });
-    flights.set(img, animation);
+    flights.set(bubble, animation);
     let timeout;
-    animation.onfinish = animation.oncancel = () => { clearTimeout(timeout); img.remove(); flights.delete(img); };
+    const remove = () => { clearTimeout(timeout); bubble.remove(); flights.delete(bubble); };
+    animation.onfinish = () => { remove(); popAtBag(target,layer); };
+    animation.oncancel = remove;
     if (!photo.complete) {
-      img.style.visibility = "hidden";
+      bubble.style.visibility = "hidden";
       animation.pause();
       timeout = setTimeout(() => animation.cancel(), 900);
       img.decode().then(() => {
         if (animation.playState === "idle") return;
         clearTimeout(timeout);
-        img.style.visibility = "";
+        bubble.style.visibility = "";
         animation.play();
       }).catch(() => animation.cancel());
     }

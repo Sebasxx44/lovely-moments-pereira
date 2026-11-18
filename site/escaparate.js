@@ -21,13 +21,16 @@
     return {
       button, wash, props, paper, prepared: index === 0,
       photo: button.querySelector(".object-figure > img"),
+      canvas: button.querySelector(".gift-model"), model: null, modelRequested: false,
       figure: button.querySelector(".object-figure"),
       title: button.dataset.title,
-      description: card.querySelector(".product-description").textContent,
-      link: card.querySelector("a").href
+      description: button.dataset.description || card.querySelector(".product-description").textContent,
+      link: button.dataset.href || card.querySelector("a").href
     };
   });
   const last = gifts.length - 1;
+  runway.style.setProperty("--steps", last);
+  const boxIndex = gifts.findIndex(gift => gift.button.querySelector("#hero-box"));
   const heartIndex = gifts.findIndex(gift => gift.button.dataset.id === "corazon-sorpresa");
   const heartFigure = gifts[heartIndex].figure;
   const heartImage = heartFigure.querySelector("img");
@@ -83,7 +86,7 @@
   let openingAt = null;
   let swipe = null;
   let ignoreClickUntil = 0;
-  const box = window.LovelyBox?.mount(board.querySelector("#hero-box"));
+  let box = null;
 
   function measure() {
     const head = masthead.offsetHeight;
@@ -100,8 +103,41 @@
     const imageWidth = Math.max(1, Math.min(heartFigure.clientWidth, heartFigure.clientHeight * heartAspect));
     const roomAboveTitle = height + Math.min(28, height * .09);
     heartBoost = clamp(Math.min(width * .94, roomAboveTitle * heartAspect) / imageWidth - 1, 0, .34);
+    for (const gift of gifts) gift.model?.resize(gift.canvas.clientWidth, gift.canvas.clientHeight);
     dirty = true;
     queue();
+  }
+
+  function prepareModel(gift, index) {
+    if (gift.modelRequested || reduced.matches || navigator.connection?.saveData) return;
+    if (!gift.canvas && index !== boxIndex) return;
+    gift.modelRequested = true;
+    if (index === boxIndex) {
+      box = window.LovelyBox?.mount(gift.button.querySelector("#hero-box"));
+      box?.ready.then(() => {
+        gift.button.classList.add("has-model");
+        dirty = true; queue();
+      }).catch(() => {});
+      return;
+    }
+    const canvas = gift.canvas;
+    const load = async () => {
+      if (reduced.matches || Math.abs(position - index) > 1 || !document.body.classList.contains("in-showcase")) {
+        gift.modelRequested = false;
+        return;
+      }
+      try {
+        await gift.photo.decode();
+        const model = await window.LovelyGiftModel.mount(canvas, gift.photo);
+        if (model) {
+          gift.model = model;
+          gift.button.classList.add("has-model");
+          dirty = true; queue();
+        }
+      } catch { /* The responsive photograph stays in place on devices without 3D. */ }
+    };
+    if ("requestIdleCallback" in window) requestIdleCallback(load, {timeout: 400});
+    else setTimeout(load, 40);
   }
 
   function prepareArt(gift) {
@@ -128,6 +164,7 @@
       const offset = i - position;
       const focus = 1 - smoothstep(clamp(Math.abs(offset)));
       if (!gift.prepared && Math.abs(offset) < 1) prepareArt(gift);
+      if (Math.abs(offset) < .78) prepareModel(gift, i);
       const alpha = i === lower ? 1 : i === upper ? mix : 0;
       gift.wash.style.opacity = alpha.toFixed(3);
       gift.props.style.opacity = focus.toFixed(3);
@@ -144,7 +181,7 @@
     if (Math.abs(position - active) > .54) select(Math.round(position));
     const heartFocus = 1 - smoothstep(clamp(Math.abs(position - heartIndex)));
     lightSet();
-    gifts.forEach(({ button, figure }, index) => {
+    gifts.forEach(({ button, figure, model }, index) => {
       // The side gifts exchange edges only after they have completely faded out.
       const count = gifts.length;
       const offset = (index - position + count * 1.5) % count - count / 2;
@@ -164,15 +201,19 @@
       const scale = (1 - depth * .50) * (isHeart ? 1 + heartBoost * heartFocus : 1);
       button.style.transform = "translate(-50%, -50%) translate3d(" + x.toFixed(2) + "px," + y.toFixed(2) + "px,0) scale(" + scale.toFixed(4) + ")";
       button.style.zIndex = String(10 - Math.round(distance * 4));
-      const turn = -offset * 10 + aimX * focus * 3;
-      const pitch = -aimY * focus * 2;
+      const turn = model ? 0 : -offset * 10 + aimX * focus * 3;
+      const pitch = model ? 0 : -aimY * focus * 2;
       const roll = offset * 3.2 - aimX * focus;
       figure.style.transform = "perspective(1200px) rotateY(" + turn.toFixed(2) + "deg) rotateX(" + pitch.toFixed(2) + "deg) rotateZ(" + roll.toFixed(2) + "deg)";
+      if (model) {
+        const yaw = reduced.matches ? 0 : -offset * .22 + aimX * focus * .13 - (1 - opening) * focus * .12;
+        model.paint(yaw, reduced.matches ? 0 : aimY * focus * .075 + offset * .028);
+      }
     });
 
-    if (box && position < 1.65) {
-      const focus = 1 - smoothstep(Math.min(1, position));
-      const lift = reduced.matches ? 0 : .03 + .27 * opening + .46 * (1 - focus);
+    if (box && Math.abs(position - boxIndex) < 1.65) {
+      const focus = 1 - smoothstep(Math.min(1, Math.abs(position - boxIndex)));
+      const lift = reduced.matches ? 0 : .30 + .34 * (1 - focus);
       box.update(+lift.toFixed(3), +(aimX * focus).toFixed(3), +(aimY * focus).toFixed(3));
     }
   }
@@ -289,12 +330,18 @@
   board.addEventListener("animationend", event => {
     if (event.animationName === "unwrap-set") board.removeAttribute("data-arrival");
   });
-  box?.ready.then(() => {
-    gifts[0].button.classList.add("has-model");
-    if (arrive && !reduced.matches && window.scrollY <= start + 2) openingAt = performance.now();
-    dirty = true;
-    queue();
-  }).catch(() => { /* Keep the product photograph if the 3D textures cannot load. */ });
+  if (arrive) openingAt = performance.now();
+  gifts.forEach(gift => {
+    gift.canvas?.addEventListener("webglcontextlost", event => {
+      event.preventDefault();
+      gift.model = null;
+      gift.button.classList.remove("has-model");
+      dirty = true; queue();
+    });
+    gift.canvas?.addEventListener("webglcontextrestored", () => {
+      gift.modelRequested = false; paintedPosition = -1; dirty = true; queue();
+    });
+  });
 
   window.addEventListener("scroll", queue, { passive: true });
   window.addEventListener("resize", measure);
