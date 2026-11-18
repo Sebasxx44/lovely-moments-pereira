@@ -155,6 +155,15 @@
   transition: opacity 250ms 65ms var(--ease), transform 360ms var(--ease);
 }
 .rail-object:focus-visible { outline-offset: -8px; border-radius: 12px; }
+@media (min-width: 901px) {
+  .rail-object:has(.gift-model) .object-figure {
+    inset: max(-60px, -5.4svh) -12% -1.3%;
+    scale: var(--plush-scale, .8);
+    transform-origin: 50% 55%;
+  }
+  .rail-object:first-child { --plush-scale: 1; }
+  .rail-object:has(.gift-model) .object-ground { bottom: -3%; }
+}
 @media (min-width: 2000px) {
   .rail-object { width: min(45vw, 1450px); }
   .showcase-board .wrap { width: min(89%, 2300px); max-width: none; }

@@ -80,15 +80,18 @@
   let sync = true, dirty = true;
   let openingAt = null;
   let swipe = null;
+  let lastWheelTime = -Infinity, wheelStarted = -Infinity, lastWheelDelta = 0;
+  let wheelCaptured = false, wheelListening = false, wheelFading = false, lastWheelHorizontal = false;
   let ignoreClickUntil = 0;
   let box = null;
 
   function measure() {
-    start = runway.getBoundingClientRect().top + window.scrollY;
-    boardHeight = board.offsetHeight;
-    travel = Math.max(1, runway.offsetHeight - boardHeight);
-    // Give the last gift room to settle before native scrolling releases the stage.
-    stride = (travel - Math.min(120, travel * .08)) / last;
+    const bounds = runway.getBoundingClientRect();
+    start = bounds.top + window.scrollY;
+    boardHeight = board.getBoundingClientRect().height;
+    travel = Math.max(1, bounds.height - boardHeight);
+    // The final stop must fit inside the sticky range on fractional mobile viewports.
+    stride = Math.floor(travel) / last;
     width = rail.clientWidth;
     height = rail.clientHeight;
     railTop = rail.parentElement.offsetTop;
@@ -157,6 +160,7 @@
       const gift = gifts[i];
       const offset = i - position;
       const focus = 1 - smoothstep(clamp(Math.abs(offset)));
+      if (gift.canvas) gift.figure.style.setProperty("--plush-scale", (.8 + .2 * focus).toFixed(3));
       if (!gift.prepared && Math.abs(offset) < 1) prepareArt(gift);
       if (Math.abs(offset) < .78) prepareModel(gift, i);
       const alpha = i === lower ? 1 : i === upper ? mix : 0;
@@ -233,17 +237,20 @@
     if (!pinned) decorTargetX = decorTargetY = 0;
     const inView = pixels < travel + boardHeight;
     document.body.classList.toggle("in-showcase", inView);
-    const raw = clamp(pixels / stride, 0, last);
-    const fraction = raw % 1;
-    const target = reduced.matches ? Math.round(raw) : Math.floor(raw) + .52 * fraction + .48 * smoothstep(fraction);
+    if (inView !== wheelListening) {
+      wheelListening = inView;
+      if (inView) window.addEventListener("wheel", wheelStep, { passive: false });
+      else window.removeEventListener("wheel", wheelStep);
+    }
+    const target = indexAt(pixels);
     const oldPosition = position, oldX = aimX, oldY = aimY;
     const oldDecorX = decorX, oldDecorY = decorY;
-    if (sync || reduced.matches || pixels >= travel || swipe?.horizontal) {
+    if (sync || reduced.matches || pixels > travel) {
       position = target;
       velocity = 0;
     } else {
       // Analytic critically damped response: independent of refresh rate, no bounce.
-      const rate = 28;
+      const rate = 19;
       const error = position - target;
       const decay = Math.exp(-rate * dt);
       const carry = (velocity + rate * error) * dt;
@@ -276,8 +283,83 @@
     frame = requestAnimationFrame(tick);
   }
 
+  function indexAt(pixels) {
+    return clamp(Math.round(pixels / stride), 0, last);
+  }
+
+  function onStage() {
+    const pixels = window.scrollY - start;
+    return pixels >= -.5 && pixels <= travel + .5 && !document.querySelector("dialog[open], .shop-menu[open]");
+  }
+
   function goTo(index) {
-    window.scrollTo({ top: start + clamp(index, 0, last) * stride, behavior: reduced.matches ? "instant" : "smooth" });
+    // The document lands on the stop now. The renderer eases the gifts into place.
+    window.scrollTo({ top: start + clamp(index, 0, last) * stride, behavior: "instant" });
+    queue();
+  }
+
+  function wheelStep(event) {
+    if (event.defaultPrevented || event.ctrlKey || event.metaKey || !event.cancelable || document.querySelector("dialog[open], .shop-menu[open]")) return;
+    const pixels = window.scrollY - start;
+    if (pixels < -.5) return;
+    const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? boardHeight : 1;
+    const returning = pixels > travel;
+    if (returning && (event.deltaY >= 0 || pixels + event.deltaY * unit > travel)) return;
+    const horizontal = Math.abs(event.deltaX) > Math.abs(event.deltaY);
+    const delta = horizontal ? event.deltaX : event.deltaY;
+    if (!delta) return;
+    const direction = Math.sign(delta);
+    const gap = event.timeStamp - lastWheelTime;
+    const magnitude = Math.abs(delta) * unit;
+    const previousMagnitude = Math.abs(lastWheelDelta);
+    // A mouse can send distinct, identical notches. A trackpad usually leaves a decaying tail.
+    const notch = gap >= 70 && magnitude >= 40 && magnitude === previousMagnitude;
+    const freshImpulse = event.timeStamp - wheelStarted > 230 && previousMagnitude <= 10 && magnitude >= 3 * previousMagnitude + 16;
+    const fading = magnitude < previousMagnitude || (wheelFading && magnitude === previousMagnitude);
+    const tail = fading && (wheelFading || (gap < 260 && magnitude >= previousMagnitude * .35));
+    const sameBurst = gap < 180 || (tail && gap < 420);
+    const newAxis = horizontal !== lastWheelHorizontal && gap > 65;
+    const continued = !returning && direction === Math.sign(lastWheelDelta) && sameBurst && !notch && !freshImpulse && !newAxis;
+    wheelFading = continued && fading;
+    lastWheelHorizontal = horizontal;
+    lastWheelTime = event.timeStamp;
+    lastWheelDelta = delta * unit;
+    const next = returning ? last : indexAt(pixels) + direction;
+    if (!continued) {
+      wheelStarted = lastWheelTime;
+      wheelCaptured = next >= 0 && next <= last;
+    }
+    if (!wheelCaptured) return;
+    // Momentum from the same gesture must not advance again or push the last gift offscreen.
+    event.preventDefault();
+    if (!continued) goTo(next);
+  }
+
+  function startSwipe(event) {
+    swipe = null;
+    ignoreClickUntil = 0;
+    if (event.touches.length !== 1 || !onStage()) return;
+    const finger = event.touches[0];
+    swipe = { x: finger.clientX, y: finger.clientY, index: indexAt(window.scrollY - start), stepped: false };
+  }
+
+  function moveSwipe(event) {
+    if (!swipe || event.touches.length !== 1 || !event.cancelable) return;
+    if (swipe.stepped) { event.preventDefault(); return; }
+    const finger = event.touches[0];
+    const dx = swipe.x - finger.clientX, dy = swipe.y - finger.clientY;
+    const delta = Math.abs(dx) > Math.abs(dy) ? dx : dy;
+    if (Math.abs(delta) < 8) return;
+    const next = swipe.index + Math.sign(delta);
+    if (next < 0 || next > last) { swipe = null; return; }
+    event.preventDefault();
+    swipe.stepped = true;
+    goTo(next);
+  }
+
+  function endSwipe() {
+    if (swipe?.stepped) ignoreClickUntil = performance.now() + 350;
+    swipe = null;
   }
 
   gifts.forEach(({ link }, i) => {
@@ -291,10 +373,17 @@
       }
     });
   });
-  board.addEventListener("keydown", event => {
-    if (event.key !== "ArrowLeft" && event.key !== "ArrowRight") return;
+  window.addEventListener("keydown", event => {
+    const forward = ["ArrowRight", "ArrowDown", "PageDown"].includes(event.key);
+    const back = ["ArrowLeft", "ArrowUp", "PageUp"].includes(event.key);
+    if (!forward && !back && event.key !== " ") return;
+    if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || !onStage()) return;
+    if (event.target.closest?.("input, textarea, select, button, summary, [contenteditable=true]")) return;
+    const direction = back || (event.key === " " && event.shiftKey) ? -1 : 1;
+    const next = indexAt(window.scrollY - start) + direction;
+    if (next < 0 || next > last) return;
     event.preventDefault();
-    goTo(active + (event.key === "ArrowRight" ? 1 : -1));
+    goTo(next);
   });
   function aimProps(event) {
     if (reduced.matches || !fine.matches || event.pointerType === "touch" || !document.body.classList.contains("showcase-pinned")) return;
@@ -310,6 +399,10 @@
   for (const surface of [board, masthead]) {
     surface.addEventListener("pointermove", aimProps);
     surface.addEventListener("pointerleave", restProps);
+    surface.addEventListener("touchstart", startSwipe, { passive: true });
+    surface.addEventListener("touchmove", moveSwipe, { passive: false });
+    surface.addEventListener("touchend", endSwipe);
+    surface.addEventListener("touchcancel", endSwipe);
   }
   rail.addEventListener("pointermove", event => {
     if (reduced.matches || !fine.matches || event.pointerType === "touch") return;
@@ -318,40 +411,6 @@
     queue();
   });
   rail.addEventListener("pointerleave", () => { pointerX = pointerY = 0; queue(); });
-
-  rail.addEventListener("touchstart", event => {
-    swipe = null;
-    ignoreClickUntil = 0;
-    if (event.touches.length !== 1) return;
-    const finger = event.touches[0];
-    swipe = { x: finger.clientX, y: finger.clientY, pageY: window.scrollY, time: event.timeStamp, horizontal: false };
-  }, { passive: true });
-  rail.addEventListener("touchmove", event => {
-    if (!swipe || event.touches.length !== 1) return;
-    const dx = swipe.x - event.touches[0].clientX;
-    const dy = swipe.y - event.touches[0].clientY;
-    if (!swipe.horizontal) {
-      if (Math.max(Math.abs(dx), Math.abs(dy)) < 8) return;
-      if (Math.abs(dx) < Math.abs(dy) * 1.4) { swipe = null; return; }
-      swipe.horizontal = true;
-    }
-    const top = clamp(swipe.pageY + dx / spacing * stride, start, start + last * stride);
-    window.scrollTo({ top, behavior: "instant" });
-  }, { passive: true });
-  rail.addEventListener("touchend", event => {
-    if (swipe?.horizontal) {
-      const dx = swipe.x - event.changedTouches[0].clientX;
-      const raw = clamp((swipe.pageY - start) / stride + dx / spacing, 0, last);
-      const speed = Math.abs(dx) / Math.max(1, event.timeStamp - swipe.time);
-      const flick = speed > .4 && Math.abs(dx) > 32;
-      const index = flick ? (dx > 0 ? Math.ceil(raw) : Math.floor(raw)) : Math.round(raw);
-      ignoreClickUntil = performance.now() + 350;
-      goTo(index);
-    }
-    swipe = null;
-    queue();
-  }, { passive: true });
-  rail.addEventListener("touchcancel", () => { swipe = null; });
 
   const restored = performance.getEntriesByType("navigation")[0]?.type === "back_forward";
   const arrive = !reduced.matches && !restored && window.scrollY === 0 && (!location.hash || location.hash === "#inicio");
