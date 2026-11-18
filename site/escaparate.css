@@ -1,10 +1,11 @@
 @font-face { font-family: "Bricolage Grotesque"; src: url("fonts/bricolage.woff2") format("woff2"); font-style: normal; font-weight: 400 800; font-display: swap; }
 :root {
-  --set-paper: #842c47;
+  --set-paper: #783877;
+  --set-light: #e096c4;
   --set-ink: #fff4de;
 }
 .masthead { transition: background-color 420ms var(--ease), color 240ms var(--ease); }
-body.in-showcase .masthead { background-color: var(--set-paper); color: var(--set-ink); }
+body.in-showcase .masthead { background-color: var(--set-paper); color: var(--set-ink); transition: color 240ms var(--ease); }
 body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29%); }
 .showcase-runway {
   --board-h: calc(100svh - var(--head));
@@ -28,9 +29,16 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
   height: var(--board-h);
   overflow: clip;
   background-color: var(--set-paper);
-  background-image: radial-gradient(ellipse 75% 78% at 50% 37%, rgb(255 232 208 / 13%), transparent 86%), linear-gradient(0deg, rgb(33 10 16 / 14%), transparent 48%);
-  transition: background-color 420ms var(--ease);
 }
+.set-backdrop, .set-wash {
+  position: absolute; inset: 0; pointer-events: none;
+  background-color: var(--set-paper);
+  background-image:
+    linear-gradient(to bottom, var(--set-paper), transparent 20%, transparent 62%, rgb(48 5 19 / 34%)),
+    radial-gradient(ellipse 65% 65% at 55% 38%, var(--set-light), transparent 95%);
+}
+.set-backdrop { z-index: -1; overflow: hidden; }
+.set-wash { opacity: 0; }
 .set-heading, .set-caption, .set-navigation { position: relative; z-index: 2; }
 .set-heading {
   display: flex; align-items: center; justify-content: space-between;
@@ -38,12 +46,18 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
   font-size: 13px; color: #fff0dd;
 }
 .product-set { position: relative; min-height: 0; }
-.wrapping-ribbon { position: absolute; inset: -5% -8%; pointer-events: none; opacity: .49; }
-.wrapping-ribbon img { width: 100%; height: 100%; max-width: none; }
+.wrapping-ribbon { position: absolute; inset: -5% -8%; pointer-events: none; opacity: .46; }
+.wrapping-ribbon img { width: 100%; height: 100%; max-width: none; transition: filter 360ms var(--ease); }
+.wrapping-ribbon.is-gold img { filter: sepia(.95) saturate(2.2) brightness(1.13); }
+.heart-ornaments { position: absolute; inset: 0; pointer-events: none; opacity: 0; }
+.heart-ornaments > span { display: block; position: absolute; }
+.heart-ornaments img { width: 100%; height: auto; }
+.gold-key { left: 15%; top: 10%; width: clamp(60px, 7.7vw, 148px); }
+.gold-truffle { right: 19%; top: 63%; width: clamp(38px, 4.6vw, 92px); }
 .set-floor {
   pointer-events: none; position: absolute; left: -14%; right: -14%; bottom: -4%; height: 36%;
   border-radius: 50%;
-  background: radial-gradient(ellipse at center, rgb(41 12 26 / 35%), rgb(52 20 23 / 13%) 43%, transparent 71%);
+  background: radial-gradient(ellipse at center, rgb(44 8 24 / 25%), rgb(52 20 23 / 8%) 43%, transparent 71%);
 }
 .product-rail { position: absolute; inset: 0; touch-action: pan-y pinch-zoom; }
 .rail-object {
@@ -67,6 +81,7 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
   width: 100%; height: 100%; object-fit: contain;
   filter: drop-shadow(1px 9px 8px rgb(62 39 31 / 12%));
 }
+.rail-object[data-id="corazon-sorpresa"] .object-figure > img { filter: none; }
 .object-model { position: absolute; inset: 0 -3% -1%; display: block; opacity: 0; }
 .object-model, .rail-object:first-child .object-figure > img { transition: opacity 240ms var(--ease); }
 .has-model .object-model { opacity: 1; }
@@ -117,6 +132,8 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
   .rail-object { width: 76vw; }
   .object-figure { inset: 4% 0 6%; }
   .object-ground { bottom: 5.5%; }
+  .gold-key { left: 5%; top: 12%; width: clamp(45px, 13vw, 72px); }
+  .gold-truffle { right: 6%; top: 76%; width: clamp(30px, 8.5vw, 46px); }
   .set-caption { gap: 8px; padding: 4px 0 16px; }
   .set-caption h1 { margin-top: 4px; font-size: clamp(39px, 10.3vw, 64px); }
   .set-description { font-size: 14px; max-width: 43ch; }
@@ -131,6 +148,8 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
   .set-description { display: none; }
   .set-navigation { min-height: 43px; }
   .object-figure { inset-block: 0 4%; }
+  .gold-key { left: 18%; top: 6%; width: min(9vw, 62px); }
+  .gold-truffle { right: 19%; top: 65%; width: min(5vw, 36px); }
 }
 .wordmark { font: 580 clamp(22px,2.2vw,34px)/1 "Bricolage Grotesque", sans-serif; letter-spacing: -.033em; word-spacing: .04em; }
 .catalogue h2, .delivery h2, .product-dialog h2, .bag-sheet h2 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 600; letter-spacing: -.065em; }
@@ -138,8 +157,18 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
 .showcase-board :focus-visible, body.in-showcase .masthead :focus-visible { outline-color: #fff4de; }
 @media (prefers-reduced-motion: no-preference) {
   .in-showcase .rail-object, .in-showcase .object-figure, .in-showcase .wrapping-ribbon { will-change: transform; }
+  .in-showcase .heart-ornaments[data-floating] .gold-key img { animation: gold-key-float 5.5s ease-in-out infinite alternate; }
+  .in-showcase .heart-ornaments[data-floating] .gold-truffle img { animation: gold-truffle-float 6.5s ease-in-out infinite alternate; }
   [data-arrival] .product-set { animation: unwrap-set 760ms var(--ease) both; }
   [data-arrival] .set-caption { animation: unwrap-caption 580ms 70ms var(--ease) both; }
+}
+@keyframes gold-key-float {
+  from { transform: translate3d(0, 3px, 0) rotate(-5deg); }
+  to { transform: translate3d(3px, -6px, 0) rotate(3deg); }
+}
+@keyframes gold-truffle-float {
+  from { transform: translate3d(0, -3px, 0) rotate(4deg); }
+  to { transform: translate3d(-3px, 5px, 0) rotate(-3deg); }
 }
 @keyframes unwrap-set {
   from { opacity: .32; transform: translate3d(0, 18px, 0) scale(.982); }

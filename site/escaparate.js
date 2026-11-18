@@ -4,16 +4,27 @@
   const runway = document.querySelector(".showcase-runway");
   const board = runway.querySelector(".showcase-board");
   const rail = board.querySelector(".product-rail");
+  const backdrop = board.querySelector(".set-backdrop");
+  const ornaments = board.querySelector(".heart-ornaments");
   const ribbon = board.querySelector(".wrapping-ribbon");
   const masthead = document.querySelector(".masthead");
+  const themeColor = document.querySelector('meta[name="theme-color"]');
   const detail = board.querySelector("[data-hero-detail]");
   const hint = board.querySelector(".scroll-caption");
   const reduced = matchMedia("(prefers-reduced-motion: reduce)");
   const fine = matchMedia("(hover: hover) and (pointer: fine)");
-  const gifts = [...rail.querySelectorAll(".rail-object")].map(button => {
+  const gifts = [...rail.querySelectorAll(".rail-object")].map((button, index) => {
     const card = document.querySelector('.product[data-id="' + button.dataset.id + '"]');
+    const wash = index ? document.createElement("span") : backdrop;
+    const paper = button.dataset.paper;
+    wash.style.setProperty("--set-paper", paper);
+    wash.style.setProperty("--set-light", button.dataset.light);
+    if (index) {
+      wash.className = "set-wash";
+      backdrop.append(wash);
+    }
     return {
-      button,
+      button, wash, paper,
       figure: button.querySelector(".object-figure"),
       title: button.dataset.title,
       description: card.querySelector(".product-description").textContent,
@@ -21,6 +32,10 @@
     };
   });
   const last = gifts.length - 1;
+  const heartIndex = gifts.findIndex(gift => gift.button.dataset.id === "corazon-sorpresa");
+  const heartFigure = gifts[heartIndex].figure;
+  const heartImage = heartFigure.querySelector("img");
+  const heartAspect = Number(heartImage.getAttribute("width")) / Number(heartImage.getAttribute("height"));
   const clamp = (value, min = 0, max = 1) => Math.min(max, Math.max(min, value));
   const smoothstep = value => value * value * (3 - 2 * value);
 
@@ -46,8 +61,8 @@
     active = index;
     const gift = gifts[index];
     runway.dataset.active = index;
-    masthead.style.setProperty("--set-paper", gift.button.dataset.paper);
-    board.style.setProperty("--set-paper", gift.button.dataset.paper);
+    ribbon.classList.toggle("is-gold", index === heartIndex);
+    themeColor.content = gift.paper;
     hint.textContent = index === last ? "Sigue al catálogo" : "Desliza para recorrer";
     detail.dataset.heroDetail = gift.button.dataset.id;
     detail.href = gift.link;
@@ -65,6 +80,7 @@
 
   let start = 0, travel = 0, stride = 1, spacing = 0;
   let width = 0, height = 0, boardHeight = 0, railTop = 0;
+  let heartBoost = 0, paintedPosition = -1;
   let position = 0, velocity = 0;
   let aimX = 0, aimY = 0, pointerX = 0, pointerY = 0;
   let frame = 0, previousTime = 0;
@@ -85,12 +101,39 @@
     height = rail.clientHeight;
     railTop = head + rail.parentElement.offsetTop;
     spacing = width * parseFloat(getComputedStyle(runway).getPropertyValue("--gift-spacing"));
+    // Size the actual cutout, including its bow, against the space above the title.
+    const imageWidth = Math.max(1, Math.min(heartFigure.clientWidth, heartFigure.clientHeight * heartAspect));
+    const roomAboveTitle = height + Math.min(28, height * .09);
+    heartBoost = clamp(Math.min(width * .94, roomAboveTitle * heartAspect) / imageWidth - 1, 0, .34);
     dirty = true;
     queue();
   }
 
+  function lightSet(heartFocus) {
+    if (position === paintedPosition) return;
+    paintedPosition = position;
+    const lower = Math.floor(position);
+    const upper = Math.min(last, lower + 1);
+    const mix = smoothstep(position - lower);
+    // Crossfade two prepainted backdrops. The lower layer remains opaque.
+    for (let i = 1; i <= last; i++) {
+      const alpha = i === lower ? 1 : i === upper ? mix : 0;
+      gifts[i].wash.style.opacity = alpha.toFixed(3);
+    }
+    masthead.style.setProperty("--set-paper", mix
+      ? `color-mix(in srgb, ${gifts[upper].paper} ${(mix * 100).toFixed(2)}%, ${gifts[lower].paper})`
+      : gifts[lower].paper);
+    ornaments.style.opacity = heartFocus.toFixed(3);
+    ornaments.toggleAttribute("data-floating", heartFocus > .01);
+    ornaments.style.transform = reduced.matches ? "none"
+      : `translate3d(${((heartIndex - position) * 7).toFixed(2)}%, ${((1 - heartFocus) * 12).toFixed(2)}px, 0)`;
+    ribbon.style.opacity = (.46 + heartFocus * .36).toFixed(3);
+  }
+
   function draw(opening) {
     if (Math.abs(position - active) > .54) select(Math.round(position));
+    const heartFocus = 1 - smoothstep(clamp(Math.abs(position - heartIndex)));
+    lightSet(heartFocus);
     gifts.forEach(({ button, figure }, index) => {
       // The side gifts exchange edges only after they have completely faded out.
       const count = gifts.length;
@@ -99,14 +142,17 @@
       const squared = distance * distance;
       const depth = squared / (.68 + squared);
       const focus = 1 - smoothstep(Math.min(1, distance));
-      const opacity = (1 - depth * .28) * (1 - smoothstep(clamp((distance - 1.17) / .48)));
+      const isHeart = index === heartIndex;
+      const visibility = (1 - depth * .28) * (1 - smoothstep(clamp((distance - 1.17) / .48)));
+      const opacity = visibility * (isHeart ? 1 : 1 - .67 * heartFocus);
       button.style.opacity = opacity.toFixed(3);
       button.style.pointerEvents = opacity > .05 ? "auto" : "none";
       if (opacity === 0) return;
 
-      const x = offset * spacing + aimX * focus * 3;
-      const y = depth * Math.min(height * .105, 58) + aimY * focus * 2;
-      const scale = 1 - depth * .43;
+      const x = offset * (spacing + (isHeart ? 0 : width * .045 * heartFocus)) + aimX * focus * 3;
+      const lift = isHeart ? Math.min(18, height * .035) * heartFocus : 0;
+      const y = depth * Math.min(height * .105, 58) + aimY * focus * 2 - lift;
+      const scale = (1 - depth * .43) * (isHeart ? 1 + heartBoost * heartFocus : 1 - .12 * heartFocus);
       button.style.transform = "translate(-50%, -50%) translate3d(" + x.toFixed(2) + "px," + y.toFixed(2) + "px,0) scale(" + scale.toFixed(4) + ")";
       button.style.zIndex = String(10 - Math.round(distance * 4));
       const turn = -offset * 10 + aimX * focus * 3;
@@ -256,6 +302,7 @@
   reduced.addEventListener("change", () => {
     pointerX = pointerY = aimX = aimY = 0;
     openingAt = null;
+    paintedPosition = -1;
     board.removeAttribute("data-arrival");
     sync = dirty = true;
     queue();
