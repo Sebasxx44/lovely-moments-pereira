@@ -13,8 +13,6 @@
 }
 .scene-page.scene-at-top .masthead { background: transparent; color: var(--scene-ink); }
 .scene-page .masthead-inner, .scene-inner { width: min(calc(100% - 2 * var(--rail)), 1824px); margin-inline: auto; }
-.scene-page .masthead-inner { border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent); }
-.scene-page .bag-count { border-color: color-mix(in srgb, currentColor 35%, transparent); }
 .scene-page :is(.masthead, .studio-scene) :focus-visible { outline-color: currentColor; }
 #contenido-seccion { display: flow-root; }
 #contenido-seccion:focus { outline: none; }

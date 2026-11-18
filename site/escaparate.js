@@ -5,40 +5,38 @@
   const board = runway.querySelector(".showcase-board");
   const rail = board.querySelector(".product-rail");
   const backdrop = board.querySelector(".set-backdrop");
+  const ornaments = board.querySelector(".set-ornaments");
   const masthead = document.querySelector(".masthead");
   const themeColor = document.querySelector('meta[name="theme-color"]');
-  const detail = board.querySelector("[data-hero-detail]");
-  const hint = board.querySelector(".scroll-caption");
   const reduced = matchMedia("(prefers-reduced-motion: reduce)");
   const fine = matchMedia("(hover: hover) and (pointer: fine)");
-  const gifts = [...rail.querySelectorAll(".rail-object")].map((button, index) => {
-    const card = document.querySelector('.product[data-id="' + button.dataset.id + '"]');
-    const wash = backdrop.querySelector('[data-scene="' + button.dataset.id + '"]');
-    const props = board.querySelector('[data-props="' + button.dataset.id + '"]');
-    const paper = button.dataset.paper;
+  const gifts = [...rail.querySelectorAll(".rail-object")].map((link, index) => {
+    const card = document.querySelector('.product[data-id="' + link.dataset.id + '"]');
+    const wash = backdrop.querySelector('[data-scene="' + link.dataset.id + '"]');
+    const props = board.querySelector('[data-props="' + link.dataset.id + '"]');
+    const paper = link.dataset.paper;
     wash.style.setProperty("--set-paper", paper);
-    wash.style.setProperty("--set-light", button.dataset.light);
+    wash.style.setProperty("--set-light", link.dataset.light);
     return {
-      button, wash, props, paper, prepared: index === 0,
-      photo: button.querySelector(".object-figure > img"),
-      canvas: button.querySelector(".gift-model"), model: null, modelRequested: false,
-      figure: button.querySelector(".object-figure"),
-      title: button.dataset.title,
-      description: button.dataset.description || card.querySelector(".product-description").textContent,
-      link: button.dataset.href || card.querySelector("a").href
+      link, wash, props, paper, prepared: index === 0,
+      photo: link.querySelector(".object-figure > img"),
+      canvas: link.querySelector(".gift-model"), model: null, modelRequested: false,
+      figure: link.querySelector(".object-figure"),
+      title: link.dataset.title,
+      description: link.dataset.description || card.querySelector(".product-description").textContent
     };
   });
   const last = gifts.length - 1;
   runway.style.setProperty("--steps", last);
-  const boxIndex = gifts.findIndex(gift => gift.button.querySelector("#hero-box"));
-  const heartIndex = gifts.findIndex(gift => gift.button.dataset.id === "corazon-sorpresa");
+  const boxIndex = gifts.findIndex(gift => gift.link.querySelector("#hero-box"));
+  const heartIndex = gifts.findIndex(gift => gift.link.dataset.id === "corazon-sorpresa");
   const heartFigure = gifts[heartIndex].figure;
   const heartImage = heartFigure.querySelector("img");
   const heartAspect = Number(heartImage.getAttribute("width")) / Number(heartImage.getAttribute("height"));
   const clamp = (value, min = 0, max = 1) => Math.min(max, Math.max(min, value));
   const smoothstep = value => value * value * (3 - 2 * value);
 
-  // Stacked lines reserve the same space for all four gifts, even when text wraps.
+  // Stacked lines reserve the same space for all gifts, even when text wraps.
   function makeLines(selector, field) {
     const lines = gifts.map((gift, index) => {
       const line = document.createElement("span");
@@ -61,19 +59,15 @@
     const gift = gifts[index];
     runway.dataset.active = index;
     themeColor.content = gift.paper;
-    hint.textContent = index === last ? "Sigue al catálogo" : "Desliza para recorrer";
-    detail.dataset.heroDetail = gift.button.dataset.id;
-    detail.href = gift.link;
-    detail.setAttribute("aria-label", "Ver el regalo: " + gift.title);
-    gifts.forEach(({ button, title }, i) => {
-      button.tabIndex = i === index ? 0 : -1;
-      button.setAttribute("aria-label", (i === index ? "Ver detalle de " : "Centrar ") + title);
+    gifts.forEach(({ link, title }, i) => {
+      link.tabIndex = i === index ? 0 : -1;
+      link.setAttribute("aria-label", (i === index ? "Ver detalle de " : "Centrar ") + title);
       for (const line of [titles[i], descriptions[i]]) {
         line.setAttribute("aria-hidden", String(i !== index));
         line.toggleAttribute("data-past", i < index);
       }
     });
-    if (hasRailFocus) gift.button.focus({ preventScroll: true });
+    if (hasRailFocus) gift.link.focus({ preventScroll: true });
   }
 
   let start = 0, travel = 0, stride = 1, spacing = 0;
@@ -81,6 +75,7 @@
   let heartBoost = 0, paintedPosition = -1;
   let position = 0, velocity = 0;
   let aimX = 0, aimY = 0, pointerX = 0, pointerY = 0;
+  let decorX = 0, decorY = 0, decorTargetX = 0, decorTargetY = 0;
   let frame = 0, previousTime = 0;
   let sync = true, dirty = true;
   let openingAt = null;
@@ -89,15 +84,14 @@
   let box = null;
 
   function measure() {
-    const head = masthead.offsetHeight;
-    start = runway.getBoundingClientRect().top + window.scrollY - head;
+    start = runway.getBoundingClientRect().top + window.scrollY;
     boardHeight = board.offsetHeight;
     travel = Math.max(1, runway.offsetHeight - boardHeight);
     // Give the last gift room to settle before native scrolling releases the stage.
     stride = (travel - Math.min(120, travel * .08)) / last;
     width = rail.clientWidth;
     height = rail.clientHeight;
-    railTop = head + rail.parentElement.offsetTop;
+    railTop = rail.parentElement.offsetTop;
     spacing = width * parseFloat(getComputedStyle(runway).getPropertyValue("--gift-spacing"));
     // Size the actual cutout, including its bow, against the space above the title.
     const imageWidth = Math.max(1, Math.min(heartFigure.clientWidth, heartFigure.clientHeight * heartAspect));
@@ -113,9 +107,9 @@
     if (!gift.canvas && index !== boxIndex) return;
     gift.modelRequested = true;
     if (index === boxIndex) {
-      box = window.LovelyBox?.mount(gift.button.querySelector("#hero-box"));
+      box = window.LovelyBox?.mount(gift.link.querySelector("#hero-box"));
       box?.ready.then(() => {
-        gift.button.classList.add("has-model");
+        gift.link.classList.add("has-model");
         dirty = true; queue();
       }).catch(() => {});
       return;
@@ -131,7 +125,7 @@
         const model = await window.LovelyGiftModel.mount(canvas, gift.photo);
         if (model) {
           gift.model = model;
-          gift.button.classList.add("has-model");
+          gift.link.classList.add("has-model");
           dirty = true; queue();
         }
       } catch { /* The responsive photograph stays in place on devices without 3D. */ }
@@ -172,16 +166,13 @@
       if (focus) gift.props.style.transform = reduced.matches ? "none"
         : `translate3d(${(offset * 6).toFixed(2)}%, ${((1 - focus) * 10).toFixed(2)}px, 0)`;
     }
-    masthead.style.setProperty("--set-paper", mix
-      ? `color-mix(in srgb, ${gifts[upper].paper} ${(mix * 100).toFixed(2)}%, ${gifts[lower].paper})`
-      : gifts[lower].paper);
   }
 
   function draw(opening) {
     if (Math.abs(position - active) > .54) select(Math.round(position));
     const heartFocus = 1 - smoothstep(clamp(Math.abs(position - heartIndex)));
     lightSet();
-    gifts.forEach(({ button, figure, model }, index) => {
+    gifts.forEach(({ link, figure, model }, index) => {
       // The side gifts exchange edges only after they have completely faded out.
       const count = gifts.length;
       const offset = (index - position + count * 1.5) % count - count / 2;
@@ -191,16 +182,16 @@
       const focus = 1 - smoothstep(Math.min(1, distance));
       const isHeart = index === heartIndex;
       const opacity = (.16 + .84 * focus) * (1 - smoothstep(clamp((distance - 1.17) / .48)));
-      button.style.opacity = opacity.toFixed(3);
-      button.style.pointerEvents = opacity > .05 ? "auto" : "none";
+      link.style.opacity = opacity.toFixed(3);
+      link.style.pointerEvents = opacity > .05 ? "auto" : "none";
       if (opacity === 0) return;
 
       const x = offset * spacing + aimX * focus * 3;
       const lift = isHeart ? Math.min(18, height * .035) * heartFocus : 0;
       const y = depth * Math.min(height * .105, 58) + aimY * focus * 2 - lift;
       const scale = (1 - depth * .50) * (isHeart ? 1 + heartBoost * heartFocus : 1);
-      button.style.transform = "translate(-50%, -50%) translate3d(" + x.toFixed(2) + "px," + y.toFixed(2) + "px,0) scale(" + scale.toFixed(4) + ")";
-      button.style.zIndex = String(10 - Math.round(distance * 4));
+      link.style.transform = "translate(-50%, -50%) translate3d(" + x.toFixed(2) + "px," + y.toFixed(2) + "px,0) scale(" + scale.toFixed(4) + ")";
+      link.style.zIndex = String(10 - Math.round(distance * 4));
       const turn = model ? 0 : -offset * 10 + aimX * focus * 3;
       const pitch = model ? 0 : -aimY * focus * 2;
       const roll = offset * 3.2 - aimX * focus;
@@ -218,17 +209,35 @@
     }
   }
 
+  function followPointer(current, target, easing) {
+    const next = current + (target - current) * easing;
+    return Math.abs(target - next) < .002 ? target : next;
+  }
+
+  function moveProps() {
+    const x = (decorX * Math.min(46, width * .035)).toFixed(2) + "px";
+    const y = (decorY * Math.min(32, boardHeight * .046)).toFixed(2) + "px";
+    const roll = (decorX * 7).toFixed(2) + "deg";
+    ornaments.style.setProperty("--pointer-x", x);
+    ornaments.style.setProperty("--pointer-y", y);
+    ornaments.style.setProperty("--pointer-roll", roll);
+  }
+
   function tick(time) {
     frame = 0;
     const dt = clamp((time - previousTime) / 1000, 0, .055);
     previousTime = time;
     const pixels = window.scrollY - start;
+    const pinned = pixels <= travel;
+    document.body.classList.toggle("showcase-pinned", pinned);
+    if (!pinned) decorTargetX = decorTargetY = 0;
     const inView = pixels < travel + boardHeight;
     document.body.classList.toggle("in-showcase", inView);
     const raw = clamp(pixels / stride, 0, last);
     const fraction = raw % 1;
     const target = reduced.matches ? Math.round(raw) : Math.floor(raw) + .52 * fraction + .48 * smoothstep(fraction);
     const oldPosition = position, oldX = aimX, oldY = aimY;
+    const oldDecorX = decorX, oldDecorY = decorY;
     if (sync || reduced.matches || pixels >= travel || swipe?.horizontal) {
       position = target;
       velocity = 0;
@@ -247,16 +256,17 @@
     }
     sync = false;
     const follow = 1 - Math.exp(-15 * dt);
-    aimX += (pointerX - aimX) * follow;
-    aimY += (pointerY - aimY) * follow;
-    if (Math.abs(pointerX - aimX) < .002) aimX = pointerX;
-    if (Math.abs(pointerY - aimY) < .002) aimY = pointerY;
+    aimX = followPointer(aimX, pointerX, follow);
+    aimY = followPointer(aimY, pointerY, follow);
+    decorX = followPointer(decorX, decorTargetX, follow);
+    decorY = followPointer(decorY, decorTargetY, follow);
     const openingTime = openingAt === null ? 1 : clamp((time - openingAt) / 740);
     const opening = 1 - (1 - openingTime) ** 3;
     if (dirty || position !== oldPosition || aimX !== oldX || aimY !== oldY || openingAt !== null) draw(opening);
+    if (dirty || oldDecorX !== decorX || oldDecorY !== decorY) moveProps();
     dirty = false;
     if (openingTime === 1) openingAt = null;
-    if (inView && (position !== target || velocity || aimX !== pointerX || aimY !== pointerY || openingAt !== null)) queue();
+    if (inView && (position !== target || velocity || aimX !== pointerX || aimY !== pointerY || decorX !== decorTargetX || decorY !== decorTargetY || openingAt !== null)) queue();
     else previousTime = 0;
   }
 
@@ -270,11 +280,15 @@
     window.scrollTo({ top: start + clamp(index, 0, last) * stride, behavior: reduced.matches ? "instant" : "smooth" });
   }
 
-  gifts.forEach(({ button }, i) => {
-    button.addEventListener("click", event => {
-      if (event.detail && performance.now() < ignoreClickUntil) return;
-      if (i !== active || Math.abs(position - i) > .13) goTo(i);
-      else detail.click();
+  gifts.forEach(({ link }, i) => {
+    link.addEventListener("click", event => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.altKey || event.shiftKey) return;
+      if (event.detail && performance.now() < ignoreClickUntil) {
+        event.preventDefault();
+      } else if (i !== active || Math.abs(position - i) > .13) {
+        event.preventDefault();
+        goTo(i);
+      }
     });
   });
   board.addEventListener("keydown", event => {
@@ -282,6 +296,21 @@
     event.preventDefault();
     goTo(active + (event.key === "ArrowRight" ? 1 : -1));
   });
+  function aimProps(event) {
+    if (reduced.matches || !fine.matches || event.pointerType === "touch" || !document.body.classList.contains("showcase-pinned")) return;
+    decorTargetX = clamp(event.clientX / width * 2 - 1, -1, 1);
+    decorTargetY = clamp(event.clientY / boardHeight * 2 - 1, -1, 1);
+    queue();
+  }
+  function restProps(event) {
+    if (event.relatedTarget instanceof Node && (board.contains(event.relatedTarget) || masthead.contains(event.relatedTarget))) return;
+    decorTargetX = decorTargetY = 0;
+    queue();
+  }
+  for (const surface of [board, masthead]) {
+    surface.addEventListener("pointermove", aimProps);
+    surface.addEventListener("pointerleave", restProps);
+  }
   rail.addEventListener("pointermove", event => {
     if (reduced.matches || !fine.matches || event.pointerType === "touch") return;
     pointerX = clamp(event.clientX / width * 2 - 1, -1, 1);
@@ -335,7 +364,7 @@
     gift.canvas?.addEventListener("webglcontextlost", event => {
       event.preventDefault();
       gift.model = null;
-      gift.button.classList.remove("has-model");
+      gift.link.classList.remove("has-model");
       dirty = true; queue();
     });
     gift.canvas?.addEventListener("webglcontextrestored", () => {
@@ -353,8 +382,14 @@
       measure();
     }
   });
-  reduced.addEventListener("change", () => {
+  function resetPointer() {
     pointerX = pointerY = aimX = aimY = 0;
+    decorTargetX = decorTargetY = decorX = decorY = 0;
+    dirty = true; queue();
+  }
+  fine.addEventListener("change", resetPointer);
+  reduced.addEventListener("change", () => {
+    resetPointer();
     openingAt = null;
     paintedPosition = -1;
     board.removeAttribute("data-arrival");

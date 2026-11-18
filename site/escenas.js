@@ -46,7 +46,7 @@
     frame = requestAnimationFrame(paint);
   }
   function onScroll() {
-    document.body.classList.toggle("scene-at-top", window.scrollY <= 24);
+    document.body.classList.toggle("scene-at-top", window.scrollY <= 0);
     schedule();
   }
   function measure() {

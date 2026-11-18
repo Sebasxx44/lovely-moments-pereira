@@ -1,14 +1,13 @@
 :root { --display: "Bricolage Grotesque", sans-serif; }
 .sr { position: absolute; height: 1px; width: 1px; clip-path: inset(50%); overflow: hidden; white-space: nowrap; }
 .masthead-inner { gap: 20px; }
+.masthead-actions { display: flex; align-items: center; justify-self: end; }
 .masthead .main-nav { gap: clamp(14px,2.1vw,34px); }
 .shop-menu { display: none; }
-body.in-showcase .bag-count { border-color: rgb(255 241 222 / 48%); }
 .line-copy > a { display: block; font-size: 14px; font-weight: 550; line-height: 1.28; }
 .line-copy > a:hover { text-decoration: underline; }
 .shop-footer { background: var(--deep); color: #fff4e7; }
 .shop-footer :focus-visible { outline-color: currentColor; }
-.store-interior .masthead { border-bottom: 1px solid var(--line); }
 .store-interior h1, .store-interior h2, .home-directory h2 { font-family: var(--display); font-weight: 600; letter-spacing: -.043em; text-wrap: balance; }
 .store-interior h1 { font-size: clamp(42px,5.4vw,88px); line-height: 1.02; }
 .store-interior h2, .home-directory h2 { font-size: clamp(30px,3.3vw,52px); line-height: 1.08; }
@@ -117,21 +116,21 @@ body:has(.more-products) main { overflow: clip; isolation: isolate; }
 }
 @media(min-width:801px) { .s-card img,.page-tile img { transition:filter 220ms ease; } .s-card a:hover img,.page-tile:hover img { filter:brightness(1.04); } }
 @media(max-width:900px) {
-  .masthead-inner { grid-template-columns:1fr auto auto; gap:14px; }
+  .masthead-inner { grid-template-columns:minmax(0,1fr) auto; gap:clamp(8px,2vw,16px); }
   .masthead .main-nav { display:none; }
+  .masthead-actions { gap:clamp(22px,5.6vw,34px); }
+  .shop-menu > summary, .bag-trigger { min-inline-size:44px; justify-content:center; }
   .shop-menu { display:block; font-size:14px; }
   .shop-menu > summary { cursor:pointer; list-style:none; min-height:44px; display:flex; align-items:center; }
   .shop-menu summary::-webkit-details-marker { display:none; }
-  .masthead .shop-menu nav { display:grid; gap:0; position:absolute; top:100%; left:0; right:0; padding:10px var(--rail) 18px; background:var(--paper); color:var(--ink); border-block:1px solid var(--line); }
+  .masthead .shop-menu nav { display:grid; gap:0; position:absolute; top:100%; left:0; right:0; padding:10px var(--rail) 18px; background:var(--paper); color:var(--ink); }
   .shop-menu:not([open]) nav { display:none; }
   .shop-menu nav a { padding:10px 2px; }
   .s-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px 14px; }
 }
 @media(max-width:650px) {
   .wrap { width:calc(100% - 2 * var(--rail)); }
-  .masthead-inner { gap:12px; }
   .bag-trigger { gap:5px; }
-  .bag-count { padding-left:6px; }
   .wordmark { font-size:clamp(21px,5.5vw,30px); }
   .bag-word { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); }
   .tile-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:22px 12px; }
@@ -151,4 +150,9 @@ body:has(.more-products) main { overflow: clip; isolation: isolate; }
   .link-journal ul { grid-template-columns:1fr; }
   .form-pair { grid-template-columns:1fr; gap:12px; }
   .footer-links { max-width:100%; }
+}
+@media(max-width:360px) {
+  .masthead .masthead-inner { width:calc(100% - 24px); }
+  .masthead .wordmark { font-size:clamp(19px,6vw,21px); }
+  .masthead-actions { gap:20px; }
 }

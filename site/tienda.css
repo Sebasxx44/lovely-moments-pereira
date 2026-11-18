@@ -59,9 +59,9 @@ button:disabled { cursor: auto; }
 .masthead nav a, .footer-links a { padding: 10px 0; }
 .masthead nav a:hover, .footer-links a:hover { text-decoration: underline; text-underline-offset: 5px; }
 .bag-trigger { justify-self: end; min-height: 44px; display: inline-flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 500; }
-.bag-count { font-variant-numeric: tabular-nums; border-left: 1px solid var(--line); padding-left: 10px; }
+.bag-count { font-variant-numeric: tabular-nums; }
 .bag-count > span { display: inline-block; min-width: 1ch; }
-.bag-trigger .ui-icon { width: 18px; height: 18px; }
+.bag-trigger .ui-icon { width: 22px; height: 22px; }
 .primary { min-height: 48px; display: inline-flex; align-items: center; justify-content: space-between; gap: 26px; padding: 12px 20px; background: var(--wine); color: #fff8ee; font-size: 14px; font-weight: 500; border-radius: 4px; transition: background-color 160ms; }
 .primary:hover, .primary:focus-visible { background: var(--deep); }
 .primary .ui-icon, .close-dialog .ui-icon { width: 18px; height: 18px; }
