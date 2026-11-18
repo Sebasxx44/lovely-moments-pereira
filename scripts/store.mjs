@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { paths, base, esc, url, peso, fold, photo, sectionLink, image, crumbs, searchForm, shellParts, layout, card, grid, pageTiles, linkList, textBlocks, banner } from "./templates.mjs";
+import { paths, base, esc, url, peso, fold, photo, sectionLink, image, crumbs, searchForm, shellParts, layout, sectionLayout, card, grid, pageTiles, linkList, textBlocks } from "./templates.mjs";
 import { courseForm, filmStrip, externalLinks, leadTime } from "./extras.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
@@ -90,9 +90,11 @@ export function prepare() {
     const categoryItems = page.categoryIds.flatMap(id=>byGroup.get(id) || []);
     page.items = [...new Set([...ordered,...categoryItems])];
     const originalImage = covers.get(page.slug);
-    page.cover = originalImage && fs.existsSync(path.join(publicShop,"media","pagina-"+page.slug+".webp"))
-      ? imagePage(page.slug) : (page.items[0]?.thumb || "");
-    page.imageAlt = originalImage?.alt || "";
+    const editorialImage = originalImage && fs.existsSync(path.join(publicShop,"media","pagina-"+page.slug+".webp")) ? imagePage(page.slug) : "";
+    const first = page.items[0];
+    page.cover = editorialImage || first?.thumb || "";
+    page.editorialCover = editorialImage || (first ? gallery(first.slug,0) : "");
+    page.imageAlt = editorialImage ? originalImage.alt : first?.name;
   }
   const articles = [...pages.values()].filter(articleKind);
   const collectionPages = [...pages.values()].filter(p=>collectionKind(p) || (p.categoryIds.length && !["location","city","landing"].includes(p.kind)));
@@ -103,18 +105,17 @@ export function prepare() {
   function renderPage(slug) {
     if (Object.hasOwn(aliases,slug)) return redirect(aliases[slug]);
     if (slug === paths.map) {
-      const main=`<div class="map-page wrap">${crumbs([[null,"Mapa de la tienda"]])}<h1>Mapa de la tienda</h1>${linkList(misc,"La tienda y sus entregas")}${linkList(collectionPages,"Colecciones y ocasiones")}${linkList(articles,"Guías y artículos")}<details class="map-products"><summary>Todos los productos (${items.length})</summary>${linkList(items.map(i=>({slug:i.slug,title:i.name})),"Fichas de producto")}</details></div>`;
-      return layout(parts,"Mapa de la tienda","Directorio de páginas y fichas de Lovely Moments.",main);
+      const main=`<div class="map-page wrap">${linkList(misc,"La tienda y sus entregas")}${linkList(collectionPages,"Colecciones y ocasiones")}${linkList(articles,"Guías y artículos")}<details class="map-products"><summary>Todos los productos (${items.length})</summary>${linkList(items.map(i=>({slug:i.slug,title:i.name})),"Fichas de producto")}</details></div>`;
+      return sectionLayout(parts,{slug,title:"Mapa de la tienda",intro:"Directorio de páginas y fichas de Lovely Moments."},"Mapa de la tienda",main,{next:"Ir al directorio"});
     }
     if (slug===paths.search) {
-      const main = `<div class="search-intro wrap">${crumbs([[null,"Buscar"]])}<h1>Buscar un regalo</h1>${searchForm()}</div>${grid(items,"Resultados",false)}`;
-      return layout(parts,"Buscar un regalo","Encuentra flores, chocolates y regalos de Lovely Moments.",main);
+      return sectionLayout(parts,{slug,title:"Buscar un regalo",intro:"Encuentra regalos por nombre, ingrediente, flor u ocasión."},"Buscar",grid(items,"Resultados",false),{tools:'<div data-search-results>'+searchForm()+'</div>',next:"Ver resultados"});
     }
     if (slug===paths.collections) {
       const first = types.map(s=>pages.get(s)).filter(Boolean);
       const rest = collectionPages.filter(p=>!first.includes(p));
-      const main=`<div class="search-intro wrap">${crumbs([[null,"Colecciones"]])}<h1>Colecciones</h1><p>Explora por tipo de regalo o por la ocasión que quieres celebrar.</p></div>${pageTiles(first,"Por tipo de regalo")}<div class="map-page wrap">${linkList(rest,"Más colecciones y ocasiones")}</div>`;
-      return layout(parts,"Colecciones","Flores, chocolates y regalos agrupados por ocasión.",main);
+      const main=pageTiles(first,"Por tipo de regalo")+`<div class="map-page wrap">${linkList(rest,"Más colecciones y ocasiones")}</div>`;
+      return sectionLayout(parts,{slug,title:"Colecciones",intro:"Explora por tipo de regalo o por la ocasión que quieres celebrar."},"Colecciones",main,{next:"Ver las colecciones"});
     }
     const item = itemBySlug.get(slug);
     if (item) {
@@ -124,36 +125,42 @@ export function prepare() {
     }
     const page = pages.get(slug);
     if (!page) return null;
-    let main;
     if (slug===paths.catalog) {
       const useful = types.map(s=>pages.get(s)).filter(Boolean);
-      main = banner({...page,title:"El catálogo"},"Catálogo",searchForm())+pageTiles(useful,"Por tipo de regalo",sectionLink(paths.collections,"Todas las colecciones"))+`<div class="directory-cta wrap">${sectionLink(paths.all,"Ver los "+items.length+" regalos")}</div>`;
+      let main = pageTiles(useful,"Por tipo de regalo",sectionLink(paths.collections,"Todas las colecciones"))+`<div class="directory-cta wrap">${sectionLink(paths.all,"Ver los "+items.length+" regalos")}</div>`;
       const occasions = collectionPages.filter(p=>/navidad|amor-y-amistad|cumpleanos|para-ninos|halloween|dia-del-padre$/.test(p.slug)).slice(0,6);
       main += pageTiles(occasions,"Por ocasión")+`<div class="map-page wrap">${linkList(collectionPages.filter(p=>!useful.includes(p)&&!occasions.includes(p)),"Explorar el catálogo")}</div>`;
+      return sectionLayout(parts,{...page,title:"El catálogo"},"Catálogo",main,{tools:searchForm(),next:"Explorar por tipo de regalo"});
     } else if (slug === paths.all) {
-      main = banner({...page,title:"Todos los regalos"},"Catálogo",sectionLink(paths.collections,"Explorar colecciones"))+grid(items,"Elige tu regalo");
+      return sectionLayout(parts,{...page,title:"Todos los regalos"},"Catálogo",grid(items,"Elige tu regalo"),{tools:`<a class="scene-link" href="${url(paths.collections)}">Explorar colecciones</a>`,next:`Ver los ${items.length} regalos`});
     } else if (slug === paths.blog) {
-      main = banner(page,"Blog")+pageTiles(articles,"Guías de flores y regalos");
+      return sectionLayout(parts,page,"Blog",pageTiles(articles,"Guías de flores y regalos"),{next:"Ver las guías"});
     } else if (slug === paths.contact) {
-      main = banner(page,"Contacto")+contactForm()+`<div class="reading wrap">${textBlocks(page,known)}</div>`+externalLinks({...page,externalLinks:[...(page.externalLinks || []),{label:"Formulario oficial de contacto",url:page.source}]});
-    } else {
-      const label=articleKind(page) ? "Blog" : slug === paths.about ? "Nosotros" : page.items.length || collectionKind(page) ? "Colección" : "La tienda";
-      main = banner(page,label);
-      if (articleKind(page) && page.date) {
-        const published = new Intl.DateTimeFormat("es-CO",{dateStyle:"long",timeZone:"UTC"}).format(new Date(page.date+"T12:00:00Z"));
-        main += `<p class="article-by wrap">${esc(page.author)} · <time datetime="${esc(page.date)}">${esc(published)}</time></p>`;
-      }
-      if (page.items.length) main += grid(page.items,"Regalos de esta colección");
-      const editorial = textBlocks(page,known);
-      if (editorial) main += `<div class="reading wrap">${editorial}</div>`;
-      const linked = new Set((page.sections || []).flatMap(s=>(s.links || []).map(l=>l.slug)));
-      const others=(page.links || []).filter(l=>known.has(l.slug) && !linked.has(l.slug)).map(l=>({slug:l.slug,title:l.label || pages.get(l.slug)?.title}));
-      if (others.length) main += `<div class="wrap page-more">${groupLinks(others)}</div>`;
-      if (page.kind==="course") main += courseForm(page);
-      else main += externalLinks(page);
-      if (articleKind(page)) main += pageTiles(articles.filter(p=>p!==page),"Más del blog");
+      const main = contactForm()+`<div class="reading wrap">${textBlocks(page,known)}</div>`+externalLinks({...page,externalLinks:[...(page.externalLinks || []),{label:"Formulario oficial de contacto",url:page.source}]});
+      return sectionLayout(parts,page,"Contacto",main,{next:"Ir a contacto"});
     }
-    return layout(parts,page.title,page.intro,main,decoration(slug));
+
+    const label=articleKind(page) ? "Blog" : slug === paths.about ? "Nosotros" : page.items.length || collectionKind(page) ? "Colección" : "La tienda";
+    let main = "";
+    if (articleKind(page) && page.date) {
+      const published = new Intl.DateTimeFormat("es-CO",{dateStyle:"long",timeZone:"UTC"}).format(new Date(page.date+"T12:00:00Z"));
+      main += `<p class="article-by wrap">${esc(page.author)} · <time datetime="${esc(page.date)}">${esc(published)}</time></p>`;
+    }
+    if (page.items.length) main += grid(page.items,"Regalos de esta colección");
+    const editorial = textBlocks(page,known);
+    if (editorial) main += `<div class="reading wrap">${editorial}</div>`;
+    const linked = new Set((page.sections || []).flatMap(s=>(s.links || []).map(l=>l.slug)));
+    const others=(page.links || []).filter(l=>known.has(l.slug) && !linked.has(l.slug)).map(l=>({slug:l.slug,title:l.label || pages.get(l.slug)?.title}));
+    if (others.length) main += `<div class="wrap page-more">${groupLinks(others)}</div>`;
+    if (page.kind==="course") main += courseForm(page);
+    else main += externalLinks(page);
+    if (articleKind(page)) main += pageTiles(articles.filter(p=>p!==page),"Más del blog");
+    let next = "Ver más información";
+    if (label === "Blog") next = "Leer la guía";
+    else if (label === "Nosotros") next = "Conocer la historia";
+    else if (page.items.length) next = page.items.length === 1 ? "Ver el regalo" : `Ver los ${page.items.length} regalos`;
+    else if (page.kind === "course") next = "Ver la capacitación";
+    return sectionLayout(parts,page,label,main,{next,theme:decoration(slug)});
   }
   return { supported, renderPage, js:"window.LovelyInventory="+JSON.stringify(inventory).replace(/</g,"\\u003c")+";\n" };
 }

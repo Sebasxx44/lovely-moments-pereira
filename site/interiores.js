@@ -7,23 +7,7 @@
   }]));
   const params = new URLSearchParams(location.search);
   const reduced = matchMedia("(prefers-reduced-motion: reduce)");
-  const bannerPhoto = $(".banner-photo");
-  if (bannerPhoto) {
-    let frame = 0, visible = true;
-    function placePhoto() {
-      frame = 0;
-      if (!visible || reduced.matches) return;
-      const bounds = bannerPhoto.getBoundingClientRect();
-      const travel = Math.max(0, Math.min(1, (76 - bounds.top) / Math.max(1, bounds.height)));
-      bannerPhoto.style.setProperty("--travel", (travel * 20).toFixed(1) + "px");
-    }
-    function schedulePhoto() { if (visible && !frame) frame = requestAnimationFrame(placePhoto); }
-    new IntersectionObserver(([entry])=>{ visible=entry.isIntersecting; schedulePhoto(); }).observe(bannerPhoto);
-    window.addEventListener("scroll", schedulePhoto, {passive:true});
-    window.addEventListener("resize", schedulePhoto);
-    reduced.addEventListener("change",schedulePhoto);
-  }
-  const globalSearch = $(".search-intro form[role=search]");
+  const globalSearch = $("[data-search-results] form[role=search]");
   if (globalSearch) globalSearch.elements.q.value = params.get("q") || "";
   const list = $("[data-browse]");
   if (list) {
