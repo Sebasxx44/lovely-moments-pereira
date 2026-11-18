@@ -1,0 +1,4236 @@
+[
+  {
+    "slug": "",
+    "title": "Lovely Moments",
+    "kind": "home",
+    "intro": "Flores, chocolates y regalos que preparamos en Pereira para entregar a domicilio.",
+    "sections": [
+      {
+        "heading": "Elige tu regalo",
+        "text": "Explora las colecciones de la tienda o escríbenos para preparar un pedido.",
+        "links": [
+          {
+            "slug": "floristeria-a-domicilio-en-pereira",
+            "label": "Catálogo de regalos"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "floristeria-a-domicilio-en-pereira",
+        "label": "Catálogo de regalos"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      }
+    ],
+    "categoryIds": [],
+    "productSlugs": [],
+    "image": null,
+    "imageAlt": "Lovely Moments",
+    "group": "La tienda",
+    "source": "https://lovelymoments.com.co/"
+  },
+  {
+    "slug": "floristeria-a-domicilio-en-pereira",
+    "title": "Catálogo de regalos",
+    "kind": "catalog",
+    "intro": "Empieza por lo que le gusta a quien recibe el detalle. Reunimos aquí las colecciones de Lovely Moments y las fechas para las que preparamos regalos.",
+    "sections": [
+      {
+        "heading": "Flores y ramos",
+        "text": "Arreglos en caja, flores de tallo largo para entregar envueltas y flores artesanales para conservar.",
+        "links": [
+          {
+            "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+            "label": "Arreglos florales"
+          },
+          {
+            "slug": "bouquets-de-flores-en-pereira",
+            "label": "Bouquets de flores"
+          },
+          {
+            "slug": "rosas-eternas",
+            "label": "Rosas eternas de cinta"
+          },
+          {
+            "slug": "flores-eternas",
+            "label": "Flores eternas"
+          }
+        ]
+      },
+      {
+        "heading": "Chocolate y fresas",
+        "text": "Mira el interior de las cajas y el acabado de cada pieza. Hay bombones rellenos, fresas y mini donas cubiertas de chocolate.",
+        "links": [
+          {
+            "slug": "chocolates-pereira",
+            "label": "Chocolates artesanales"
+          },
+          {
+            "slug": "fresas-con-chocolate-en-pereira",
+            "label": "Fresas con chocolate"
+          },
+          {
+            "slug": "bombones-de-chocolate-en-pereira",
+            "label": "Bombones de chocolate"
+          },
+          {
+            "slug": "mini-donuts-pereira-y-dosquebradas",
+            "label": "Mini donas decoradas"
+          }
+        ]
+      },
+      {
+        "heading": "Para llevar a la mesa",
+        "text": "Desayunos en caja, anchetas con varias preparaciones y tablas saladas para compartir.",
+        "links": [
+          {
+            "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+            "label": "Desayunos sorpresa"
+          },
+          {
+            "slug": "anchetas-pereira",
+            "label": "Anchetas"
+          },
+          {
+            "slug": "tablas-de-quesos-en-pereira-dosquebradas",
+            "label": "Tablas de quesos"
+          }
+        ]
+      },
+      {
+        "heading": "Según la ocasión",
+        "text": "Encuentra una colección para un cumpleaños, un agradecimiento, una celebración de pareja o un pedido para tu empresa.",
+        "links": [
+          {
+            "slug": "regalos-de-cumpleanos-a-domicilio-en-pereira",
+            "label": "Regalos de cumpleaños"
+          },
+          {
+            "slug": "regalos-dia-del-amor-y-la-amistad-en-pereira",
+            "label": "Regalos para dos"
+          },
+          {
+            "slug": "regalos-de-amor-y-amistad-en-pereira-dosquebradas-y-santa-rosa-de-cabal",
+            "label": "Amor y Amistad"
+          },
+          {
+            "slug": "regalos-corporativos-pereira",
+            "label": "Regalos para empresas"
+          },
+          {
+            "slug": "regalos-para-mujer-en-pereira",
+            "label": "Regalos para mujer"
+          },
+          {
+            "slug": "regalos-para-hombres-pereira",
+            "label": "Regalos para hombres"
+          },
+          {
+            "slug": "regalos-para-ninos-en-pereira",
+            "label": "Regalos para niñas y niños"
+          }
+        ]
+      },
+      {
+        "heading": "Fechas de temporada",
+        "text": "Consulta los diseños de cada campaña y pregunta cuáles se pueden preparar para tu fecha.",
+        "links": [
+          {
+            "slug": "regalos-de-san-valentin-en-pereira-dosquebradas-y-santa-rosa-de-cabal",
+            "label": "San Valentín"
+          },
+          {
+            "slug": "regalos-para-el-dia-de-la-mujer-en-pereira-or-dosquebradas",
+            "label": "Día de la Mujer"
+          },
+          {
+            "slug": "regalos-para-el-dia-de-las-madres-pereira",
+            "label": "Día de la Madre"
+          },
+          {
+            "slug": "regalos-para-el-dia-del-padre",
+            "label": "Día del Padre"
+          },
+          {
+            "slug": "regalos-de-pascua-pereira",
+            "label": "Pascua de chocolate"
+          },
+          {
+            "slug": "regalos-de-halloween",
+            "label": "Dulces de Halloween"
+          },
+          {
+            "slug": "regalos-de-navidad-en-pereira",
+            "label": "Navidad"
+          }
+        ]
+      },
+      {
+        "heading": "Más detalles",
+        "text": "También ofrecemos peluches y objetos decorativos. El listado completo reúne todas las fichas del catálogo.",
+        "links": [
+          {
+            "slug": "peluches-pereira-or-peluches-dosquebradas-or-peluches-a-domicilio",
+            "label": "Peluches a domicilio"
+          },
+          {
+            "slug": "regalos-decorativos-pereira",
+            "label": "Regalos decorativos"
+          },
+          {
+            "slug": "flores-pereira-a-domicilio",
+            "label": "Todos los productos"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+        "label": "Arreglos florales"
+      },
+      {
+        "slug": "bouquets-de-flores-en-pereira",
+        "label": "Bouquets de flores"
+      },
+      {
+        "slug": "rosas-eternas",
+        "label": "Rosas eternas de cinta"
+      },
+      {
+        "slug": "flores-eternas",
+        "label": "Flores eternas"
+      },
+      {
+        "slug": "chocolates-pereira",
+        "label": "Chocolates artesanales"
+      },
+      {
+        "slug": "fresas-con-chocolate-en-pereira",
+        "label": "Fresas con chocolate"
+      },
+      {
+        "slug": "bombones-de-chocolate-en-pereira",
+        "label": "Bombones de chocolate"
+      },
+      {
+        "slug": "mini-donuts-pereira-y-dosquebradas",
+        "label": "Mini donas decoradas"
+      },
+      {
+        "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+        "label": "Desayunos sorpresa"
+      },
+      {
+        "slug": "anchetas-pereira",
+        "label": "Anchetas"
+      },
+      {
+        "slug": "tablas-de-quesos-en-pereira-dosquebradas",
+        "label": "Tablas de quesos"
+      },
+      {
+        "slug": "regalos-de-cumpleanos-a-domicilio-en-pereira",
+        "label": "Regalos de cumpleaños"
+      },
+      {
+        "slug": "regalos-dia-del-amor-y-la-amistad-en-pereira",
+        "label": "Regalos para dos"
+      },
+      {
+        "slug": "regalos-de-amor-y-amistad-en-pereira-dosquebradas-y-santa-rosa-de-cabal",
+        "label": "Amor y Amistad"
+      },
+      {
+        "slug": "regalos-corporativos-pereira",
+        "label": "Regalos para empresas"
+      },
+      {
+        "slug": "regalos-para-mujer-en-pereira",
+        "label": "Regalos para mujer"
+      },
+      {
+        "slug": "regalos-para-hombres-pereira",
+        "label": "Regalos para hombres"
+      },
+      {
+        "slug": "regalos-para-ninos-en-pereira",
+        "label": "Regalos para niñas y niños"
+      },
+      {
+        "slug": "regalos-de-san-valentin-en-pereira-dosquebradas-y-santa-rosa-de-cabal",
+        "label": "San Valentín"
+      },
+      {
+        "slug": "regalos-para-el-dia-de-la-mujer-en-pereira-or-dosquebradas",
+        "label": "Día de la Mujer"
+      },
+      {
+        "slug": "regalos-para-el-dia-de-las-madres-pereira",
+        "label": "Día de la Madre"
+      },
+      {
+        "slug": "regalos-para-el-dia-del-padre",
+        "label": "Día del Padre"
+      },
+      {
+        "slug": "regalos-de-pascua-pereira",
+        "label": "Pascua de chocolate"
+      },
+      {
+        "slug": "regalos-de-halloween",
+        "label": "Dulces de Halloween"
+      },
+      {
+        "slug": "regalos-de-navidad-en-pereira",
+        "label": "Navidad"
+      },
+      {
+        "slug": "peluches-pereira-or-peluches-dosquebradas-or-peluches-a-domicilio",
+        "label": "Peluches a domicilio"
+      },
+      {
+        "slug": "regalos-decorativos-pereira",
+        "label": "Regalos decorativos"
+      },
+      {
+        "slug": "flores-pereira-a-domicilio",
+        "label": "Todos los productos"
+      }
+    ],
+    "categoryIds": [],
+    "productSlugs": [],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/af28---magia-YBgyk6kz0ysvE7wQ.jpg",
+    "imageAlt": "Floristería Pereira, arreglos y ramos de flores",
+    "group": "La tienda",
+    "source": "https://lovelymoments.com.co/floristeria-a-domicilio-en-pereira",
+    "collectionIndex": true
+  },
+  {
+    "slug": "flores-pereira-a-domicilio",
+    "title": "Todos los productos",
+    "kind": "catalog",
+    "intro": "Consulta las fichas de flores, desayunos, chocolates y demás regalos del catálogo completo.",
+    "sections": [
+      {
+        "heading": "Cómo encargar una referencia",
+        "text": "Elige un diseño y comparte su nombre con el equipo para consultar disponibilidad y entrega.",
+        "links": [
+          {
+            "slug": "floristeria-a-domicilio-en-pereira",
+            "label": "Catálogo de regalos"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "floristeria-a-domicilio-en-pereira",
+        "label": "Catálogo de regalos"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      }
+    ],
+    "categoryIds": [],
+    "productSlugs": [
+      "alguito-sorpresa-lovely-alguitos-sorpresa-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ancheta-amor-y-amistad-or-peluche-y-ferrerros-or-detalles-pereira",
+      "anchetas-regalo-a-domicilio-en-pereira-dosquebradas",
+      "ancheta-brindis-navideno-or-anchetas-de-lujo-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "anchetas-de-frutas-pereira-dosquebradas",
+      "ancheta-dulce-armonia-anchetas-sorpresa-en-pereira",
+      "anchetas-dia-de-las-madres-pereira-dosquebradas",
+      "ancheta-dia-del-padre-or-arquitecto-de-suenos-or-pereria",
+      "ancheta-lovely-moments-or-detalles-personalizados-pereira",
+      "ancheta-navidena-dulce-armonia-or-anchetas-navidenas-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ancheta-navidena-pequena-navidad-regalos-para-empresas-mini-ancheta-navidena",
+      "ancheta-orquidea-orquideas-en-pereira",
+      "regalos-para-recien-nacido-en-pereira",
+      "ancheta-recien-nacido-pereira-or-detalles-para-bebe-en-pereira",
+      "ancheta-san-valentin-con-fresas-recubiertas-con-chocolate-or-anchetas-y-detalles-pereira-dosquebradas",
+      "ancheta-con-vino-y-tabla-de-quesos-anchetas-a-domicilio-en-pereira",
+      "anchetas-de-amor-y-amistad-para-hombres-en-pereira-ancheta-caballero",
+      "ancheta-de-lujo-royal-or-anchetas-navidenas-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ancheta-dia-del-padre",
+      "anchetas-navidenas-para-empresas",
+      "anchetas-para-hombre-en-pereira",
+      "anchetas-navidenas-pereira-or-anchetas-de-lujo-en-pereira",
+      "anchetas-navidenas-pereira-or-ancheta-merry-christmas",
+      "anchetas-navidenas-en-pereira-dosquebradas",
+      "anchetas-pereira-or-anchetas-de-navidad-a-domicilio",
+      "anchetas-a-domicilio-en-pereira-or-anchetas-para-empresas",
+      "anchetas-dia-del-padre-en-pereira",
+      "ancheta-con-peluches-para-bebe-en-pereira-dosquebradas",
+      "anchetas-para-mujer-en-pereira-or-detalles-para-mujer",
+      "ancheta-de-regalo-para-ninos-y-ninas-en-pereira-dosquebradas",
+      "arreglo-armonia-de-rosas-eternas-arreglo-de-rosas-eternas-pereira-dosquebradas",
+      "caja-en-forma-de-corazon-con-fresas-y-rosas-en-pereira-dosquebradas",
+      "flores-a-domicilio-en-pereira-colombia",
+      "arreglos-florales-catolicos",
+      "arreglos-de-rosas-en-pereira",
+      "arreglo-floral-de-lujo-en-pereira",
+      "arreglo-floral-celestial",
+      "arreglo-floral-corazon-romantico-or-arreglos-en-caja-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "flores-de-amor-y-amistad-en-pereira-dosquebradas",
+      "arreglo-floral-cuadro-de-amor-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-dulces-15-regalos-para-15-anos-en-pereira",
+      "floristerias-a-domicilio-en-pereira-dosquebradas-santa-rosa-de-cabal",
+      "arreglo-floral-exotic-rosas-con-base-tipo-koreano-or-floristas-en-pereira",
+      "arreglo-floral-frescura",
+      "arreglo-floral-garden-arreglos-florales-de-cumpleanos-en-pereira-",
+      "arreglo-floral-inmortal-or-flores-preservadas-para-mama-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "detalles-dia-de-las-madres-en-pereira-y-dosquebradas",
+      "arreglo-floral-jardin-del-sol-naciente-arreglos-florales-en-pereira-dosquebradas",
+      "arreglo-floral-lovely-moments-or-arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "arreglo-floral-mama-consentida-or-flores-de-lujo-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglos-florales-dia-de-las-madres-pereira",
+      "arreglo-floral-navideno-pereira-dosquebradas",
+      "arreglo-floral-nostalgia-or-flores-a-domicilio-dia-de-las-madres-pereira-dosquebradas",
+      "arreglo-floral-only-you-detalles-de-amor-y-amistad-en-pereira",
+      "arreglo-floral-en-caja-de-corazon-en-pereira",
+      "arreglo-floral-romance-arreglos-con-orquideas-en-pereira",
+      "arreglo-floral-con-girasoles-pereira-dosquebradas-santa-rosa-de-cabal",
+      "arreglo-de-flores-pereira-dosquebradas-con-frutas",
+      "arreglo-floral-del-campo-or-flores-en-pereira-or-flores-a-domicilio",
+      "flores-a-domicilio-en-pereira-dia-de-la-madre",
+      "regalos-para-conquistar-en-pereira",
+      "arreglo-floral-con-fresas-de-chocolate-en-pereira",
+      "arreglo-fragante-or-arreglos-florales-pereira-or-regalos-dia-de-las-madres-2025",
+      "arreglo-floral-para-enamorar-en-pereira-dosquebradas",
+      "arreglo-floral-con-globos-pereira",
+      "arreglo-de-flores-fantasia-floral-con-fresas-arreglos-de-flores-en-pereira",
+      "rosas-eternas-pereira-dosquebradas",
+      "arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "arreglo-floral-con-girasoles-en-pereira-dosquebradas",
+      "arreglo-floral-con-rosas-pereira-y-el-eje-cafetero",
+      "arreglo-floral-magia-arreglo-floral-corazon-pereira",
+      "ramos-de-flores-pereira-dosquebradas",
+      "arreglo-floral-san-valentin-pereira-dosquebradas",
+      "arreglo-floral-sonrisas-para-mama-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-de-rosas-pereira-dosquebradas",
+      "arreglo-floral-dia-de-las-madres-or-arreglos-florales-en-pereira",
+      "floristerias-en-pereira-amor-y-amistad-2024",
+      "fresas-para-ninos-pereira",
+      "dia-de-las-madres-or-velas-aromaticas-pereira-or-arreglos-florales-y-velas-arreglos-con-velas-pereira",
+      "regalos-de-halloween-para-ninos-pereira",
+      "ramos-de-rosas-en-pereira-santa-rosa-de-cabal-dosquebradas",
+      "bouquet-amor-genuino-or-ramos-de-rosas-en-pereira",
+      "bouquet-arcoiris-bouquet-de-flores-a-domicilio-en-pereira",
+      "rosas-a-domicilio-en-pereira-dosquebradas-santa-rosa-de-cabal",
+      "bouquet-aida-or-floristeria-de-lujo-en-pereira-or-flores-eternas",
+      "arreglo-de-flores-para-enviar-a-pereira-dosquebradas",
+      "ramos-de-flores-en-pereira-a-domicilio",
+      "bouquet-dulzura-or-ramos-de-flores-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "bouquet-de-lujo-en-pereira-dosquebradas",
+      "bouquet-ensueno-or-flores-para-mama-en-pereira-dosquebradas-flores-pereira",
+      "bouquet-eterno-bouquet-de-flores-pereira",
+      "bouquet-gloria-mini-or-flores-eternas-pereira-dosquebradas",
+      "bouquet-jp-con-fresas-recubiertas-de-chocolate-floristerias-en-pereira-centro",
+      "bouquet-joya-flores-con-licores-en-pereira",
+      "bouquet-lovely-moments-or-ramos-de-flores-en-pereira-or-floristeria-en-pereira-or-dosquebradas",
+      "ramos-de-chocolates-y-flores-pereira-dosquebradas",
+      "bouquet-luz-or-floristeria-de-lujo-en-pereira-dosquebradas",
+      "bouquet-madre-especial-or-flores-en-pereira-a-domicilio",
+      "bouquet-magnolia-or-ramos-de-flores-eternas-or-pereira-colombia",
+      "bouquet-marina-or-ramos-de-flores-eternas-pereira-colombia-or-girasoles-margaritas",
+      "flores-pereira-bouquet-mariposa-de-rosas-eternas",
+      "bouquet-mini-de-rosas-eternas-de-cinta-regalos-de-aniversario-a-domicilio-en-pereira",
+      "bouquet-miriam-or-tulipanes-pereira-colombia",
+      "bouquet-mujeres-divinas-or-ramos-de-flores-en-pereira-or-floristerias-a-domicilio",
+      "bouquet-nelly-or-tulipanes-pereira-or-flores-eternas-colombia",
+      "bouquet-de-flores-navideno-pereira-dosquebradas",
+      "bouquet-olga-flores-eternas-pereira-colombia-tulipanes",
+      "floristeria-en-pereira-pagos-online",
+      "bouquet-premium-de-rosas-eternas-bouquet-de-rosas-eternas",
+      "regalos-para-una-fiesta-de-15-en-pereira",
+      "bouquet-queen-de-rosas-eternas-or-flores-en-pereira-online-ramo-estilo-buchon-pereira",
+      "bouquet-quinceanera-ramos-para-quince-anos-pereira-ramos-para-quinceanera",
+      "bouquet-roma-ramos-buchones-en-pereira-y-dosquebradas",
+      "enviar-flores-a-pereira-colombia",
+      "ramos-de-flores-minimalistas-en-pereira",
+      "bouquet-yolanda-or-ramo-de-flores-eternas-colombia",
+      "arreglos-con-peluches-y-flores",
+      "bouquet-de-girasoles-pereira",
+      "bouquet-de-girasoles-en-pereira",
+      "girasoles-a-domicilio-en-pereira-dosquebradas",
+      "floristeria-pereira-a-domicilio",
+      "arreglos-con-rosas-pereira",
+      "floristerias-en-pereira-rosas-y-fresas",
+      "bouquet-de-lujo-happy-bouquet-de-rosas-pereira",
+      "mini-donuts-decoradas-pereira",
+      "ramos-de-rosas-y-chocolates",
+      "bouquet-mas-bombones-de-chocolate-combo-dulzura-chocolates-rellenos-pereira-",
+      "regalos-pereira-a-domicilio",
+      "burbujas-de-chocolate-or-regalos-empresariales-dia-de-las-madres-pereira",
+      "caja-corazon-romance-or-caja-de-rosas-en-forma-de-corazon-or-regalos-amory-amistad",
+      "caja-amar-de-fresas-con-chocolate-x-5-unidades-regalos-de-grado-a-domicilio-en-pereira",
+      "regalo-especial-para-conquistar-pereira-dosquebradas",
+      "caja-aventura-or-detalles-dia-del-padre-en-pereira-dosquebradas",
+      "regalos-para-hombres-sencillos-en-pereira",
+      "regalos-para-halloween-en-pereira-y-dosquebradas",
+      "chocobombas-pereira-dosquebradas-santa-rosa-de-cabal",
+      "regalos-de-cumpleanos-para-mujer-en-pereira-dosquebradas",
+      "regalos-corporativos-pereira-dosquebradas",
+      "caja-elixir-de-fresas-y-corazon-de-chocolate-regalo-para-una-nina-en-pereira",
+      "caja-de-fresas-con-chocolate",
+      "fresas-navidenas-para-novenas-en-pereira",
+      "caja-feliz-navidad-or-anchetas-navidenas-or-anchetas-de-navidad",
+      "regalos-originales-para-navidad-en-pereira",
+      "caja-london-con-rosas-y-tableta-de-chocolate-artesanal-regalos-de-lujo-hechos-con-chocolate-pereira",
+      "fresas-recubiertas-de-chocolate-navidenas-pereira",
+      "fresas-recubiertas-de-chocolate-para-ninas",
+      "flores-y-regalos-pereira",
+      "caja-navidena-sorpresa-or-torre-navidena-or-tapas-espanolas-pereira",
+      "caja-navidena-de-lujo-con-fresas-y-vino-tinto-regalos-navidenos-de-lujo-en-pereira",
+      "chocobombas-pereira-dosquebradas",
+      "rosas-y-chocolates-pereira",
+      "fresas-cubiertas-pereira-dosquebradas",
+      "caja-premium-rosas-and-fresas-deluxe-ramos-en-caja-or-floristeria-pereira-lovely-moments",
+      "caja-serenata-con-vino-rosas-y-fresas-recubiertas-con-chocolate-cajas-regalo-con-vino-pereira",
+      "caja-sorpresa-regalos-sorpresa-para-hombres-en-pereira",
+      "fresas-recubiertas-pereira-dosquebradas",
+      "regalos-para-el-dia-de-la-mujer-en-pereira",
+      "caja-valantine-or-valentines-gifts-pereira-or-flower-shop-in-pereira",
+      "caja-de-bombones-amor-infinito-caja-de-chocolates-pereira",
+      "caja-de-bombones-floral-regalos-para-mamas-en-pereira",
+      "chocolates-navidenos-pereira-dosquebradas",
+      "bombones-de-chocolate-para-mujer-en-pereira",
+      "caja-de-bombones-de-chocolate-regalos-de-amor-y-amistad-en-pereira",
+      "chocolates-finos-pereira-dosquebradas",
+      "chocolates-para-ninos-pereira-caja-de-chocolates-love-chocolate",
+      "floristeria-economica-pereira",
+      "flores-san-valentin-pereira-or-flores-en-pereira",
+      "fresas-navidenas-pereira",
+      "caja-de-fresas-san-valentin-or-fresas-con-chocolate-pereira-dosquebradas",
+      "caja-de-fresas-con-chocolate-or-dia-de-la-mujer-en-pereira",
+      "caja-de-fresas-de-halloween-triki-triki-x-12-dia-de-brujas-pereira",
+      "fresas-con-chocolate-en-pereira-dosquebradas-y-santa-rosa-de-cabal-decoradas",
+      "caja-de-chocolates-de-lujo-pereira",
+      "cajas-de-flores-pereira-con-fresas-grande-arreglos-florales-en-pereira",
+      "caja-de-velas-x-3-or-velas-aromaticas-pereira-or-regalos-para-empresas",
+      "regalo-con-chocolates-pereira",
+      "caja-de-flores-ternura-arreglos-con-chocolates-en-pereira",
+      "arreglos-florales-a-domicilio-en-pereira",
+      "caja-de-flores-y-chocolates-i-love-you-or-detalles-pereira",
+      "caja-de-fresas-recubiertas-con-chocolate-bombonita-regalos-a-pereira-desde-espana",
+      "caja-de-fresas-recubiertas-con-chocolate-en-pereira",
+      "regalos-sorpresa-en-pereira-fresas-dosquebradas",
+      "caja-de-mini-donuts-x-4-donuts-personalizadas-pereira",
+      "postres-a-domicilio-en-pereira",
+      "caja-de-velas-navidenas-or-velas-personalizadas-pereira",
+      "chocolates-pereira-a-domicilio",
+      "regalos-para-el-dia-del-hombre-en-pereira",
+      "regalos-para-empresas-en-pereira",
+      "caja-regalo-the-one-para-hombres-regalos-de-aniversario-para-hombres-pereira",
+      "caja-regalo-con-mensaje-o-nombre-de-chocolate-regalos-originales-pereira",
+      "regalos-para-el-dia-del-padre-en-pereira",
+      "regalos-de-navidad-pereira",
+      "regalos-para-fiestas-infantiles-pereira",
+      "arreglo-de-rosas-eternas",
+      "canasta-huevos-de-pascua-pereira",
+      "flores-de-cumpleanos-a-domicilio-en-pereira-dosquebradas",
+      "canasta-de-flores-pereira",
+      "canasta-sorpresa-pereira",
+      "canasta-de-flores-de-lujo-romance-arreglo-floral-a-domicilio-pereira",
+      "candelabro-abrazo-de-paz-candelabro-de-alas-de-angel",
+      "porcelana-de-alas-de-angel-pereira",
+      "candelabros-decorativos-pereira-dosquebradas",
+      "casa-navidena-de-chocolate-casita-de-chocolate-decorada-pereira",
+      "centros-de-mesa-en-pereira-y-dosquebradas-centro-de-mesa-primaveral",
+      "choco-bombas-de-navidad-en-pereira",
+      "chocobombas-pereira-or-detalles-para-empresas-en-pereira-dosquebradas",
+      "chocolates-de-amor-y-amistad-or-bombones-pasion-de-chocolate-en-pereira",
+      "cofre-del-amor-propuesta-de-matrimonio-pereira",
+      "combo-amore-mio-or-flores-de-amor-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "combo-conquista-flores-y-peluches-pereira-dosquebradas",
+      "combo-cute-chocolates-mas-rosa-eterna-floristeria",
+      "combo-empresarial-or-tabla-de-queso-or-detalles-empresariales",
+      "combo-poema-de-rosa-eterna-de-cinta-y-fresas-recubiertas-con-chocolate-enviar-regalos-a-pereira-desde",
+      "corazon-sorpresa-de-chocolate-regalos-de-aniversario-pereira-dosquebradas",
+      "desayunos-sorpresa-pereira-dosquebradas-santa-rosa-de-cabal",
+      "desayuno-deluxe-para-ella-a-domicilio-desayuno-sorpresa-para-mujer-en-pereira",
+      "desayuno-sorpresa-a-domicilio-en-pereira-lovely-moments",
+      "desayuno-sorpresa-para-ninos-pereira-dosquebradas-santa-rosa",
+      "desayuno-sorpresa-de-cumpleanos-a-domicilio-en-pereira",
+      "desayuno-lovely-para-ella-desayuno-sorpresa-con-flores-a-domicilio-pereira",
+      "desayunos-sorpresa-en-pereira-dosquebradas-y-santa-rosa-de-cabal-risaralda",
+      "desayuno-sorpresa-a-domicilio-economico-pereira",
+      "desayunos-sorpresa-para-hombres-en-pereira",
+      "desayuno-sorpresa-para-ninos-pereira-dosquebradas",
+      "desayuno-sorpresa-para-mujer-pereira-dosquebradas",
+      "desayuno-sorpresa-hombre-pereira",
+      "desayuno-sorpresa-siempre-juntos-detalles-sorpresa-en-pereira-dosquebradas",
+      "abrazo-matutino-desayuno-sorpresa-a-domicilio-desayuno-sorpresa-de-lujo-para-mujeres-pereira",
+      "desayuno-sorpresa-amor-y-amistad-con-amor-siempre-floristeria-lovely-moments-pereira",
+      "desayuno-sorpresa-bellos-momentos-or-desayunos-sorpresa-personalizados-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayuno-sorpresa-hombres-dosquebradas-pereira",
+      "desayunos-en-pereira-dia-de-las-madres-dosquebradas-santa-rosa",
+      "desayuno-sorpresa-dulce-despertar-or-desayuno-sorpresa-para-ninos-y-ninas-or-pereira-or-dosquebradas-or-santa-rosa",
+      "desayuno-sorpresa-dia-de-las-madres-or-desayuno-sorpresa-pereira",
+      "desayuno-sorpresa-dia-del-padre-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal1",
+      "desayuno-sorpresa-encanto-matutino-or-desayunos-sorpresa-en-pereira-or-dosquebradas",
+      "desayunos-sorpresa-a-domicilio-en-pereira-para-el-dia-de-las-madres",
+      "desayuno-sorpresa-hermosa-or-desayunos-sorpresa-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayuno-sorpresa-especial-para-hombres-pereira",
+      "desayuno-sorpresa-mama-hermosa-or-desayunos-saludables-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayuno-sorpresa-margarita-or-desayunos-sorpresa-para-mujer-en-pereira-or-dosquebradas",
+      "desayuno-sorpresa-navideno-or-desayunos-navidenos-pereira",
+      "desayuno-sorpresa-pereira-dosquebradas-or-desayuno-paris-lovely-moments",
+      "desayuno-sorpresa-queen-or-desayunos-sorpresa-para-mama-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayuno-sorpresa-san-valentin-or-desayunos-lovely-moments-pereira-dosquebradas",
+      "desayuno-sorpresa-dia-del-padre-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayunos-sorpresa-en-pereira-feliz-cumpleanos",
+      "desayuno-sorpresa-para-madres-or-regalos-para-madres-pereira-dosquebradas",
+      "desayuno-sorpresa-a-domicilio-para-dos-personas-pereira",
+      "desayuno-sorpresa-para-el-dia-del-padre-desayuno-sorpresa-papa-de-lujo",
+      "desayunos-sorpresa-para-mujeres-en-pereira-dosquebradas-desayuno-lovely-vip",
+      "desayuno-sorpresa-carta-de-amor-or-desayunos-sorpresa-elegantes-amor-y-amistad",
+      "desayuno-sorpresa-para-hombres-desayuno-sorpresa-arriero",
+      "desayunos-sorpresa-para-hombres-en-pereira-or-desayunos-dosquebradas",
+      "dulce-desayuno-sorpresa-a-domicilio-desayuno-sorpresa-personalizado-a-domicilio-pereira",
+      "florero-venus-de-milo-florero-cabeza-de-venus-pereira",
+      "flores-san-valentin-or-flores-en-pereira-or-floristerias-a-domicilio",
+      "fresas-con-crema-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "huevo-de-pascua-de-chocolate-pereira-dosquebradas",
+      "kit-ano-viejo-pereira-dosquebradas-or-munecos-de-ano-viejo",
+      "kit-chocobombas-x-2-chocobombs-pereira",
+      "kit-de-autocuidado-lovely-moments-regalos-para-mama-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "mug-personalizado-dia-de-las-madres-pereira-or-regalos-para-empresas",
+      "muneco-de-nieve-de-chocolate-pereira",
+      "oso-sorpresa-de-halloween-pereira",
+      "oso-de-chocolate-de-papa-noel-pereira",
+      "oso-sorpresa-de-chocolate-floristeria-lovely",
+      "porcelanas-de-osos-teddy-pereira",
+      "oso-teddy-con-vela-adicional-or-velas-pereira-or-velas-artesanales-dosquebradas",
+      "porcelanas-pereira",
+      "postres-de-chocolate-a-domicilio-en-pereira",
+      "chocolates-navidenos-pereira",
+      "ramo-buchon-hello-kitty-or-detalles-pereira-ramo-estilo-buchon-de-rosas-eternas",
+      "ramos-buchones-pereira-dosquebradas-santa-rosa-de-cabal",
+      "flores-a-domicilio-en-dosquebradas-pago-online-flores-de-lujo-en-pereira-colombia",
+      "ramo-buchon-elegance-or-flores-en-pereira-a-domicilio-ramo-buchon-de-rosas-eternas",
+      "ramo-buchon-en-pereira-dosquebradas",
+      "ramos-de-rosas-eternas-pereira-risaralda",
+      "ramo-de-flores-bonita-or-flores-en-pereira-or-flower-shop",
+      "ramos-de-flores-en-pereira",
+      "ramo-de-rosas-san-valentin-pereira-dosquebradas",
+      "ramo-de-rosas-y-orquideas-bellos-momentos-or-flores-en-pereira",
+      "ramos-de-flores-a-domicilio-en-pereira",
+      "ramo-de-velas-aromatizadas-lovely-moments-or-velas-aromaticas-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ramos-buchones-de-graduacion-or-regalos-de-graduacion-en-pereira",
+      "ramos-de-flores-pereira",
+      "ramos-de-rosas-en-pereira",
+      "regalos-para-el-dia-de-las-madres-en-pereira-y-dosquebradas",
+      "regalos-de-amor-y-amistad-para-mujer-en-pereira-arreglos-florales-a-domicilio",
+      "regalos-para-el-dia-del-padre-en-pereira-dosquebradas-y-santa-rosa-de-cabal1",
+      "rosas-eternas-de-cinta-individual-flores-baratas-pereira",
+      "set-de-velas-or-combo-4-or-velas-aromaticas-pereira-or-dosquebradas-or-santa-rosa-de-cabal-",
+      "set-de-velas-artesanales-navidenas-or-combo-1-or-velas-aromaticas-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ancheta-de-lujo-para-hombres-pereira",
+      "tabla-de-quesos-gourmet-or-tablas-de-queso-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "tabla-de-quesos-en-pereira-y-dosquebradas-tabla-mediterranea",
+      "tabla-de-quesos-provenza-or-tablas-de-quesos-en-pereira",
+      "tabla-de-quesos-toscana-tablas-de-queso-pereira-tablas-de-queso-pereira",
+      "tabla-de-quesos-pereira-dosquebradas-y-santa-rosa-de-cabal",
+      "tabla-de-quesos-navidena-pereira",
+      "tableta-de-chocolates-pereira",
+      "tapas-espanolas-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal-or-tapas-sevillanas",
+      "oso-de-porcelana-pereira",
+      "teddy-floral-porcelana-de-oso-teddy-pereira",
+      "torre-de-fresas-recubiertas-con-chocolate-pereira",
+      "trio-navideno-caja-x-3-unidades-de-fresas-recubiertas-con-chocolate-regalos-corporativos-navidenos-pereira",
+      "unicornio-de-chocolate-unicornio-sorpresa-para-ninas-pereira",
+      "vela-artesanal-copo-de-nieve-or-velas-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "vela-corazon-or-velas-pereira-or-velas-artesanales-dosquebradas",
+      "vela-navidena-angel-de-luz-or-velas-navidenas-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "velas-aromaticas-or-oso-ternura-or-velas-pereira",
+      "velas-artesanales-en-pereira-or-combo-3-or-pereira-or-dosquebradas-or-velas-navidenas",
+      "velas-personalizadas-pereira-or-combo-2-or-velas-artesanales-",
+      "velas-ramo-de-tulipanes-or-velas-aromaticas-or-velas-artesanales",
+      "velas-pereira-decorativas-velas-artesanales-aromaticas",
+      "yugos-para-quinceanera-en-pereira",
+      "angel-de-la-tierra-porcelanas-decoradas-para-regalo-en-pereira"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/20230902_164224-AoPZvXgOk2UbPwgp.jpg",
+    "imageAlt": "Desayunos sorpresa a domicilio en Pereira",
+    "group": "La tienda",
+    "source": "https://lovelymoments.com.co/flores-pereira-a-domicilio",
+    "allProducts": true
+  },
+  {
+    "slug": "floristeria-pereira",
+    "title": "La historia de Lovely Moments",
+    "kind": "about",
+    "intro": "Kendy Santa fundó Lovely Moments en Pereira en 2020, durante la pandemia. El taller reúne floristería y chocolatería y prepara pedidos para Pereira, Dosquebradas y Santa Rosa de Cabal.",
+    "sections": [
+      {
+        "heading": "El trabajo del taller",
+        "text": "Kendy dirige un equipo que trabaja por encargo. Seleccionamos flores colombianas y combinamos ingredientes nacionales e importados para preparar los chocolates.",
+        "links": [
+          {
+            "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+            "label": "Arreglos florales"
+          },
+          {
+            "slug": "chocolates-pereira",
+            "label": "Chocolates artesanales"
+          }
+        ]
+      },
+      {
+        "heading": "Un regalo con nombre propio",
+        "text": "Una dedicatoria, una marca o un motivo especial pueden formar parte del diseño. Cuéntanos para quién es y qué tienes en mente.",
+        "links": [
+          {
+            "slug": "regalos-corporativos-pereira",
+            "label": "Regalos para empresas"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      },
+      {
+        "heading": "Pedidos desde lejos",
+        "text": "Atendemos a quienes encargan desde Colombia y desde el exterior. Repartimos en Pereira, Dosquebradas y Santa Rosa de Cabal.",
+        "links": [
+          {
+            "slug": "floristerias-a-domicilio-en-pereira-colombia",
+            "label": "Flores a domicilio en Pereira"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-dosquebradas",
+            "label": "Flores a domicilio en Dosquebradas"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-santa-rosa-de-cabal",
+            "label": "Flores a domicilio en Santa Rosa de Cabal"
+          }
+        ]
+      },
+      {
+        "heading": "Lo que hemos aprendido",
+        "text": "Compartimos la experiencia del taller en charlas y capacitaciones de emprendimiento, floristería y chocolatería.",
+        "links": [
+          {
+            "slug": "cursos-de-emprendimiento",
+            "label": "Cursos y capacitaciones"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+        "label": "Arreglos florales"
+      },
+      {
+        "slug": "chocolates-pereira",
+        "label": "Chocolates artesanales"
+      },
+      {
+        "slug": "regalos-corporativos-pereira",
+        "label": "Regalos para empresas"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira-colombia",
+        "label": "Flores a domicilio en Pereira"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-dosquebradas",
+        "label": "Flores a domicilio en Dosquebradas"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-santa-rosa-de-cabal",
+        "label": "Flores a domicilio en Santa Rosa de Cabal"
+      },
+      {
+        "slug": "cursos-de-emprendimiento",
+        "label": "Cursos y capacitaciones"
+      }
+    ],
+    "categoryIds": [],
+    "productSlugs": [],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/dm-25-arreglo-gracias-mama-001-DN8Ll33a2mGlsSyz.jpg",
+    "imageAlt": "floristerías Pereira a Domicilio",
+    "group": "La tienda",
+    "source": "https://lovelymoments.com.co/floristeria-pereira"
+  },
+  {
+    "slug": "floristerias-a-domicilio-en-pereira",
+    "title": "Habla con Lovely Moments",
+    "kind": "contact",
+    "intro": "Para un pedido, una cotización o una dedicatoria, habla directamente con el equipo de Pereira.",
+    "sections": [
+      {
+        "heading": "WhatsApp y teléfono",
+        "text": "El número de atención es +57 321 392 0327. Indica qué referencia te interesa, el municipio y la fecha de entrega.",
+        "links": []
+      },
+      {
+        "heading": "Correo y redes",
+        "text": "Escríbenos a detalles@lovelymoments.com.co. En Instagram, Facebook y TikTok nos encuentras como @ByLovelyMoments.",
+        "links": []
+      },
+      {
+        "heading": "Cobertura de entregas",
+        "text": "Recibimos encargos desde Colombia y desde el exterior para entregar en Pereira, Dosquebradas y Santa Rosa de Cabal. También atendemos consultas en inglés por WhatsApp.",
+        "links": [
+          {
+            "slug": "floristerias-a-domicilio-en-pereira-colombia",
+            "label": "Flores a domicilio en Pereira"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-dosquebradas",
+            "label": "Flores a domicilio en Dosquebradas"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-santa-rosa-de-cabal",
+            "label": "Flores a domicilio en Santa Rosa de Cabal"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "floristerias-a-domicilio-en-pereira-colombia",
+        "label": "Flores a domicilio en Pereira"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-dosquebradas",
+        "label": "Flores a domicilio en Dosquebradas"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-santa-rosa-de-cabal",
+        "label": "Flores a domicilio en Santa Rosa de Cabal"
+      }
+    ],
+    "categoryIds": [],
+    "productSlugs": [],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/b06---tentacia2n-Yg25BVVRQeioJwEl.jpg",
+    "imageAlt": "ramos buchones en Pereira",
+    "group": "La tienda",
+    "source": "https://lovelymoments.com.co/floristerias-a-domicilio-en-pereira",
+    "externalLinks": [
+      {
+        "label": "WhatsApp",
+        "url": "https://wa.me/573213920327"
+      },
+      {
+        "label": "Teléfono",
+        "url": "tel:+573213920327"
+      },
+      {
+        "label": "Correo",
+        "url": "mailto:detalles@lovelymoments.com.co"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/bylovelymoments/"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/bylovelymoments"
+      },
+      {
+        "label": "TikTok",
+        "url": "https://www.tiktok.com/@bylovelymoments"
+      }
+    ],
+    "contact": {
+      "phone": "+57 321 392 0327",
+      "whatsapp": "https://wa.me/573213920327",
+      "email": "detalles@lovelymoments.com.co",
+      "municipalities": [
+        "Pereira",
+        "Dosquebradas",
+        "Santa Rosa de Cabal"
+      ]
+    },
+    "formFields": [
+      {
+        "label": "Nombre",
+        "required": true
+      },
+      {
+        "label": "Apellido",
+        "required": false
+      },
+      {
+        "label": "Teléfono",
+        "required": true
+      },
+      {
+        "label": "Correo",
+        "required": true
+      },
+      {
+        "label": "Tu mensaje",
+        "required": true
+      }
+    ]
+  },
+  {
+    "slug": "flores-en-pereira",
+    "title": "Cuaderno de la floristería",
+    "kind": "blog",
+    "intro": "Cuatro lecturas de Lovely Moments sobre regalar flores, elegir colores y pensar en quien recibe el detalle.",
+    "sections": [
+      {
+        "heading": "Guías del taller",
+        "text": "Empieza por una ocasión que conozcas o por una flor que le guste a la persona.",
+        "links": [
+          {
+            "slug": "como-elegir-el-ramo-perfecto-guia-de-regalos-florales",
+            "label": "Cómo elegir un ramo de flores"
+          },
+          {
+            "slug": "el-lenguaje-de-las-flores-significado-de-los-colores-y-tipos",
+            "label": "El significado de los colores y las flores"
+          },
+          {
+            "slug": "10-ideas-de-regalos-florales-para-todas-ocasion",
+            "label": "Diez ideas para regalar flores"
+          },
+          {
+            "slug": "consejos-para-elegir-el-regalo-perfecto",
+            "label": "Cómo escoger un regalo personal"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "como-elegir-el-ramo-perfecto-guia-de-regalos-florales",
+        "label": "Cómo elegir un ramo de flores"
+      },
+      {
+        "slug": "el-lenguaje-de-las-flores-significado-de-los-colores-y-tipos",
+        "label": "El significado de los colores y las flores"
+      },
+      {
+        "slug": "10-ideas-de-regalos-florales-para-todas-ocasion",
+        "label": "Diez ideas para regalar flores"
+      },
+      {
+        "slug": "consejos-para-elegir-el-regalo-perfecto",
+        "label": "Cómo escoger un regalo personal"
+      }
+    ],
+    "categoryIds": [],
+    "productSlugs": [],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/b03---sutal-YrD1yn8rB1CZ9B3x.jpg",
+    "imageAlt": "Cuaderno de la floristería",
+    "group": "Cuaderno del taller",
+    "source": "https://lovelymoments.com.co/flores-en-pereira"
+  },
+  {
+    "slug": "cursos-de-emprendimiento",
+    "title": "Cursos y capacitaciones",
+    "kind": "course",
+    "intro": "Kendy Santa comparte el oficio aprendido en Lovely Moments con personas que quieren lanzar un negocio creativo o mejorar uno que ya tienen.",
+    "sections": [
+      {
+        "heading": "Qué puedes aprender",
+        "text": "El programa reúne chocolatería artesanal, floristería, fabricación de flores artificiales y diseño decorativo. Hay formación en modelos de negocio, ventas y posicionamiento de marca.",
+        "links": []
+      },
+      {
+        "heading": "Modalidades",
+        "text": "Se ofrecen charlas, seminarios y cursos presenciales y virtuales. La programación se comunica a quienes manifiestan interés.",
+        "links": []
+      },
+      {
+        "heading": "Preinscripción gratuita",
+        "text": "Comparte tus datos de contacto, la ciudad y país donde vives y las áreas que quieres estudiar. La preinscripción te permite recibir fechas y modalidades del equipo.",
+        "links": [
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      }
+    ],
+    "categoryIds": [],
+    "productSlugs": [],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/whatsapp-image-2026-02-16-at-13.24.21-KQ62dr60JKjxNBUt.jpeg",
+    "imageAlt": "formación para emprendedores",
+    "group": "La tienda",
+    "source": "https://lovelymoments.com.co/cursos-de-emprendimiento",
+    "externalLinks": [
+      {
+        "label": "WhatsApp",
+        "url": "https://wa.me/573213920327"
+      },
+      {
+        "label": "Preinscripción en la tienda",
+        "url": "https://lovelymoments.com.co/cursos-de-emprendimiento#registro"
+      }
+    ],
+    "formFields": [
+      {
+        "label": "Nombre",
+        "required": true
+      },
+      {
+        "label": "Apellidos",
+        "required": true
+      },
+      {
+        "label": "Correo electrónico",
+        "required": true
+      },
+      {
+        "label": "Número telefónico o WhatsApp",
+        "required": true
+      },
+      {
+        "label": "Ciudad y país",
+        "required": true
+      },
+      {
+        "label": "Áreas de interés",
+        "required": true
+      }
+    ],
+    "eventOptions": [
+      "Emprendimiento",
+      "Floristería",
+      "Chocolatería",
+      "Decoración y Diseño",
+      "Mercadeo",
+      "Flores Artificiales",
+      "Cocina y Alimentos",
+      "Creatividad e Innovación"
+    ]
+  },
+  {
+    "slug": "search",
+    "title": "Buscar en la tienda",
+    "kind": "search",
+    "intro": "Encuentra regalos por nombre, ingrediente, flor u ocasión.",
+    "sections": [],
+    "links": [],
+    "categoryIds": [],
+    "productSlugs": [],
+    "image": null,
+    "imageAlt": "Buscar en la tienda",
+    "group": "La tienda",
+    "source": "https://lovelymoments.com.co/search"
+  },
+  {
+    "slug": "chocolates-pereira",
+    "title": "Chocolates artesanales",
+    "kind": "collection",
+    "intro": "Tabletas, paletas, figuras y corazones sorpresa salen del taller junto a las cajas para compartir.",
+    "sections": [
+      {
+        "heading": "Elige la presentación",
+        "text": "Puedes regalar una pieza con forma, una caja de bombones rellenos o frutos cubiertos. Consulta cada ficha para ver su composición.",
+        "links": [
+          {
+            "slug": "bombones-de-chocolate-en-pereira",
+            "label": "Bombones de chocolate"
+          },
+          {
+            "slug": "fresas-con-chocolate-en-pereira",
+            "label": "Fresas con chocolate"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "bombones-de-chocolate-en-pereira",
+        "label": "Bombones de chocolate"
+      },
+      {
+        "slug": "fresas-con-chocolate-en-pereira",
+        "label": "Fresas con chocolate"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01GK2V9YEQMBJN36BCST3EX0YD"
+    ],
+    "productSlugs": [
+      "oso-sorpresa-de-chocolate-floristeria-lovely",
+      "unicornio-de-chocolate-unicornio-sorpresa-para-ninas-pereira",
+      "corazon-sorpresa-de-chocolate-regalos-de-aniversario-pereira-dosquebradas",
+      "regalo-especial-para-conquistar-pereira-dosquebradas",
+      "chocolates-para-ninos-pereira-caja-de-chocolates-love-chocolate",
+      "caja-de-chocolates-de-lujo-pereira",
+      "regalos-para-empresas-en-pereira",
+      "combo-cute-chocolates-mas-rosa-eterna-floristeria",
+      "rosas-y-chocolates-pereira",
+      "caja-london-con-rosas-y-tableta-de-chocolate-artesanal-regalos-de-lujo-hechos-con-chocolate-pereira",
+      "regalos-corporativos-pereira-dosquebradas",
+      "regalos-de-cumpleanos-para-mujer-en-pereira-dosquebradas",
+      "caja-regalo-con-mensaje-o-nombre-de-chocolate-regalos-originales-pereira",
+      "cofre-del-amor-propuesta-de-matrimonio-pereira",
+      "fresas-cubiertas-pereira-dosquebradas",
+      "tableta-de-chocolates-pereira",
+      "oso-sorpresa-de-halloween-pereira",
+      "chocobombas-pereira-dosquebradas",
+      "oso-de-chocolate-de-papa-noel-pereira",
+      "choco-bombas-de-navidad-en-pereira",
+      "chocobombas-pereira-dosquebradas-santa-rosa-de-cabal",
+      "chocolates-navidenos-pereira",
+      "muneco-de-nieve-de-chocolate-pereira",
+      "casa-navidena-de-chocolate-casita-de-chocolate-decorada-pereira",
+      "caja-regalo-the-one-para-hombres-regalos-de-aniversario-para-hombres-pereira",
+      "mini-donuts-decoradas-pereira",
+      "caja-de-mini-donuts-x-4-donuts-personalizadas-pereira",
+      "chocolates-pereira-a-domicilio"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/ch31-mv04Mr5Z5XSaOlwr.jpg",
+    "imageAlt": "Chocolates artesanales",
+    "group": "Chocolate y fresas",
+    "source": "https://lovelymoments.com.co/chocolates-pereira"
+  },
+  {
+    "slug": "fresas-con-chocolate-en-pereira",
+    "title": "Fresas con chocolate",
+    "kind": "collection",
+    "intro": "Fresas cubiertas y decoradas a mano, presentadas en cajas, ramos y arreglos con flores.",
+    "sections": [
+      {
+        "heading": "Una caja o un ramo",
+        "text": "En caja se aprecian las decoraciones de cada fresa. En un ramo, la fruta se combina con flores. Las fichas indican las cantidades y los acompañamientos.",
+        "links": [
+          {
+            "slug": "bouquets-de-flores-en-pereira",
+            "label": "Bouquets de flores"
+          },
+          {
+            "slug": "chocolates-pereira",
+            "label": "Chocolates artesanales"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "bouquets-de-flores-en-pereira",
+        "label": "Bouquets de flores"
+      },
+      {
+        "slug": "chocolates-pereira",
+        "label": "Chocolates artesanales"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWTASDTKF3TQZQMRFQ4NSMM"
+    ],
+    "productSlugs": [
+      "anchetas-regalo-a-domicilio-en-pereira-dosquebradas",
+      "ancheta-de-regalo-para-ninos-y-ninas-en-pereira-dosquebradas",
+      "canasta-sorpresa-pereira",
+      "floristeria-economica-pereira",
+      "regalos-para-conquistar-en-pereira",
+      "caja-de-flores-ternura-arreglos-con-chocolates-en-pereira",
+      "caja-en-forma-de-corazon-con-fresas-y-rosas-en-pereira-dosquebradas",
+      "arreglo-floral-con-fresas-de-chocolate-en-pereira",
+      "arreglo-floral-con-globos-pereira",
+      "flores-de-cumpleanos-a-domicilio-en-pereira-dosquebradas",
+      "arreglo-floral-para-enamorar-en-pereira-dosquebradas",
+      "arreglo-floral-en-caja-de-corazon-en-pereira",
+      "arreglo-floral-con-girasoles-en-pereira-dosquebradas",
+      "arreglo-floral-frescura",
+      "arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "arreglo-floral-de-lujo-en-pereira",
+      "arreglos-florales-a-domicilio-en-pereira",
+      "arreglos-con-rosas-pereira",
+      "girasoles-a-domicilio-en-pereira-dosquebradas",
+      "floristerias-en-pereira-rosas-y-fresas",
+      "bouquet-arcoiris-bouquet-de-flores-a-domicilio-en-pereira",
+      "bouquet-jp-con-fresas-recubiertas-de-chocolate-floristerias-en-pereira-centro",
+      "bouquet-joya-flores-con-licores-en-pereira",
+      "bouquet-de-lujo-en-pereira-dosquebradas",
+      "unicornio-de-chocolate-unicornio-sorpresa-para-ninas-pereira",
+      "chocolates-para-ninos-pereira-caja-de-chocolates-love-chocolate",
+      "caja-de-chocolates-de-lujo-pereira",
+      "caja-london-con-rosas-y-tableta-de-chocolate-artesanal-regalos-de-lujo-hechos-con-chocolate-pereira",
+      "caja-serenata-con-vino-rosas-y-fresas-recubiertas-con-chocolate-cajas-regalo-con-vino-pereira",
+      "cofre-del-amor-propuesta-de-matrimonio-pereira",
+      "fresas-cubiertas-pereira-dosquebradas",
+      "caja-de-fresas-recubiertas-con-chocolate-bombonita-regalos-a-pereira-desde-espana",
+      "regalos-sorpresa-en-pereira-fresas-dosquebradas",
+      "fresas-con-chocolate-en-pereira-dosquebradas-y-santa-rosa-de-cabal-decoradas",
+      "caja-de-fresas-recubiertas-con-chocolate-en-pereira",
+      "torre-de-fresas-recubiertas-con-chocolate-pereira",
+      "caja-elixir-de-fresas-y-corazon-de-chocolate-regalo-para-una-nina-en-pereira",
+      "regalos-para-el-dia-de-la-mujer-en-pereira",
+      "caja-de-fresas-con-chocolate",
+      "fresas-recubiertas-pereira-dosquebradas",
+      "fresas-recubiertas-de-chocolate-para-ninas",
+      "ancheta-de-lujo-para-hombres-pereira",
+      "caja-amar-de-fresas-con-chocolate-x-5-unidades-regalos-de-grado-a-domicilio-en-pereira",
+      "combo-poema-de-rosa-eterna-de-cinta-y-fresas-recubiertas-con-chocolate-enviar-regalos-a-pereira-desde",
+      "caja-de-fresas-de-halloween-triki-triki-x-12-dia-de-brujas-pereira",
+      "regalos-para-halloween-en-pereira-y-dosquebradas",
+      "fresas-navidenas-para-novenas-en-pereira",
+      "trio-navideno-caja-x-3-unidades-de-fresas-recubiertas-con-chocolate-regalos-corporativos-navidenos-pereira",
+      "fresas-navidenas-pereira",
+      "regalos-originales-para-navidad-en-pereira",
+      "fresas-recubiertas-de-chocolate-navidenas-pereira",
+      "caja-sorpresa-regalos-sorpresa-para-hombres-en-pereira",
+      "regalos-para-hombres-sencillos-en-pereira",
+      "caja-regalo-the-one-para-hombres-regalos-de-aniversario-para-hombres-pereira",
+      "fresas-para-ninos-pereira",
+      "cajas-de-flores-pereira-con-fresas-grande-arreglos-florales-en-pereira",
+      "caja-navidena-de-lujo-con-fresas-y-vino-tinto-regalos-navidenos-de-lujo-en-pereira",
+      "chocolates-pereira-a-domicilio",
+      "flores-san-valentin-pereira-or-flores-en-pereira",
+      "ancheta-san-valentin-con-fresas-recubiertas-con-chocolate-or-anchetas-y-detalles-pereira-dosquebradas",
+      "caja-de-fresas-san-valentin-or-fresas-con-chocolate-pereira-dosquebradas",
+      "caja-de-fresas-con-chocolate-or-dia-de-la-mujer-en-pereira",
+      "combo-conquista-flores-y-peluches-pereira-dosquebradas",
+      "caja-premium-rosas-and-fresas-deluxe-ramos-en-caja-or-floristeria-pereira-lovely-moments"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/fr29-YD0DZba4G5SbBjDL.jpg",
+    "imageAlt": "Fresas con chocolate",
+    "group": "Chocolate y fresas",
+    "source": "https://lovelymoments.com.co/fresas-con-chocolate-en-pereira"
+  },
+  {
+    "slug": "fresas-recubiertas-con-chocolate-pereira",
+    "title": "Fresas recubiertas de chocolate",
+    "kind": "collection",
+    "intro": "Revisa las presentaciones de fresas que prepara la tienda para celebraciones y detalles de pareja.",
+    "sections": [
+      {
+        "heading": "Un detalle para compartir",
+        "text": "Hay cajas de distintos tamaños y composiciones con flores o bebidas. Elige la referencia para consultar sus piezas y dedicatorias.",
+        "links": [
+          {
+            "slug": "fresas-con-chocolate-en-pereira",
+            "label": "Fresas con chocolate"
+          },
+          {
+            "slug": "regalos-dia-del-amor-y-la-amistad-en-pereira",
+            "label": "Regalos para dos"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "fresas-con-chocolate-en-pereira",
+        "label": "Fresas con chocolate"
+      },
+      {
+        "slug": "regalos-dia-del-amor-y-la-amistad-en-pereira",
+        "label": "Regalos para dos"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWTASDTKF3TQZQMRFQ4NSMM"
+    ],
+    "productSlugs": [
+      "anchetas-regalo-a-domicilio-en-pereira-dosquebradas",
+      "ancheta-de-regalo-para-ninos-y-ninas-en-pereira-dosquebradas",
+      "canasta-sorpresa-pereira",
+      "floristeria-economica-pereira",
+      "regalos-para-conquistar-en-pereira",
+      "caja-de-flores-ternura-arreglos-con-chocolates-en-pereira",
+      "caja-en-forma-de-corazon-con-fresas-y-rosas-en-pereira-dosquebradas",
+      "arreglo-floral-con-fresas-de-chocolate-en-pereira",
+      "arreglo-floral-con-globos-pereira",
+      "flores-de-cumpleanos-a-domicilio-en-pereira-dosquebradas",
+      "arreglo-floral-para-enamorar-en-pereira-dosquebradas",
+      "arreglo-floral-en-caja-de-corazon-en-pereira",
+      "arreglo-floral-con-girasoles-en-pereira-dosquebradas",
+      "arreglo-floral-frescura",
+      "arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "arreglo-floral-de-lujo-en-pereira",
+      "arreglos-florales-a-domicilio-en-pereira",
+      "arreglos-con-rosas-pereira",
+      "girasoles-a-domicilio-en-pereira-dosquebradas",
+      "floristerias-en-pereira-rosas-y-fresas",
+      "bouquet-arcoiris-bouquet-de-flores-a-domicilio-en-pereira",
+      "bouquet-jp-con-fresas-recubiertas-de-chocolate-floristerias-en-pereira-centro",
+      "bouquet-joya-flores-con-licores-en-pereira",
+      "bouquet-de-lujo-en-pereira-dosquebradas",
+      "unicornio-de-chocolate-unicornio-sorpresa-para-ninas-pereira",
+      "chocolates-para-ninos-pereira-caja-de-chocolates-love-chocolate",
+      "caja-de-chocolates-de-lujo-pereira",
+      "caja-london-con-rosas-y-tableta-de-chocolate-artesanal-regalos-de-lujo-hechos-con-chocolate-pereira",
+      "caja-serenata-con-vino-rosas-y-fresas-recubiertas-con-chocolate-cajas-regalo-con-vino-pereira",
+      "cofre-del-amor-propuesta-de-matrimonio-pereira",
+      "fresas-cubiertas-pereira-dosquebradas",
+      "caja-de-fresas-recubiertas-con-chocolate-bombonita-regalos-a-pereira-desde-espana",
+      "regalos-sorpresa-en-pereira-fresas-dosquebradas",
+      "fresas-con-chocolate-en-pereira-dosquebradas-y-santa-rosa-de-cabal-decoradas",
+      "caja-de-fresas-recubiertas-con-chocolate-en-pereira",
+      "torre-de-fresas-recubiertas-con-chocolate-pereira",
+      "caja-elixir-de-fresas-y-corazon-de-chocolate-regalo-para-una-nina-en-pereira",
+      "regalos-para-el-dia-de-la-mujer-en-pereira",
+      "caja-de-fresas-con-chocolate",
+      "fresas-recubiertas-pereira-dosquebradas",
+      "fresas-recubiertas-de-chocolate-para-ninas",
+      "ancheta-de-lujo-para-hombres-pereira",
+      "caja-amar-de-fresas-con-chocolate-x-5-unidades-regalos-de-grado-a-domicilio-en-pereira",
+      "combo-poema-de-rosa-eterna-de-cinta-y-fresas-recubiertas-con-chocolate-enviar-regalos-a-pereira-desde",
+      "caja-de-fresas-de-halloween-triki-triki-x-12-dia-de-brujas-pereira",
+      "regalos-para-halloween-en-pereira-y-dosquebradas",
+      "fresas-navidenas-para-novenas-en-pereira",
+      "trio-navideno-caja-x-3-unidades-de-fresas-recubiertas-con-chocolate-regalos-corporativos-navidenos-pereira",
+      "fresas-navidenas-pereira",
+      "regalos-originales-para-navidad-en-pereira",
+      "fresas-recubiertas-de-chocolate-navidenas-pereira",
+      "caja-sorpresa-regalos-sorpresa-para-hombres-en-pereira",
+      "regalos-para-hombres-sencillos-en-pereira",
+      "caja-regalo-the-one-para-hombres-regalos-de-aniversario-para-hombres-pereira",
+      "fresas-para-ninos-pereira",
+      "cajas-de-flores-pereira-con-fresas-grande-arreglos-florales-en-pereira",
+      "caja-navidena-de-lujo-con-fresas-y-vino-tinto-regalos-navidenos-de-lujo-en-pereira",
+      "chocolates-pereira-a-domicilio",
+      "flores-san-valentin-pereira-or-flores-en-pereira",
+      "ancheta-san-valentin-con-fresas-recubiertas-con-chocolate-or-anchetas-y-detalles-pereira-dosquebradas",
+      "caja-de-fresas-san-valentin-or-fresas-con-chocolate-pereira-dosquebradas",
+      "caja-de-fresas-con-chocolate-or-dia-de-la-mujer-en-pereira",
+      "combo-conquista-flores-y-peluches-pereira-dosquebradas",
+      "caja-premium-rosas-and-fresas-deluxe-ramos-en-caja-or-floristeria-pereira-lovely-moments"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/fr23-meP1W20Jb7iGyery.jpg",
+    "imageAlt": "Fresas recubiertas de chocolate",
+    "group": "Chocolate y fresas",
+    "source": "https://lovelymoments.com.co/fresas-recubiertas-con-chocolate-pereira"
+  },
+  {
+    "slug": "bombones-de-chocolate-en-pereira",
+    "title": "Bombones de chocolate",
+    "kind": "collection",
+    "intro": "Cajas de bombones con rellenos de ganache y acabados que cambian según la colección.",
+    "sections": [
+      {
+        "heading": "Dentro de la caja",
+        "text": "Los diseños van de formas florales a corazones. La ficha de cada caja muestra su decoración, número de piezas y accesorios.",
+        "links": [
+          {
+            "slug": "chocolates-pereira",
+            "label": "Chocolates artesanales"
+          },
+          {
+            "slug": "fresas-con-chocolate-en-pereira",
+            "label": "Fresas con chocolate"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "chocolates-pereira",
+        "label": "Chocolates artesanales"
+      },
+      {
+        "slug": "fresas-con-chocolate-en-pereira",
+        "label": "Fresas con chocolate"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWS5MCF4B55D9XX4NPY1V17"
+    ],
+    "productSlugs": [
+      "bouquet-mas-bombones-de-chocolate-combo-dulzura-chocolates-rellenos-pereira-",
+      "chocolates-finos-pereira-dosquebradas",
+      "regalo-con-chocolates-pereira",
+      "bombones-de-chocolate-para-mujer-en-pereira",
+      "caja-de-bombones-floral-regalos-para-mamas-en-pereira",
+      "caja-de-bombones-amor-infinito-caja-de-chocolates-pereira",
+      "regalos-de-halloween-para-ninos-pereira",
+      "regalos-de-navidad-pereira",
+      "chocolates-navidenos-pereira-dosquebradas",
+      "chocolates-de-amor-y-amistad-or-bombones-pasion-de-chocolate-en-pereira",
+      "caja-de-bombones-de-chocolate-regalos-de-amor-y-amistad-en-pereira"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/cha01-AR07p8nJ1EHkMW2g.jpg",
+    "imageAlt": "Bombones de chocolate",
+    "group": "Chocolate y fresas",
+    "source": "https://lovelymoments.com.co/bombones-de-chocolate-en-pereira"
+  },
+  {
+    "slug": "mini-donuts-pereira-y-dosquebradas",
+    "title": "Mini donas decoradas",
+    "kind": "collection",
+    "intro": "Mini donas bañadas en chocolate y decoradas para regalar en cajas y ramos.",
+    "sections": [
+      {
+        "heading": "Personaliza el detalle",
+        "text": "La colección incluye cajas decoradas para una ocasión y composiciones tipo ramo. Consulta los motivos disponibles para tu fecha.",
+        "links": [
+          {
+            "slug": "regalos-para-ninos-en-pereira",
+            "label": "Regalos para niñas y niños"
+          },
+          {
+            "slug": "chocolates-pereira",
+            "label": "Chocolates artesanales"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "regalos-para-ninos-en-pereira",
+        "label": "Regalos para niñas y niños"
+      },
+      {
+        "slug": "chocolates-pereira",
+        "label": "Chocolates artesanales"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWS9XE4MVVKGD0ZBGRNH0KQ"
+    ],
+    "productSlugs": [
+      "mini-donuts-decoradas-pereira",
+      "caja-de-mini-donuts-x-4-donuts-personalizadas-pereira"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/20231029_123315-mnl6EbO3k4S1jVq4.jpg",
+    "imageAlt": "Mini donas decoradas",
+    "group": "Chocolate y fresas",
+    "source": "https://lovelymoments.com.co/mini-donuts-pereira-y-dosquebradas"
+  },
+  {
+    "slug": "anchetas-pereira",
+    "title": "Anchetas",
+    "kind": "collection",
+    "intro": "En una misma caja reunimos varias cosas para regalar. Hay anchetas con fruta, chocolate, flores o bebidas, según el diseño.",
+    "sections": [
+      {
+        "heading": "Para cada mesa",
+        "text": "Compara el contenido de las referencias para un cumpleaños, un nacimiento, una fecha de pareja o Navidad.",
+        "links": [
+          {
+            "slug": "regalos-de-cumpleanos-a-domicilio-en-pereira",
+            "label": "Regalos de cumpleaños"
+          },
+          {
+            "slug": "regalos-de-navidad-en-pereira",
+            "label": "Navidad"
+          },
+          {
+            "slug": "tablas-de-quesos-en-pereira-dosquebradas",
+            "label": "Tablas de quesos"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "regalos-de-cumpleanos-a-domicilio-en-pereira",
+        "label": "Regalos de cumpleaños"
+      },
+      {
+        "slug": "regalos-de-navidad-en-pereira",
+        "label": "Navidad"
+      },
+      {
+        "slug": "tablas-de-quesos-en-pereira-dosquebradas",
+        "label": "Tablas de quesos"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01GK2V9FH2CMBR8PDT53J3H981"
+    ],
+    "productSlugs": [
+      "ancheta-con-vino-y-tabla-de-quesos-anchetas-a-domicilio-en-pereira",
+      "ancheta-de-regalo-para-ninos-y-ninas-en-pereira-dosquebradas",
+      "ancheta-con-peluches-para-bebe-en-pereira-dosquebradas",
+      "canasta-sorpresa-pereira",
+      "ancheta-de-lujo-para-hombres-pereira",
+      "anchetas-para-hombre-en-pereira",
+      "anchetas-navidenas-en-pereira-dosquebradas",
+      "anchetas-navidenas-para-empresas",
+      "ancheta-navidena-pequena-navidad-regalos-para-empresas-mini-ancheta-navidena",
+      "anchetas-de-frutas-pereira-dosquebradas",
+      "regalos-para-recien-nacido-en-pereira",
+      "floristerias-a-domicilio-en-pereira-dosquebradas-santa-rosa-de-cabal",
+      "ancheta-dulce-armonia-anchetas-sorpresa-en-pereira",
+      "ancheta-orquidea-orquideas-en-pereira",
+      "anchetas-dia-de-las-madres-pereira-dosquebradas",
+      "desayunos-sorpresa-para-hombres-en-pereira-or-desayunos-dosquebradas",
+      "floristerias-en-pereira-amor-y-amistad-2024",
+      "anchetas-de-amor-y-amistad-para-hombres-en-pereira-ancheta-caballero",
+      "anchetas-navidenas-pereira-or-ancheta-merry-christmas",
+      "anchetas-pereira-or-anchetas-de-navidad-a-domicilio",
+      "anchetas-navidenas-pereira-or-anchetas-de-lujo-en-pereira",
+      "anchetas-a-domicilio-en-pereira-or-anchetas-para-empresas",
+      "ancheta-lovely-moments-or-detalles-personalizados-pereira",
+      "chocobombas-pereira-or-detalles-para-empresas-en-pereira-dosquebradas",
+      "ancheta-san-valentin-con-fresas-recubiertas-con-chocolate-or-anchetas-y-detalles-pereira-dosquebradas",
+      "anchetas-para-mujer-en-pereira-or-detalles-para-mujer",
+      "ancheta-recien-nacido-pereira-or-detalles-para-bebe-en-pereira",
+      "ancheta-amor-y-amistad-or-peluche-y-ferrerros-or-detalles-pereira",
+      "caja-feliz-navidad-or-anchetas-navidenas-or-anchetas-de-navidad",
+      "ancheta-brindis-navideno-or-anchetas-de-lujo-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ancheta-navidena-dulce-armonia-or-anchetas-navidenas-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ancheta-de-lujo-royal-or-anchetas-navidenas-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-navidena-sorpresa-or-torre-navidena-or-tapas-espanolas-pereira",
+      "combo-empresarial-or-tabla-de-queso-or-detalles-empresariales",
+      "caja-valantine-or-valentines-gifts-pereira-or-flower-shop-in-pereira"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/an01-A3QPyV8Vq5fDj78x.jpg",
+    "imageAlt": "Anchetas",
+    "group": "Para la mesa",
+    "source": "https://lovelymoments.com.co/anchetas-pereira"
+  },
+  {
+    "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+    "title": "Desayunos sorpresa",
+    "kind": "collection",
+    "intro": "Cajas y bandejas con preparaciones dulces y saladas para llevar el regalo a la primera comida del día.",
+    "sections": [
+      {
+        "heading": "Escoge el desayuno",
+        "text": "Revisa qué bebida, fruta, pan u otros acompañamientos trae cada referencia. Puedes consultar el municipio y la fecha antes de encargar.",
+        "links": [
+          {
+            "slug": "regalos-de-cumpleanos-a-domicilio-en-pereira",
+            "label": "Regalos de cumpleaños"
+          },
+          {
+            "slug": "anchetas-pereira",
+            "label": "Anchetas"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "regalos-de-cumpleanos-a-domicilio-en-pereira",
+        "label": "Regalos de cumpleaños"
+      },
+      {
+        "slug": "anchetas-pereira",
+        "label": "Anchetas"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01GK2VACN4H0SYNZN6PQT4ZCAE"
+    ],
+    "productSlugs": [
+      "desayuno-sorpresa-para-ninos-pereira-dosquebradas",
+      "abrazo-matutino-desayuno-sorpresa-a-domicilio-desayuno-sorpresa-de-lujo-para-mujeres-pereira",
+      "dulce-desayuno-sorpresa-a-domicilio-desayuno-sorpresa-personalizado-a-domicilio-pereira",
+      "desayuno-sorpresa-a-domicilio-para-dos-personas-pereira",
+      "desayuno-sorpresa-especial-para-hombres-pereira",
+      "desayuno-sorpresa-hombres-dosquebradas-pereira",
+      "desayuno-sorpresa-hombre-pereira",
+      "desayunos-sorpresa-para-hombres-en-pereira",
+      "desayunos-sorpresa-pereira-dosquebradas-santa-rosa-de-cabal",
+      "desayuno-lovely-para-ella-desayuno-sorpresa-con-flores-a-domicilio-pereira",
+      "desayuno-sorpresa-para-mujer-pereira-dosquebradas",
+      "desayuno-sorpresa-a-domicilio-economico-pereira",
+      "desayuno-deluxe-para-ella-a-domicilio-desayuno-sorpresa-para-mujer-en-pereira",
+      "desayuno-sorpresa-de-cumpleanos-a-domicilio-en-pereira",
+      "desayunos-sorpresa-en-pereira-dosquebradas-y-santa-rosa-de-cabal-risaralda",
+      "desayuno-sorpresa-a-domicilio-en-pereira-lovely-moments",
+      "desayuno-sorpresa-para-ninos-pereira-dosquebradas-santa-rosa",
+      "desayunos-sorpresa-en-pereira-feliz-cumpleanos",
+      "desayunos-sorpresa-a-domicilio-en-pereira-para-el-dia-de-las-madres",
+      "desayunos-en-pereira-dia-de-las-madres-dosquebradas-santa-rosa",
+      "desayuno-sorpresa-dia-del-padre-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "alguito-sorpresa-lovely-alguitos-sorpresa-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayuno-sorpresa-pereira-dosquebradas-or-desayuno-paris-lovely-moments",
+      "desayunos-sorpresa-para-hombres-en-pereira-or-desayunos-dosquebradas",
+      "desayunos-sorpresa-para-mujeres-en-pereira-dosquebradas-desayuno-lovely-vip",
+      "desayuno-sorpresa-navideno-or-desayunos-navidenos-pereira",
+      "desayuno-sorpresa-san-valentin-or-desayunos-lovely-moments-pereira-dosquebradas",
+      "desayuno-sorpresa-margarita-or-desayunos-sorpresa-para-mujer-en-pereira-or-dosquebradas",
+      "desayuno-sorpresa-dia-de-las-madres-or-desayuno-sorpresa-pereira",
+      "desayuno-sorpresa-para-madres-or-regalos-para-madres-pereira-dosquebradas",
+      "desayuno-sorpresa-dia-del-padre-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal1",
+      "desayuno-sorpresa-amor-y-amistad-con-amor-siempre-floristeria-lovely-moments-pereira",
+      "desayuno-sorpresa-siempre-juntos-detalles-sorpresa-en-pereira-dosquebradas",
+      "desayuno-sorpresa-encanto-matutino-or-desayunos-sorpresa-en-pereira-or-dosquebradas",
+      "desayuno-sorpresa-bellos-momentos-or-desayunos-sorpresa-personalizados-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayuno-sorpresa-hermosa-or-desayunos-sorpresa-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayuno-sorpresa-mama-hermosa-or-desayunos-saludables-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayuno-sorpresa-queen-or-desayunos-sorpresa-para-mama-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayuno-sorpresa-para-hombres-desayuno-sorpresa-arriero",
+      "desayuno-sorpresa-para-el-dia-del-padre-desayuno-sorpresa-papa-de-lujo",
+      "desayuno-sorpresa-dulce-despertar-or-desayuno-sorpresa-para-ninos-y-ninas-or-pereira-or-dosquebradas-or-santa-rosa",
+      "desayuno-sorpresa-carta-de-amor-or-desayunos-sorpresa-elegantes-amor-y-amistad"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/desayuno-sorpresa-san-valentin-c-AGBzqvyX30Hp9JqZ.jpg",
+    "imageAlt": "Desayunos sorpresa",
+    "group": "Para la mesa",
+    "source": "https://lovelymoments.com.co/desayunos-sorpresa-a-domicilio-en-pereira"
+  },
+  {
+    "slug": "tablas-de-quesos-en-pereira-dosquebradas",
+    "title": "Tablas de quesos",
+    "kind": "collection",
+    "intro": "Tablas con quesos y acompañamientos dulces y salados, listas para regalar o compartir.",
+    "sections": [
+      {
+        "heading": "Revisa la combinación",
+        "text": "Frutos, panes, carnes frías y bebidas varían entre referencias. La composición de cada tabla está en su ficha.",
+        "links": [
+          {
+            "slug": "anchetas-pereira",
+            "label": "Anchetas"
+          },
+          {
+            "slug": "regalos-corporativos-pereira",
+            "label": "Regalos para empresas"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "anchetas-pereira",
+        "label": "Anchetas"
+      },
+      {
+        "slug": "regalos-corporativos-pereira",
+        "label": "Regalos para empresas"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCZGMB25M791GZB7KGPA07X5"
+    ],
+    "productSlugs": [
+      "tabla-de-quesos-pereira-dosquebradas-y-santa-rosa-de-cabal",
+      "ancheta-con-vino-y-tabla-de-quesos-anchetas-a-domicilio-en-pereira",
+      "tabla-de-quesos-toscana-tablas-de-queso-pereira-tablas-de-queso-pereira",
+      "tabla-de-quesos-navidena-pereira",
+      "tabla-de-quesos-en-pereira-y-dosquebradas-tabla-mediterranea",
+      "anchetas-de-frutas-pereira-dosquebradas",
+      "floristerias-a-domicilio-en-pereira-dosquebradas-santa-rosa-de-cabal",
+      "tabla-de-quesos-provenza-or-tablas-de-quesos-en-pereira",
+      "anchetas-dia-de-las-madres-pereira-dosquebradas",
+      "ancheta-dia-del-padre-or-arquitecto-de-suenos-or-pereria",
+      "caja-aventura-or-detalles-dia-del-padre-en-pereira-dosquebradas",
+      "tabla-de-quesos-gourmet-or-tablas-de-queso-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-navidena-sorpresa-or-torre-navidena-or-tapas-espanolas-pereira",
+      "combo-empresarial-or-tabla-de-queso-or-detalles-empresariales",
+      "tapas-espanolas-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal-or-tapas-sevillanas"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/20231113_124204-m2Wl10ljvZSy5or9.jpg",
+    "imageAlt": "Tablas de quesos",
+    "group": "Para la mesa",
+    "source": "https://lovelymoments.com.co/tablas-de-quesos-en-pereira-dosquebradas"
+  },
+  {
+    "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+    "title": "Arreglos florales",
+    "kind": "collection",
+    "intro": "Rosas, girasoles y flores de temporada trabajadas en cajas, canastas y otras bases.",
+    "sections": [
+      {
+        "heading": "Cómo quieres entregar las flores",
+        "text": "Un arreglo llega montado en su base. Si prefieres entregar los tallos envueltos, explora los bouquets del taller.",
+        "links": [
+          {
+            "slug": "bouquets-de-flores-en-pereira",
+            "label": "Bouquets de flores"
+          },
+          {
+            "slug": "como-elegir-el-ramo-perfecto-guia-de-regalos-florales",
+            "label": "Cómo elegir un ramo de flores"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "bouquets-de-flores-en-pereira",
+        "label": "Bouquets de flores"
+      },
+      {
+        "slug": "como-elegir-el-ramo-perfecto-guia-de-regalos-florales",
+        "label": "Cómo elegir un ramo de flores"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWX76QVFRZG74KTJJETM4X1"
+    ],
+    "productSlugs": [
+      "ramos-de-flores-pereira-dosquebradas",
+      "arreglos-de-rosas-en-pereira",
+      "arreglo-floral-con-rosas-pereira-y-el-eje-cafetero",
+      "canasta-sorpresa-pereira",
+      "floristeria-economica-pereira",
+      "regalos-para-conquistar-en-pereira",
+      "caja-de-flores-ternura-arreglos-con-chocolates-en-pereira",
+      "arreglo-de-rosas-pereira-dosquebradas",
+      "caja-en-forma-de-corazon-con-fresas-y-rosas-en-pereira-dosquebradas",
+      "arreglo-floral-garden-arreglos-florales-de-cumpleanos-en-pereira-",
+      "arreglo-floral-con-fresas-de-chocolate-en-pereira",
+      "arreglo-floral-con-globos-pereira",
+      "flores-de-cumpleanos-a-domicilio-en-pereira-dosquebradas",
+      "canasta-de-flores-de-lujo-romance-arreglo-floral-a-domicilio-pereira",
+      "canasta-de-flores-pereira",
+      "arreglo-floral-para-enamorar-en-pereira-dosquebradas",
+      "arreglo-floral-en-caja-de-corazon-en-pereira",
+      "arreglo-floral-con-girasoles-en-pereira-dosquebradas",
+      "arreglo-floral-magia-arreglo-floral-corazon-pereira",
+      "arreglo-floral-frescura",
+      "arreglo-floral-dulces-15-regalos-para-15-anos-en-pereira",
+      "arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "arreglo-floral-de-lujo-en-pereira",
+      "arreglos-florales-a-domicilio-en-pereira",
+      "arreglo-floral-celestial",
+      "arreglos-con-rosas-pereira",
+      "girasoles-a-domicilio-en-pereira-dosquebradas",
+      "bouquet-de-girasoles-en-pereira",
+      "floristerias-en-pereira-rosas-y-fresas",
+      "bouquet-mas-bombones-de-chocolate-combo-dulzura-chocolates-rellenos-pereira-",
+      "ramos-de-rosas-y-chocolates",
+      "bouquet-de-lujo-happy-bouquet-de-rosas-pereira",
+      "arreglo-de-flores-para-enviar-a-pereira-dosquebradas",
+      "regalos-pereira-a-domicilio",
+      "bouquet-arcoiris-bouquet-de-flores-a-domicilio-en-pereira",
+      "bouquet-eterno-bouquet-de-flores-pereira",
+      "ramos-de-chocolates-y-flores-pereira-dosquebradas",
+      "bouquet-de-girasoles-pereira",
+      "floristeria-pereira-a-domicilio",
+      "bouquet-jp-con-fresas-recubiertas-de-chocolate-floristerias-en-pereira-centro",
+      "bouquet-joya-flores-con-licores-en-pereira",
+      "bouquet-de-lujo-en-pereira-dosquebradas",
+      "arreglo-de-flores-pereira-dosquebradas-con-frutas",
+      "mini-donuts-decoradas-pereira",
+      "cajas-de-flores-pereira-con-fresas-grande-arreglos-florales-en-pereira",
+      "bouquet-de-flores-navideno-pereira-dosquebradas",
+      "arreglo-floral-navideno-pereira-dosquebradas",
+      "arreglo-floral-con-girasoles-pereira-dosquebradas-santa-rosa-de-cabal",
+      "flores-a-domicilio-en-pereira-colombia",
+      "ramo-buchon-en-pereira-dosquebradas",
+      "ramos-buchones-pereira-dosquebradas-santa-rosa-de-cabal",
+      "flores-san-valentin-pereira-or-flores-en-pereira",
+      "arreglo-de-flores-fantasia-floral-con-fresas-arreglos-de-flores-en-pereira",
+      "ancheta-dulce-armonia-anchetas-sorpresa-en-pereira",
+      "arreglo-floral-romance-arreglos-con-orquideas-en-pereira",
+      "floristerias-a-domicilio-en-pereira-dosquebradas-santa-rosa-de-cabal",
+      "arreglos-florales-catolicos",
+      "centros-de-mesa-en-pereira-y-dosquebradas-centro-de-mesa-primaveral",
+      "arreglos-florales-dia-de-las-madres-pereira",
+      "detalles-dia-de-las-madres-en-pereira-y-dosquebradas",
+      "ancheta-orquidea-orquideas-en-pereira",
+      "arreglo-floral-dia-de-las-madres-or-arreglos-florales-en-pereira",
+      "regalos-para-el-dia-de-las-madres-en-pereira-y-dosquebradas",
+      "arreglo-floral-jardin-del-sol-naciente-arreglos-florales-en-pereira-dosquebradas",
+      "bouquet-amor-genuino-or-ramos-de-rosas-en-pereira",
+      "regalos-de-amor-y-amistad-para-mujer-en-pereira-arreglos-florales-a-domicilio",
+      "flores-de-amor-y-amistad-en-pereira-dosquebradas",
+      "floristerias-en-pereira-amor-y-amistad-2024",
+      "arreglo-floral-san-valentin-pereira-dosquebradas",
+      "caja-de-flores-y-chocolates-i-love-you-or-detalles-pereira",
+      "arreglo-floral-lovely-moments-or-arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "fresas-con-crema-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-nostalgia-or-flores-a-domicilio-dia-de-las-madres-pereira-dosquebradas",
+      "arreglo-floral-del-campo-or-flores-en-pereira-or-flores-a-domicilio",
+      "flores-a-domicilio-en-pereira-dia-de-la-madre",
+      "arreglo-floral-only-you-detalles-de-amor-y-amistad-en-pereira",
+      "combo-conquista-flores-y-peluches-pereira-dosquebradas",
+      "caja-premium-rosas-and-fresas-deluxe-ramos-en-caja-or-floristeria-pereira-lovely-moments",
+      "caja-valantine-or-valentines-gifts-pereira-or-flower-shop-in-pereira",
+      "flores-san-valentin-or-flores-en-pereira-or-floristerias-a-domicilio",
+      "combo-amore-mio-or-flores-de-amor-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-inmortal-or-flores-preservadas-para-mama-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-sonrisas-para-mama-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ramo-de-velas-aromatizadas-lovely-moments-or-velas-aromaticas-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-mama-consentida-or-flores-de-lujo-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-corazon-romance-or-caja-de-rosas-en-forma-de-corazon-or-regalos-amory-amistad",
+      "arreglo-floral-cuadro-de-amor-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/af40-Yg2aEMWM9LTrOjv1.jpg",
+    "imageAlt": "Arreglos florales",
+    "group": "Flores",
+    "source": "https://lovelymoments.com.co/arreglos-florales-a-domicilio-en-pereira-colombia"
+  },
+  {
+    "slug": "bouquets-de-flores-en-pereira",
+    "title": "Bouquets de flores",
+    "kind": "collection",
+    "intro": "Ramos envueltos para entregar en mano, desde composiciones pequeñas hasta ramos buchones.",
+    "sections": [
+      {
+        "heading": "Color y acompañamientos",
+        "text": "Para elegir, mira qué flores forman el ramo y si el diseño incorpora fresas, chocolates u otros detalles.",
+        "links": [
+          {
+            "slug": "fresas-con-chocolate-en-pereira",
+            "label": "Fresas con chocolate"
+          },
+          {
+            "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+            "label": "Arreglos florales"
+          },
+          {
+            "slug": "el-lenguaje-de-las-flores-significado-de-los-colores-y-tipos",
+            "label": "El significado de los colores y las flores"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "fresas-con-chocolate-en-pereira",
+        "label": "Fresas con chocolate"
+      },
+      {
+        "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+        "label": "Arreglos florales"
+      },
+      {
+        "slug": "el-lenguaje-de-las-flores-significado-de-los-colores-y-tipos",
+        "label": "El significado de los colores y las flores"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWSC0P8YRGCVE9Z89HXC477"
+    ],
+    "productSlugs": [
+      "arreglos-con-rosas-pereira",
+      "girasoles-a-domicilio-en-pereira-dosquebradas",
+      "bouquet-de-girasoles-en-pereira",
+      "floristerias-en-pereira-rosas-y-fresas",
+      "bouquet-mas-bombones-de-chocolate-combo-dulzura-chocolates-rellenos-pereira-",
+      "ramos-de-rosas-y-chocolates",
+      "bouquet-de-lujo-happy-bouquet-de-rosas-pereira",
+      "arreglo-de-flores-para-enviar-a-pereira-dosquebradas",
+      "regalos-pereira-a-domicilio",
+      "bouquet-arcoiris-bouquet-de-flores-a-domicilio-en-pereira",
+      "bouquet-eterno-bouquet-de-flores-pereira",
+      "ramos-de-chocolates-y-flores-pereira-dosquebradas",
+      "bouquet-de-girasoles-pereira",
+      "floristeria-pereira-a-domicilio",
+      "bouquet-jp-con-fresas-recubiertas-de-chocolate-floristerias-en-pereira-centro",
+      "bouquet-joya-flores-con-licores-en-pereira",
+      "bouquet-de-lujo-en-pereira-dosquebradas",
+      "bouquet-premium-de-rosas-eternas-bouquet-de-rosas-eternas",
+      "bouquet-mini-de-rosas-eternas-de-cinta-regalos-de-aniversario-a-domicilio-en-pereira",
+      "flores-pereira-bouquet-mariposa-de-rosas-eternas",
+      "regalos-para-una-fiesta-de-15-en-pereira",
+      "arreglos-con-peluches-y-flores",
+      "rosas-a-domicilio-en-pereira-dosquebradas-santa-rosa-de-cabal",
+      "bouquet-de-flores-navideno-pereira-dosquebradas",
+      "ramo-buchon-en-pereira-dosquebradas",
+      "ramos-buchones-pereira-dosquebradas-santa-rosa-de-cabal",
+      "bouquet-queen-de-rosas-eternas-or-flores-en-pereira-online-ramo-estilo-buchon-pereira",
+      "ramo-buchon-elegance-or-flores-en-pereira-a-domicilio-ramo-buchon-de-rosas-eternas",
+      "ramos-buchones-de-graduacion-or-regalos-de-graduacion-en-pereira",
+      "ramo-buchon-hello-kitty-or-detalles-pereira-ramo-estilo-buchon-de-rosas-eternas",
+      "bouquet-roma-ramos-buchones-en-pereira-y-dosquebradas",
+      "flores-a-domicilio-en-dosquebradas-pago-online-flores-de-lujo-en-pereira-colombia",
+      "bouquet-quinceanera-ramos-para-quince-anos-pereira-ramos-para-quinceanera",
+      "ramos-de-rosas-eternas-pereira-risaralda",
+      "ramos-de-rosas-en-pereira-santa-rosa-de-cabal-dosquebradas",
+      "ramos-de-flores-minimalistas-en-pereira",
+      "floristeria-en-pereira-pagos-online",
+      "enviar-flores-a-pereira-colombia",
+      "ramos-de-flores-en-pereira",
+      "bouquet-amor-genuino-or-ramos-de-rosas-en-pereira",
+      "regalos-de-amor-y-amistad-para-mujer-en-pereira-arreglos-florales-a-domicilio",
+      "ramos-de-rosas-en-pereira",
+      "ramos-de-flores-a-domicilio-en-pereira",
+      "ramos-de-flores-pereira",
+      "ramo-de-rosas-san-valentin-pereira-dosquebradas",
+      "ramos-de-flores-en-pereira-a-domicilio",
+      "bouquet-mujeres-divinas-or-ramos-de-flores-en-pereira-or-floristerias-a-domicilio",
+      "bouquet-ensueno-or-flores-para-mama-en-pereira-dosquebradas-flores-pereira",
+      "bouquet-madre-especial-or-flores-en-pereira-a-domicilio",
+      "bouquet-olga-flores-eternas-pereira-colombia-tulipanes",
+      "bouquet-marina-or-ramos-de-flores-eternas-pereira-colombia-or-girasoles-margaritas",
+      "bouquet-miriam-or-tulipanes-pereira-colombia",
+      "bouquet-yolanda-or-ramo-de-flores-eternas-colombia",
+      "bouquet-nelly-or-tulipanes-pereira-or-flores-eternas-colombia",
+      "bouquet-magnolia-or-ramos-de-flores-eternas-or-pereira-colombia",
+      "bouquet-aida-or-floristeria-de-lujo-en-pereira-or-flores-eternas",
+      "bouquet-gloria-mini-or-flores-eternas-pereira-dosquebradas",
+      "bouquet-luz-or-floristeria-de-lujo-en-pereira-dosquebradas",
+      "ramo-de-flores-bonita-or-flores-en-pereira-or-flower-shop",
+      "bouquet-lovely-moments-or-ramos-de-flores-en-pereira-or-floristeria-en-pereira-or-dosquebradas",
+      "bouquet-dulzura-or-ramos-de-flores-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/b09-mP476lMlZBiz068k.jpg",
+    "imageAlt": "Bouquets de flores",
+    "group": "Flores",
+    "source": "https://lovelymoments.com.co/bouquets-de-flores-en-pereira"
+  },
+  {
+    "slug": "rosas-eternas",
+    "title": "Rosas eternas de cinta",
+    "kind": "collection",
+    "intro": "Rosas artesanales de cinta en ramos, cajas y canastas que se pueden conservar después de la ocasión.",
+    "sections": [
+      {
+        "heading": "El tamaño del ramo",
+        "text": "Encontrarás desde rosas individuales hasta ramos buchones. Cada referencia identifica el formato, los colores y los adornos.",
+        "links": [
+          {
+            "slug": "flores-eternas",
+            "label": "Flores eternas"
+          },
+          {
+            "slug": "bouquets-de-flores-en-pereira",
+            "label": "Bouquets de flores"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "flores-eternas",
+        "label": "Flores eternas"
+      },
+      {
+        "slug": "bouquets-de-flores-en-pereira",
+        "label": "Bouquets de flores"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWSBEGR6WQ8K7M8B4R6YC0A"
+    ],
+    "productSlugs": [
+      "combo-cute-chocolates-mas-rosa-eterna-floristeria",
+      "rosas-eternas-de-cinta-individual-flores-baratas-pereira",
+      "bouquet-premium-de-rosas-eternas-bouquet-de-rosas-eternas",
+      "bouquet-mini-de-rosas-eternas-de-cinta-regalos-de-aniversario-a-domicilio-en-pereira",
+      "flores-pereira-bouquet-mariposa-de-rosas-eternas",
+      "regalos-para-una-fiesta-de-15-en-pereira",
+      "arreglo-armonia-de-rosas-eternas-arreglo-de-rosas-eternas-pereira-dosquebradas",
+      "flores-y-regalos-pereira",
+      "rosas-eternas-pereira-dosquebradas",
+      "arreglo-de-rosas-eternas",
+      "arreglos-con-peluches-y-flores",
+      "yugos-para-quinceanera-en-pereira",
+      "bouquet-queen-de-rosas-eternas-or-flores-en-pereira-online-ramo-estilo-buchon-pereira",
+      "ramo-buchon-elegance-or-flores-en-pereira-a-domicilio-ramo-buchon-de-rosas-eternas",
+      "ramos-buchones-de-graduacion-or-regalos-de-graduacion-en-pereira",
+      "ramo-buchon-hello-kitty-or-detalles-pereira-ramo-estilo-buchon-de-rosas-eternas",
+      "bouquet-quinceanera-ramos-para-quince-anos-pereira-ramos-para-quinceanera",
+      "ramos-de-rosas-eternas-pereira-risaralda"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/re09-d953NQng11iKBMWG.jpg",
+    "imageAlt": "Rosas eternas de cinta",
+    "group": "Flores",
+    "source": "https://lovelymoments.com.co/rosas-eternas"
+  },
+  {
+    "slug": "flores-eternas",
+    "title": "Flores eternas",
+    "kind": "collection",
+    "intro": "Ramos artesanales de tulipanes y otras flores duraderas, hechos para conservarse.",
+    "sections": [
+      {
+        "heading": "Envíos dentro de Colombia",
+        "text": "Además de las entregas locales en Risaralda, esta línea admite envíos nacionales. Pide al equipo la cotización para tu destino.",
+        "links": [
+          {
+            "slug": "rosas-eternas",
+            "label": "Rosas eternas de cinta"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "rosas-eternas",
+        "label": "Rosas eternas de cinta"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01JVMNDP1AJWV40NHXNQMRC2X9"
+    ],
+    "productSlugs": [
+      "bouquet-olga-flores-eternas-pereira-colombia-tulipanes",
+      "bouquet-marina-or-ramos-de-flores-eternas-pereira-colombia-or-girasoles-margaritas",
+      "bouquet-miriam-or-tulipanes-pereira-colombia",
+      "bouquet-yolanda-or-ramo-de-flores-eternas-colombia",
+      "bouquet-nelly-or-tulipanes-pereira-or-flores-eternas-colombia",
+      "bouquet-magnolia-or-ramos-de-flores-eternas-or-pereira-colombia",
+      "bouquet-aida-or-floristeria-de-lujo-en-pereira-or-flores-eternas",
+      "bouquet-gloria-mini-or-flores-eternas-pereira-dosquebradas",
+      "bouquet-luz-or-floristeria-de-lujo-en-pereira-dosquebradas"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/fe-05-ALpe9DKRJGI72an1.jpg",
+    "imageAlt": "tulipanes pereira",
+    "group": "Flores",
+    "source": "https://lovelymoments.com.co/flores-eternas"
+  },
+  {
+    "slug": "regalos-decorativos-pereira",
+    "title": "Regalos decorativos",
+    "kind": "collection",
+    "intro": "Porcelanas, cerámicas, velas y candelabros para una mesa, una repisa o un rincón especial.",
+    "sections": [
+      {
+        "heading": "Elige una pieza",
+        "text": "Compara la figura, la base y el acabado de cada referencia. También se pueden consultar detalles para regalar en empresas.",
+        "links": [
+          {
+            "slug": "regalos-corporativos-pereira",
+            "label": "Regalos para empresas"
+          },
+          {
+            "slug": "regalos-para-mujer-en-pereira",
+            "label": "Regalos para mujer"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "regalos-corporativos-pereira",
+        "label": "Regalos para empresas"
+      },
+      {
+        "slug": "regalos-para-mujer-en-pereira",
+        "label": "Regalos para mujer"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWS98G4RR3ZF0VQZ3EZQ7GQ"
+    ],
+    "productSlugs": [
+      "anchetas-regalo-a-domicilio-en-pereira-dosquebradas",
+      "porcelana-de-alas-de-angel-pereira",
+      "candelabro-abrazo-de-paz-candelabro-de-alas-de-angel",
+      "candelabros-decorativos-pereira-dosquebradas",
+      "porcelanas-pereira",
+      "teddy-floral-porcelana-de-oso-teddy-pereira",
+      "porcelanas-de-osos-teddy-pereira",
+      "oso-de-porcelana-pereira",
+      "angel-de-la-tierra-porcelanas-decoradas-para-regalo-en-pereira",
+      "florero-venus-de-milo-florero-cabeza-de-venus-pereira",
+      "velas-pereira-decorativas-velas-artesanales-aromaticas",
+      "caja-de-velas-x-3-or-velas-aromaticas-pereira-or-regalos-para-empresas",
+      "dia-de-las-madres-or-velas-aromaticas-pereira-or-arreglos-florales-y-velas-arreglos-con-velas-pereira",
+      "velas-aromaticas-or-oso-ternura-or-velas-pereira",
+      "oso-teddy-con-vela-adicional-or-velas-pereira-or-velas-artesanales-dosquebradas",
+      "velas-ramo-de-tulipanes-or-velas-aromaticas-or-velas-artesanales",
+      "vela-corazon-or-velas-pereira-or-velas-artesanales-dosquebradas"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/dc13-dOq7jgVKNyIQk8OD.jpg",
+    "imageAlt": "Regalos decorativos",
+    "group": "Regalos",
+    "source": "https://lovelymoments.com.co/regalos-decorativos-pereira"
+  },
+  {
+    "slug": "peluches-pereira-or-peluches-dosquebradas-or-peluches-a-domicilio",
+    "title": "Peluches a domicilio",
+    "kind": "collection",
+    "intro": "Osos, conejos y personajes como Hello Kitty y Lotso, en tamaños que cambian según las existencias.",
+    "sections": [
+      {
+        "heading": "Pide el catálogo de peluches",
+        "text": "Escríbenos por WhatsApp para ver los diseños y tamaños disponibles. Puedes encargar uno solo o preguntar por un arreglo que incluya peluche.",
+        "links": [
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          },
+          {
+            "slug": "regalos-para-ninos-en-pereira",
+            "label": "Regalos para niñas y niños"
+          }
+        ]
+      },
+      {
+        "heading": "Entrega local",
+        "text": "Coordinamos el domicilio en Pereira, Dosquebradas y Santa Rosa de Cabal.",
+        "links": [
+          {
+            "slug": "floristerias-a-domicilio-en-pereira-colombia",
+            "label": "Flores a domicilio en Pereira"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-dosquebradas",
+            "label": "Flores a domicilio en Dosquebradas"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-santa-rosa-de-cabal",
+            "label": "Flores a domicilio en Santa Rosa de Cabal"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      },
+      {
+        "slug": "regalos-para-ninos-en-pereira",
+        "label": "Regalos para niñas y niños"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira-colombia",
+        "label": "Flores a domicilio en Pereira"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-dosquebradas",
+        "label": "Flores a domicilio en Dosquebradas"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-santa-rosa-de-cabal",
+        "label": "Flores a domicilio en Santa Rosa de Cabal"
+      }
+    ],
+    "categoryIds": [],
+    "productSlugs": [],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/an06b---ancheta-recien-nacido-mP4NkgRXE6HWGE0q.jpg",
+    "imageAlt": "peluches dosquebradas",
+    "group": "Regalos",
+    "source": "https://lovelymoments.com.co/peluches-pereira-or-peluches-dosquebradas-or-peluches-a-domicilio",
+    "externalLinks": [
+      {
+        "label": "WhatsApp",
+        "url": "https://wa.me/573213920327"
+      }
+    ]
+  },
+  {
+    "slug": "regalos-corporativos-pereira",
+    "title": "Regalos para empresas",
+    "kind": "collection",
+    "intro": "Regalos personalizados para colaboradores, clientes y eventos en Pereira, Dosquebradas y Santa Rosa de Cabal.",
+    "sections": [
+      {
+        "heading": "Cotizaciones",
+        "text": "Cuéntanos el número de personas, la fecha y el presupuesto. Se pueden preparar chocolates, flores de temporada y anchetas con detalles de la empresa.",
+        "links": [
+          {
+            "slug": "chocolates-pereira",
+            "label": "Chocolates artesanales"
+          },
+          {
+            "slug": "anchetas-pereira",
+            "label": "Anchetas"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "chocolates-pereira",
+        "label": "Chocolates artesanales"
+      },
+      {
+        "slug": "anchetas-pereira",
+        "label": "Anchetas"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWSAB2ANCP6G8VN875769R8"
+    ],
+    "productSlugs": [
+      "regalos-para-empresas-en-pereira",
+      "combo-cute-chocolates-mas-rosa-eterna-floristeria",
+      "regalos-corporativos-pereira-dosquebradas",
+      "caja-de-fresas-recubiertas-con-chocolate-en-pereira",
+      "regalos-para-el-dia-de-la-mujer-en-pereira",
+      "chocolates-navidenos-pereira-dosquebradas",
+      "fresas-recubiertas-de-chocolate-navidenas-pereira",
+      "ancheta-navidena-pequena-navidad-regalos-para-empresas-mini-ancheta-navidena",
+      "kit-chocobombas-x-2-chocobombs-pereira",
+      "anchetas-de-amor-y-amistad-para-hombres-en-pereira-ancheta-caballero",
+      "chocolates-de-amor-y-amistad-or-bombones-pasion-de-chocolate-en-pereira",
+      "anchetas-navidenas-pereira-or-ancheta-merry-christmas",
+      "desayuno-sorpresa-navideno-or-desayunos-navidenos-pereira",
+      "anchetas-pereira-or-anchetas-de-navidad-a-domicilio",
+      "anchetas-navidenas-pereira-or-anchetas-de-lujo-en-pereira",
+      "anchetas-a-domicilio-en-pereira-or-anchetas-para-empresas",
+      "ancheta-lovely-moments-or-detalles-personalizados-pereira",
+      "chocobombas-pereira-or-detalles-para-empresas-en-pereira-dosquebradas",
+      "kit-ano-viejo-pereira-dosquebradas-or-munecos-de-ano-viejo",
+      "fresas-con-crema-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-de-fresas-con-chocolate-or-dia-de-la-mujer-en-pereira",
+      "ramos-de-flores-en-pereira-a-domicilio",
+      "anchetas-para-mujer-en-pereira-or-detalles-para-mujer",
+      "mug-personalizado-dia-de-las-madres-pereira-or-regalos-para-empresas",
+      "burbujas-de-chocolate-or-regalos-empresariales-dia-de-las-madres-pereira",
+      "caja-de-velas-x-3-or-velas-aromaticas-pereira-or-regalos-para-empresas",
+      "dia-de-las-madres-or-velas-aromaticas-pereira-or-arreglos-florales-y-velas-arreglos-con-velas-pereira",
+      "caja-feliz-navidad-or-anchetas-navidenas-or-anchetas-de-navidad",
+      "ancheta-brindis-navideno-or-anchetas-de-lujo-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ancheta-navidena-dulce-armonia-or-anchetas-navidenas-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-de-velas-navidenas-or-velas-personalizadas-pereira",
+      "set-de-velas-artesanales-navidenas-or-combo-1-or-velas-aromaticas-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "velas-personalizadas-pereira-or-combo-2-or-velas-artesanales-",
+      "velas-artesanales-en-pereira-or-combo-3-or-pereira-or-dosquebradas-or-velas-navidenas",
+      "set-de-velas-or-combo-4-or-velas-aromaticas-pereira-or-dosquebradas-or-santa-rosa-de-cabal-",
+      "vela-artesanal-copo-de-nieve-or-velas-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "vela-navidena-angel-de-luz-or-velas-navidenas-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ancheta-de-lujo-royal-or-anchetas-navidenas-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "tabla-de-quesos-gourmet-or-tablas-de-queso-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-navidena-sorpresa-or-torre-navidena-or-tapas-espanolas-pereira",
+      "combo-empresarial-or-tabla-de-queso-or-detalles-empresariales",
+      "tapas-espanolas-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal-or-tapas-sevillanas",
+      "velas-aromaticas-or-oso-ternura-or-velas-pereira",
+      "velas-ramo-de-tulipanes-or-velas-aromaticas-or-velas-artesanales",
+      "vela-corazon-or-velas-pereira-or-velas-artesanales-dosquebradas",
+      "oso-teddy-con-vela-adicional-or-velas-pereira-or-velas-artesanales-dosquebradas"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/ch22-ALpOjZvZ9pujEL8g.jpg",
+    "imageAlt": "Regalos para empresas",
+    "group": "Regalos",
+    "source": "https://lovelymoments.com.co/regalos-corporativos-pereira",
+    "externalLinks": [
+      {
+        "label": "WhatsApp",
+        "url": "https://wa.me/573213920327"
+      }
+    ]
+  },
+  {
+    "slug": "regalos-de-cumpleanos-a-domicilio-en-pereira",
+    "title": "Regalos de cumpleaños",
+    "kind": "collection",
+    "intro": "Desayunos, fresas, arreglos y chocolates para celebrar a quien cumple años.",
+    "sections": [
+      {
+        "heading": "Empieza por sus gustos",
+        "text": "Si prefiere algo para comer, mira las cajas de fresas y los desayunos. Si colecciona flores, elige un ramo con sus colores.",
+        "links": [
+          {
+            "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+            "label": "Desayunos sorpresa"
+          },
+          {
+            "slug": "fresas-con-chocolate-en-pereira",
+            "label": "Fresas con chocolate"
+          },
+          {
+            "slug": "bouquets-de-flores-en-pereira",
+            "label": "Bouquets de flores"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+        "label": "Desayunos sorpresa"
+      },
+      {
+        "slug": "fresas-con-chocolate-en-pereira",
+        "label": "Fresas con chocolate"
+      },
+      {
+        "slug": "bouquets-de-flores-en-pereira",
+        "label": "Bouquets de flores"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWS7C0S9MG0FT6MZ48AV3S3"
+    ],
+    "productSlugs": [
+      "anchetas-regalo-a-domicilio-en-pereira-dosquebradas",
+      "ancheta-con-vino-y-tabla-de-quesos-anchetas-a-domicilio-en-pereira",
+      "ancheta-de-regalo-para-ninos-y-ninas-en-pereira-dosquebradas",
+      "ancheta-con-peluches-para-bebe-en-pereira-dosquebradas",
+      "ramos-de-flores-pereira-dosquebradas",
+      "arreglos-de-rosas-en-pereira",
+      "arreglo-floral-con-rosas-pereira-y-el-eje-cafetero",
+      "canasta-sorpresa-pereira",
+      "floristeria-economica-pereira",
+      "regalos-para-conquistar-en-pereira",
+      "caja-de-flores-ternura-arreglos-con-chocolates-en-pereira",
+      "arreglo-de-rosas-pereira-dosquebradas",
+      "caja-en-forma-de-corazon-con-fresas-y-rosas-en-pereira-dosquebradas",
+      "arreglo-floral-con-fresas-de-chocolate-en-pereira",
+      "arreglo-floral-con-globos-pereira",
+      "flores-de-cumpleanos-a-domicilio-en-pereira-dosquebradas",
+      "canasta-de-flores-de-lujo-romance-arreglo-floral-a-domicilio-pereira",
+      "canasta-de-flores-pereira",
+      "arreglo-floral-para-enamorar-en-pereira-dosquebradas",
+      "arreglo-floral-en-caja-de-corazon-en-pereira",
+      "arreglo-floral-con-girasoles-en-pereira-dosquebradas",
+      "arreglo-floral-magia-arreglo-floral-corazon-pereira",
+      "arreglo-floral-frescura",
+      "arreglo-floral-dulces-15-regalos-para-15-anos-en-pereira",
+      "arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "arreglo-floral-de-lujo-en-pereira",
+      "arreglos-florales-a-domicilio-en-pereira",
+      "arreglo-floral-celestial",
+      "arreglos-con-rosas-pereira",
+      "girasoles-a-domicilio-en-pereira-dosquebradas",
+      "bouquet-de-girasoles-en-pereira",
+      "floristerias-en-pereira-rosas-y-fresas",
+      "bouquet-mas-bombones-de-chocolate-combo-dulzura-chocolates-rellenos-pereira-",
+      "ramos-de-rosas-y-chocolates",
+      "bouquet-de-lujo-happy-bouquet-de-rosas-pereira",
+      "arreglo-de-flores-para-enviar-a-pereira-dosquebradas",
+      "regalos-pereira-a-domicilio",
+      "bouquet-arcoiris-bouquet-de-flores-a-domicilio-en-pereira",
+      "bouquet-eterno-bouquet-de-flores-pereira",
+      "ramos-de-chocolates-y-flores-pereira-dosquebradas",
+      "bouquet-de-girasoles-pereira",
+      "floristeria-pereira-a-domicilio",
+      "bouquet-jp-con-fresas-recubiertas-de-chocolate-floristerias-en-pereira-centro",
+      "bouquet-joya-flores-con-licores-en-pereira",
+      "bouquet-de-lujo-en-pereira-dosquebradas",
+      "oso-sorpresa-de-chocolate-floristeria-lovely",
+      "unicornio-de-chocolate-unicornio-sorpresa-para-ninas-pereira",
+      "corazon-sorpresa-de-chocolate-regalos-de-aniversario-pereira-dosquebradas",
+      "regalo-especial-para-conquistar-pereira-dosquebradas",
+      "chocolates-para-ninos-pereira-caja-de-chocolates-love-chocolate",
+      "caja-de-chocolates-de-lujo-pereira",
+      "regalos-para-empresas-en-pereira",
+      "combo-cute-chocolates-mas-rosa-eterna-floristeria",
+      "rosas-y-chocolates-pereira",
+      "caja-london-con-rosas-y-tableta-de-chocolate-artesanal-regalos-de-lujo-hechos-con-chocolate-pereira",
+      "regalos-corporativos-pereira-dosquebradas",
+      "regalos-de-cumpleanos-para-mujer-en-pereira-dosquebradas",
+      "caja-serenata-con-vino-rosas-y-fresas-recubiertas-con-chocolate-cajas-regalo-con-vino-pereira",
+      "caja-regalo-con-mensaje-o-nombre-de-chocolate-regalos-originales-pereira",
+      "fresas-cubiertas-pereira-dosquebradas",
+      "tableta-de-chocolates-pereira",
+      "chocolates-finos-pereira-dosquebradas",
+      "regalo-con-chocolates-pereira",
+      "bombones-de-chocolate-para-mujer-en-pereira",
+      "caja-de-bombones-floral-regalos-para-mamas-en-pereira",
+      "caja-de-bombones-amor-infinito-caja-de-chocolates-pereira",
+      "porcelana-de-alas-de-angel-pereira",
+      "candelabro-abrazo-de-paz-candelabro-de-alas-de-angel",
+      "candelabros-decorativos-pereira-dosquebradas",
+      "teddy-floral-porcelana-de-oso-teddy-pereira",
+      "desayuno-sorpresa-para-ninos-pereira-dosquebradas",
+      "abrazo-matutino-desayuno-sorpresa-a-domicilio-desayuno-sorpresa-de-lujo-para-mujeres-pereira",
+      "dulce-desayuno-sorpresa-a-domicilio-desayuno-sorpresa-personalizado-a-domicilio-pereira",
+      "desayuno-sorpresa-especial-para-hombres-pereira",
+      "desayuno-sorpresa-hombres-dosquebradas-pereira",
+      "desayuno-sorpresa-hombre-pereira",
+      "desayunos-sorpresa-para-hombres-en-pereira",
+      "desayunos-sorpresa-pereira-dosquebradas-santa-rosa-de-cabal",
+      "desayuno-lovely-para-ella-desayuno-sorpresa-con-flores-a-domicilio-pereira",
+      "desayuno-sorpresa-para-mujer-pereira-dosquebradas",
+      "desayuno-sorpresa-a-domicilio-economico-pereira",
+      "desayuno-deluxe-para-ella-a-domicilio-desayuno-sorpresa-para-mujer-en-pereira",
+      "desayuno-sorpresa-de-cumpleanos-a-domicilio-en-pereira",
+      "desayunos-sorpresa-en-pereira-dosquebradas-y-santa-rosa-de-cabal-risaralda",
+      "desayuno-sorpresa-a-domicilio-en-pereira-lovely-moments",
+      "desayuno-sorpresa-para-ninos-pereira-dosquebradas-santa-rosa",
+      "caja-de-fresas-recubiertas-con-chocolate-bombonita-regalos-a-pereira-desde-espana",
+      "regalos-sorpresa-en-pereira-fresas-dosquebradas",
+      "fresas-con-chocolate-en-pereira-dosquebradas-y-santa-rosa-de-cabal-decoradas",
+      "caja-de-fresas-recubiertas-con-chocolate-en-pereira",
+      "torre-de-fresas-recubiertas-con-chocolate-pereira",
+      "caja-elixir-de-fresas-y-corazon-de-chocolate-regalo-para-una-nina-en-pereira",
+      "regalos-para-el-dia-de-la-mujer-en-pereira",
+      "caja-de-fresas-con-chocolate",
+      "fresas-recubiertas-pereira-dosquebradas",
+      "fresas-recubiertas-de-chocolate-para-ninas",
+      "ancheta-de-lujo-para-hombres-pereira",
+      "caja-amar-de-fresas-con-chocolate-x-5-unidades-regalos-de-grado-a-domicilio-en-pereira",
+      "caja-sorpresa-regalos-sorpresa-para-hombres-en-pereira",
+      "anchetas-para-hombre-en-pereira",
+      "regalos-para-el-dia-del-hombre-en-pereira",
+      "regalos-para-hombres-sencillos-en-pereira",
+      "caja-regalo-the-one-para-hombres-regalos-de-aniversario-para-hombres-pereira",
+      "regalos-para-el-dia-del-padre-en-pereira",
+      "arreglos-con-peluches-y-flores",
+      "arreglo-de-flores-pereira-dosquebradas-con-frutas",
+      "mini-donuts-decoradas-pereira",
+      "rosas-a-domicilio-en-pereira-dosquebradas-santa-rosa-de-cabal",
+      "cajas-de-flores-pereira-con-fresas-grande-arreglos-florales-en-pereira",
+      "desayunos-sorpresa-en-pereira-feliz-cumpleanos",
+      "tabla-de-quesos-toscana-tablas-de-queso-pereira-tablas-de-queso-pereira",
+      "flores-a-domicilio-en-pereira-colombia",
+      "anchetas-de-frutas-pereira-dosquebradas",
+      "flores-san-valentin-pereira-or-flores-en-pereira",
+      "ramo-buchon-hello-kitty-or-detalles-pereira-ramo-estilo-buchon-de-rosas-eternas",
+      "flores-a-domicilio-en-dosquebradas-pago-online-flores-de-lujo-en-pereira-colombia",
+      "arreglo-de-flores-fantasia-floral-con-fresas-arreglos-de-flores-en-pereira",
+      "ancheta-dulce-armonia-anchetas-sorpresa-en-pereira",
+      "arreglo-floral-romance-arreglos-con-orquideas-en-pereira",
+      "floristerias-a-domicilio-en-pereira-dosquebradas-santa-rosa-de-cabal",
+      "arreglos-florales-catolicos",
+      "ramos-de-rosas-eternas-pereira-risaralda",
+      "ramos-de-rosas-en-pereira-santa-rosa-de-cabal-dosquebradas",
+      "bouquet-amor-genuino-or-ramos-de-rosas-en-pereira",
+      "desayuno-sorpresa-pereira-dosquebradas-or-desayuno-paris-lovely-moments",
+      "desayunos-sorpresa-para-hombres-en-pereira-or-desayunos-dosquebradas",
+      "desayunos-sorpresa-para-mujeres-en-pereira-dosquebradas-desayuno-lovely-vip",
+      "flores-de-amor-y-amistad-en-pereira-dosquebradas",
+      "floristerias-en-pereira-amor-y-amistad-2024",
+      "anchetas-de-amor-y-amistad-para-hombres-en-pereira-ancheta-caballero",
+      "desayuno-sorpresa-margarita-or-desayunos-sorpresa-para-mujer-en-pereira-or-dosquebradas",
+      "fresas-con-crema-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ramos-de-flores-en-pereira-a-domicilio",
+      "anchetas-para-mujer-en-pereira-or-detalles-para-mujer",
+      "combo-conquista-flores-y-peluches-pereira-dosquebradas",
+      "desayuno-sorpresa-bellos-momentos-or-desayunos-sorpresa-personalizados-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-premium-rosas-and-fresas-deluxe-ramos-en-caja-or-floristeria-pereira-lovely-moments",
+      "bouquet-lovely-moments-or-ramos-de-flores-en-pereira-or-floristeria-en-pereira-or-dosquebradas",
+      "oso-teddy-con-vela-adicional-or-velas-pereira-or-velas-artesanales-dosquebradas",
+      "velas-ramo-de-tulipanes-or-velas-aromaticas-or-velas-artesanales"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/ds18-m7VMzG4WbKcogzxB.jpg",
+    "imageAlt": "Regalos de cumpleaños",
+    "group": "Regalos",
+    "source": "https://lovelymoments.com.co/regalos-de-cumpleanos-a-domicilio-en-pereira"
+  },
+  {
+    "slug": "regalos-para-ninos-en-pereira",
+    "title": "Regalos para niñas y niños",
+    "kind": "collection",
+    "intro": "Figuras de chocolate, cajas de dulces y detalles con personajes para regalar en casa o en una fiesta.",
+    "sections": [
+      {
+        "heading": "Chocolate, peluches y sorpresas",
+        "text": "Explora las formas, cantidades y decoraciones que incluye cada referencia. Los diseños de peluches se consultan por WhatsApp.",
+        "links": [
+          {
+            "slug": "chocolates-pereira",
+            "label": "Chocolates artesanales"
+          },
+          {
+            "slug": "peluches-pereira-or-peluches-dosquebradas-or-peluches-a-domicilio",
+            "label": "Peluches a domicilio"
+          },
+          {
+            "slug": "regalos-de-pascua-pereira",
+            "label": "Pascua de chocolate"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "chocolates-pereira",
+        "label": "Chocolates artesanales"
+      },
+      {
+        "slug": "peluches-pereira-or-peluches-dosquebradas-or-peluches-a-domicilio",
+        "label": "Peluches a domicilio"
+      },
+      {
+        "slug": "regalos-de-pascua-pereira",
+        "label": "Pascua de chocolate"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWSCWNTBN017XMMK6T8CW98"
+    ],
+    "productSlugs": [
+      "ancheta-de-regalo-para-ninos-y-ninas-en-pereira-dosquebradas",
+      "ancheta-con-peluches-para-bebe-en-pereira-dosquebradas",
+      "canasta-sorpresa-pereira",
+      "oso-sorpresa-de-chocolate-floristeria-lovely",
+      "unicornio-de-chocolate-unicornio-sorpresa-para-ninas-pereira",
+      "corazon-sorpresa-de-chocolate-regalos-de-aniversario-pereira-dosquebradas",
+      "chocolates-para-ninos-pereira-caja-de-chocolates-love-chocolate",
+      "caja-de-chocolates-de-lujo-pereira",
+      "regalos-para-empresas-en-pereira",
+      "combo-cute-chocolates-mas-rosa-eterna-floristeria",
+      "rosas-y-chocolates-pereira",
+      "caja-london-con-rosas-y-tableta-de-chocolate-artesanal-regalos-de-lujo-hechos-con-chocolate-pereira",
+      "regalos-corporativos-pereira-dosquebradas",
+      "caja-regalo-con-mensaje-o-nombre-de-chocolate-regalos-originales-pereira",
+      "tableta-de-chocolates-pereira",
+      "desayuno-sorpresa-para-ninos-pereira-dosquebradas",
+      "dulce-desayuno-sorpresa-a-domicilio-desayuno-sorpresa-personalizado-a-domicilio-pereira",
+      "desayuno-sorpresa-para-ninos-pereira-dosquebradas-santa-rosa",
+      "fresas-recubiertas-pereira-dosquebradas",
+      "fresas-recubiertas-de-chocolate-para-ninas",
+      "oso-sorpresa-de-halloween-pereira",
+      "caja-de-fresas-de-halloween-triki-triki-x-12-dia-de-brujas-pereira",
+      "regalos-para-halloween-en-pereira-y-dosquebradas",
+      "regalos-para-fiestas-infantiles-pereira",
+      "regalos-de-halloween-para-ninos-pereira",
+      "fresas-navidenas-para-novenas-en-pereira",
+      "chocobombas-pereira-dosquebradas",
+      "oso-de-chocolate-de-papa-noel-pereira",
+      "trio-navideno-caja-x-3-unidades-de-fresas-recubiertas-con-chocolate-regalos-corporativos-navidenos-pereira",
+      "choco-bombas-de-navidad-en-pereira",
+      "chocobombas-pereira-dosquebradas-santa-rosa-de-cabal",
+      "fresas-navidenas-pereira",
+      "chocolates-navidenos-pereira",
+      "muneco-de-nieve-de-chocolate-pereira",
+      "postres-de-chocolate-a-domicilio-en-pereira",
+      "postres-a-domicilio-en-pereira",
+      "canasta-huevos-de-pascua-pereira",
+      "huevo-de-pascua-de-chocolate-pereira-dosquebradas",
+      "arreglos-con-peluches-y-flores",
+      "mini-donuts-decoradas-pereira",
+      "fresas-para-ninos-pereira",
+      "caja-de-mini-donuts-x-4-donuts-personalizadas-pereira",
+      "regalos-para-recien-nacido-en-pereira",
+      "ramos-buchones-de-graduacion-or-regalos-de-graduacion-en-pereira",
+      "ramo-buchon-hello-kitty-or-detalles-pereira-ramo-estilo-buchon-de-rosas-eternas",
+      "chocobombas-pereira-or-detalles-para-empresas-en-pereira-dosquebradas",
+      "ancheta-recien-nacido-pereira-or-detalles-para-bebe-en-pereira",
+      "desayuno-sorpresa-dulce-despertar-or-desayuno-sorpresa-para-ninos-y-ninas-or-pereira-or-dosquebradas-or-santa-rosa"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/ch02-YyvPel5eRwhPr61P.jpg",
+    "imageAlt": "Regalos para niñas y niños",
+    "group": "Regalos",
+    "source": "https://lovelymoments.com.co/regalos-para-ninos-en-pereira"
+  },
+  {
+    "slug": "regalos-para-hombres-pereira",
+    "title": "Regalos para hombres",
+    "kind": "collection",
+    "intro": "Anchetas, desayunos, chocolates y arreglos que se pueden escoger según los gustos de quien los recibe.",
+    "sections": [
+      {
+        "heading": "Elige el contenido",
+        "text": "Hay referencias con bebidas y combinaciones dulces o saladas. Comprueba en la ficha los elementos de la caja y los mensajes disponibles.",
+        "links": [
+          {
+            "slug": "tablas-de-quesos-en-pereira-dosquebradas",
+            "label": "Tablas de quesos"
+          },
+          {
+            "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+            "label": "Desayunos sorpresa"
+          },
+          {
+            "slug": "regalos-para-el-dia-del-padre",
+            "label": "Día del Padre"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "tablas-de-quesos-en-pereira-dosquebradas",
+        "label": "Tablas de quesos"
+      },
+      {
+        "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+        "label": "Desayunos sorpresa"
+      },
+      {
+        "slug": "regalos-para-el-dia-del-padre",
+        "label": "Día del Padre"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWS7SRQY1G3AXYX9NV993ZR"
+    ],
+    "productSlugs": [
+      "ancheta-con-vino-y-tabla-de-quesos-anchetas-a-domicilio-en-pereira",
+      "oso-sorpresa-de-chocolate-floristeria-lovely",
+      "corazon-sorpresa-de-chocolate-regalos-de-aniversario-pereira-dosquebradas",
+      "regalos-de-cumpleanos-para-mujer-en-pereira-dosquebradas",
+      "caja-serenata-con-vino-rosas-y-fresas-recubiertas-con-chocolate-cajas-regalo-con-vino-pereira",
+      "caja-regalo-con-mensaje-o-nombre-de-chocolate-regalos-originales-pereira",
+      "tableta-de-chocolates-pereira",
+      "chocolates-finos-pereira-dosquebradas",
+      "regalo-con-chocolates-pereira",
+      "bombones-de-chocolate-para-mujer-en-pereira",
+      "abrazo-matutino-desayuno-sorpresa-a-domicilio-desayuno-sorpresa-de-lujo-para-mujeres-pereira",
+      "dulce-desayuno-sorpresa-a-domicilio-desayuno-sorpresa-personalizado-a-domicilio-pereira",
+      "desayuno-sorpresa-a-domicilio-para-dos-personas-pereira",
+      "desayuno-sorpresa-especial-para-hombres-pereira",
+      "desayuno-sorpresa-hombres-dosquebradas-pereira",
+      "desayuno-sorpresa-hombre-pereira",
+      "desayunos-sorpresa-para-hombres-en-pereira",
+      "desayunos-sorpresa-pereira-dosquebradas-santa-rosa-de-cabal",
+      "desayuno-sorpresa-de-cumpleanos-a-domicilio-en-pereira",
+      "fresas-con-chocolate-en-pereira-dosquebradas-y-santa-rosa-de-cabal-decoradas",
+      "caja-elixir-de-fresas-y-corazon-de-chocolate-regalo-para-una-nina-en-pereira",
+      "regalos-para-el-dia-de-la-mujer-en-pereira",
+      "caja-de-fresas-con-chocolate",
+      "ancheta-de-lujo-para-hombres-pereira",
+      "caja-sorpresa-regalos-sorpresa-para-hombres-en-pereira",
+      "anchetas-para-hombre-en-pereira",
+      "regalos-para-el-dia-del-hombre-en-pereira",
+      "regalos-para-hombres-sencillos-en-pereira",
+      "caja-regalo-the-one-para-hombres-regalos-de-aniversario-para-hombres-pereira",
+      "regalos-para-el-dia-del-padre-en-pereira",
+      "desayunos-sorpresa-en-pereira-feliz-cumpleanos",
+      "tabla-de-quesos-toscana-tablas-de-queso-pereira-tablas-de-queso-pereira",
+      "tabla-de-quesos-navidena-pereira",
+      "ancheta-dulce-armonia-anchetas-sorpresa-en-pereira",
+      "anchetas-dia-del-padre-en-pereira",
+      "ancheta-dia-del-padre",
+      "desayuno-sorpresa-dia-del-padre-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "regalos-para-el-dia-del-padre-en-pereira-dosquebradas-y-santa-rosa-de-cabal1",
+      "desayuno-sorpresa-pereira-dosquebradas-or-desayuno-paris-lovely-moments",
+      "desayunos-sorpresa-para-hombres-en-pereira-or-desayunos-dosquebradas",
+      "anchetas-de-amor-y-amistad-para-hombres-en-pereira-ancheta-caballero",
+      "chocolates-de-amor-y-amistad-or-bombones-pasion-de-chocolate-en-pereira",
+      "ancheta-san-valentin-con-fresas-recubiertas-con-chocolate-or-anchetas-y-detalles-pereira-dosquebradas",
+      "caja-de-fresas-san-valentin-or-fresas-con-chocolate-pereira-dosquebradas",
+      "desayuno-sorpresa-dia-del-padre-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal1",
+      "ancheta-dia-del-padre-or-arquitecto-de-suenos-or-pereria",
+      "caja-aventura-or-detalles-dia-del-padre-en-pereira-dosquebradas",
+      "tapas-espanolas-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal-or-tapas-sevillanas",
+      "desayuno-sorpresa-para-hombres-desayuno-sorpresa-arriero",
+      "desayuno-sorpresa-para-el-dia-del-padre-desayuno-sorpresa-papa-de-lujo",
+      "desayuno-sorpresa-carta-de-amor-or-desayunos-sorpresa-elegantes-amor-y-amistad"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/pe07-AR07paj2ZXFZrGel.jpg",
+    "imageAlt": "Regalos para hombres",
+    "group": "Regalos",
+    "source": "https://lovelymoments.com.co/regalos-para-hombres-pereira"
+  },
+  {
+    "slug": "regalos-para-mujer-en-pereira",
+    "title": "Regalos para mujer",
+    "kind": "collection",
+    "intro": "Flores, chocolates, fresas y detalles que se pueden adaptar a la ocasión y al mensaje.",
+    "sections": [
+      {
+        "heading": "De la mesa al florero",
+        "text": "Escoge un ramo, una caja de fresas o un desayuno para regalar. La tienda recibe pedidos desde Colombia y desde el exterior.",
+        "links": [
+          {
+            "slug": "bouquets-de-flores-en-pereira",
+            "label": "Bouquets de flores"
+          },
+          {
+            "slug": "fresas-con-chocolate-en-pereira",
+            "label": "Fresas con chocolate"
+          },
+          {
+            "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+            "label": "Desayunos sorpresa"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "bouquets-de-flores-en-pereira",
+        "label": "Bouquets de flores"
+      },
+      {
+        "slug": "fresas-con-chocolate-en-pereira",
+        "label": "Fresas con chocolate"
+      },
+      {
+        "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+        "label": "Desayunos sorpresa"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWSDF3VGFMXVSNB6QDPJ8P7"
+    ],
+    "productSlugs": [
+      "anchetas-regalo-a-domicilio-en-pereira-dosquebradas",
+      "ancheta-con-vino-y-tabla-de-quesos-anchetas-a-domicilio-en-pereira",
+      "ramos-de-flores-pereira-dosquebradas",
+      "arreglos-de-rosas-en-pereira",
+      "arreglo-floral-con-rosas-pereira-y-el-eje-cafetero",
+      "canasta-sorpresa-pereira",
+      "floristeria-economica-pereira",
+      "regalos-para-conquistar-en-pereira",
+      "caja-de-flores-ternura-arreglos-con-chocolates-en-pereira",
+      "arreglo-de-rosas-pereira-dosquebradas",
+      "caja-en-forma-de-corazon-con-fresas-y-rosas-en-pereira-dosquebradas",
+      "arreglo-floral-garden-arreglos-florales-de-cumpleanos-en-pereira-",
+      "arreglo-floral-con-fresas-de-chocolate-en-pereira",
+      "arreglo-floral-con-globos-pereira",
+      "flores-de-cumpleanos-a-domicilio-en-pereira-dosquebradas",
+      "canasta-de-flores-de-lujo-romance-arreglo-floral-a-domicilio-pereira",
+      "canasta-de-flores-pereira",
+      "arreglo-floral-para-enamorar-en-pereira-dosquebradas",
+      "arreglo-floral-en-caja-de-corazon-en-pereira",
+      "arreglo-floral-con-girasoles-en-pereira-dosquebradas",
+      "arreglo-floral-magia-arreglo-floral-corazon-pereira",
+      "arreglo-floral-frescura",
+      "arreglo-floral-dulces-15-regalos-para-15-anos-en-pereira",
+      "arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "arreglo-floral-de-lujo-en-pereira",
+      "arreglos-florales-a-domicilio-en-pereira",
+      "arreglo-floral-celestial",
+      "arreglos-con-rosas-pereira",
+      "girasoles-a-domicilio-en-pereira-dosquebradas",
+      "bouquet-de-girasoles-en-pereira",
+      "floristerias-en-pereira-rosas-y-fresas",
+      "bouquet-mas-bombones-de-chocolate-combo-dulzura-chocolates-rellenos-pereira-",
+      "ramos-de-rosas-y-chocolates",
+      "bouquet-de-lujo-happy-bouquet-de-rosas-pereira",
+      "arreglo-de-flores-para-enviar-a-pereira-dosquebradas",
+      "regalos-pereira-a-domicilio",
+      "bouquet-arcoiris-bouquet-de-flores-a-domicilio-en-pereira",
+      "bouquet-eterno-bouquet-de-flores-pereira",
+      "ramos-de-chocolates-y-flores-pereira-dosquebradas",
+      "bouquet-de-girasoles-pereira",
+      "floristeria-pereira-a-domicilio",
+      "bouquet-jp-con-fresas-recubiertas-de-chocolate-floristerias-en-pereira-centro",
+      "bouquet-joya-flores-con-licores-en-pereira",
+      "bouquet-de-lujo-en-pereira-dosquebradas",
+      "oso-sorpresa-de-chocolate-floristeria-lovely",
+      "unicornio-de-chocolate-unicornio-sorpresa-para-ninas-pereira",
+      "corazon-sorpresa-de-chocolate-regalos-de-aniversario-pereira-dosquebradas",
+      "regalo-especial-para-conquistar-pereira-dosquebradas",
+      "chocolates-para-ninos-pereira-caja-de-chocolates-love-chocolate",
+      "caja-de-chocolates-de-lujo-pereira",
+      "regalos-para-empresas-en-pereira",
+      "combo-cute-chocolates-mas-rosa-eterna-floristeria",
+      "rosas-y-chocolates-pereira",
+      "caja-london-con-rosas-y-tableta-de-chocolate-artesanal-regalos-de-lujo-hechos-con-chocolate-pereira",
+      "regalos-corporativos-pereira-dosquebradas",
+      "regalos-de-cumpleanos-para-mujer-en-pereira-dosquebradas",
+      "caja-serenata-con-vino-rosas-y-fresas-recubiertas-con-chocolate-cajas-regalo-con-vino-pereira",
+      "caja-regalo-con-mensaje-o-nombre-de-chocolate-regalos-originales-pereira",
+      "cofre-del-amor-propuesta-de-matrimonio-pereira",
+      "fresas-cubiertas-pereira-dosquebradas",
+      "tableta-de-chocolates-pereira",
+      "chocolates-finos-pereira-dosquebradas",
+      "regalo-con-chocolates-pereira",
+      "bombones-de-chocolate-para-mujer-en-pereira",
+      "caja-de-bombones-floral-regalos-para-mamas-en-pereira",
+      "caja-de-bombones-amor-infinito-caja-de-chocolates-pereira",
+      "porcelanas-pereira",
+      "teddy-floral-porcelana-de-oso-teddy-pereira",
+      "porcelanas-de-osos-teddy-pereira",
+      "oso-de-porcelana-pereira",
+      "angel-de-la-tierra-porcelanas-decoradas-para-regalo-en-pereira",
+      "florero-venus-de-milo-florero-cabeza-de-venus-pereira",
+      "abrazo-matutino-desayuno-sorpresa-a-domicilio-desayuno-sorpresa-de-lujo-para-mujeres-pereira",
+      "dulce-desayuno-sorpresa-a-domicilio-desayuno-sorpresa-personalizado-a-domicilio-pereira",
+      "desayuno-sorpresa-a-domicilio-para-dos-personas-pereira",
+      "desayunos-sorpresa-pereira-dosquebradas-santa-rosa-de-cabal",
+      "desayuno-lovely-para-ella-desayuno-sorpresa-con-flores-a-domicilio-pereira",
+      "desayuno-sorpresa-para-mujer-pereira-dosquebradas",
+      "desayuno-sorpresa-a-domicilio-economico-pereira",
+      "desayuno-deluxe-para-ella-a-domicilio-desayuno-sorpresa-para-mujer-en-pereira",
+      "desayunos-sorpresa-en-pereira-dosquebradas-y-santa-rosa-de-cabal-risaralda",
+      "desayuno-sorpresa-a-domicilio-en-pereira-lovely-moments",
+      "caja-de-fresas-recubiertas-con-chocolate-bombonita-regalos-a-pereira-desde-espana",
+      "regalos-sorpresa-en-pereira-fresas-dosquebradas",
+      "fresas-con-chocolate-en-pereira-dosquebradas-y-santa-rosa-de-cabal-decoradas",
+      "caja-de-fresas-recubiertas-con-chocolate-en-pereira",
+      "torre-de-fresas-recubiertas-con-chocolate-pereira",
+      "caja-elixir-de-fresas-y-corazon-de-chocolate-regalo-para-una-nina-en-pereira",
+      "regalos-para-el-dia-de-la-mujer-en-pereira",
+      "caja-de-fresas-con-chocolate",
+      "fresas-recubiertas-pereira-dosquebradas",
+      "fresas-recubiertas-de-chocolate-para-ninas",
+      "ancheta-de-lujo-para-hombres-pereira",
+      "caja-amar-de-fresas-con-chocolate-x-5-unidades-regalos-de-grado-a-domicilio-en-pereira",
+      "combo-poema-de-rosa-eterna-de-cinta-y-fresas-recubiertas-con-chocolate-enviar-regalos-a-pereira-desde",
+      "arreglo-armonia-de-rosas-eternas-arreglo-de-rosas-eternas-pereira-dosquebradas",
+      "flores-y-regalos-pereira",
+      "rosas-eternas-pereira-dosquebradas",
+      "arreglo-de-rosas-eternas",
+      "arreglo-de-flores-pereira-dosquebradas-con-frutas",
+      "mini-donuts-decoradas-pereira",
+      "rosas-a-domicilio-en-pereira-dosquebradas-santa-rosa-de-cabal",
+      "cajas-de-flores-pereira-con-fresas-grande-arreglos-florales-en-pereira",
+      "desayunos-sorpresa-en-pereira-feliz-cumpleanos",
+      "tabla-de-quesos-toscana-tablas-de-queso-pereira-tablas-de-queso-pereira",
+      "tabla-de-quesos-navidena-pereira",
+      "arreglo-floral-con-girasoles-pereira-dosquebradas-santa-rosa-de-cabal",
+      "flores-a-domicilio-en-pereira-colombia",
+      "anchetas-de-frutas-pereira-dosquebradas",
+      "ramo-buchon-en-pereira-dosquebradas",
+      "ramos-buchones-pereira-dosquebradas-santa-rosa-de-cabal",
+      "flores-san-valentin-pereira-or-flores-en-pereira",
+      "bouquet-queen-de-rosas-eternas-or-flores-en-pereira-online-ramo-estilo-buchon-pereira",
+      "ramo-buchon-elegance-or-flores-en-pereira-a-domicilio-ramo-buchon-de-rosas-eternas",
+      "ramo-buchon-hello-kitty-or-detalles-pereira-ramo-estilo-buchon-de-rosas-eternas",
+      "bouquet-roma-ramos-buchones-en-pereira-y-dosquebradas",
+      "flores-a-domicilio-en-dosquebradas-pago-online-flores-de-lujo-en-pereira-colombia",
+      "arreglo-de-flores-fantasia-floral-con-fresas-arreglos-de-flores-en-pereira",
+      "ancheta-dulce-armonia-anchetas-sorpresa-en-pereira",
+      "arreglo-floral-romance-arreglos-con-orquideas-en-pereira",
+      "floristerias-a-domicilio-en-pereira-dosquebradas-santa-rosa-de-cabal",
+      "arreglos-florales-catolicos",
+      "ramos-de-rosas-eternas-pereira-risaralda",
+      "ramos-de-rosas-en-pereira-santa-rosa-de-cabal-dosquebradas",
+      "ramos-de-flores-minimalistas-en-pereira",
+      "floristeria-en-pereira-pagos-online",
+      "enviar-flores-a-pereira-colombia",
+      "anchetas-dia-de-las-madres-pereira-dosquebradas",
+      "ramos-de-flores-en-pereira",
+      "bouquet-amor-genuino-or-ramos-de-rosas-en-pereira",
+      "alguito-sorpresa-lovely-alguitos-sorpresa-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "regalos-de-amor-y-amistad-para-mujer-en-pereira-arreglos-florales-a-domicilio",
+      "desayuno-sorpresa-pereira-dosquebradas-or-desayuno-paris-lovely-moments",
+      "desayunos-sorpresa-para-mujeres-en-pereira-dosquebradas-desayuno-lovely-vip",
+      "flores-de-amor-y-amistad-en-pereira-dosquebradas",
+      "floristerias-en-pereira-amor-y-amistad-2024",
+      "ramos-de-rosas-en-pereira",
+      "chocolates-de-amor-y-amistad-or-bombones-pasion-de-chocolate-en-pereira",
+      "ramos-de-flores-a-domicilio-en-pereira",
+      "ramos-de-flores-pereira",
+      "arreglo-floral-san-valentin-pereira-dosquebradas",
+      "ramo-de-rosas-san-valentin-pereira-dosquebradas",
+      "caja-de-flores-y-chocolates-i-love-you-or-detalles-pereira",
+      "ancheta-san-valentin-con-fresas-recubiertas-con-chocolate-or-anchetas-y-detalles-pereira-dosquebradas",
+      "caja-de-fresas-san-valentin-or-fresas-con-chocolate-pereira-dosquebradas",
+      "desayuno-sorpresa-san-valentin-or-desayunos-lovely-moments-pereira-dosquebradas",
+      "arreglo-floral-lovely-moments-or-arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "desayuno-sorpresa-margarita-or-desayunos-sorpresa-para-mujer-en-pereira-or-dosquebradas",
+      "fresas-con-crema-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-de-fresas-con-chocolate-or-dia-de-la-mujer-en-pereira",
+      "ramos-de-flores-en-pereira-a-domicilio",
+      "bouquet-mujeres-divinas-or-ramos-de-flores-en-pereira-or-floristerias-a-domicilio",
+      "anchetas-para-mujer-en-pereira-or-detalles-para-mujer",
+      "arreglo-floral-del-campo-or-flores-en-pereira-or-flores-a-domicilio",
+      "flores-a-domicilio-en-pereira-dia-de-la-madre",
+      "bouquet-olga-flores-eternas-pereira-colombia-tulipanes",
+      "bouquet-yolanda-or-ramo-de-flores-eternas-colombia",
+      "bouquet-aida-or-floristeria-de-lujo-en-pereira-or-flores-eternas",
+      "bouquet-gloria-mini-or-flores-eternas-pereira-dosquebradas",
+      "bouquet-luz-or-floristeria-de-lujo-en-pereira-dosquebradas",
+      "combo-conquista-flores-y-peluches-pereira-dosquebradas",
+      "caja-de-bombones-de-chocolate-regalos-de-amor-y-amistad-en-pereira",
+      "ramo-de-rosas-y-orquideas-bellos-momentos-or-flores-en-pereira",
+      "arreglo-floral-exotic-rosas-con-base-tipo-koreano-or-floristas-en-pereira",
+      "arreglo-floral-corazon-romantico-or-arreglos-en-caja-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayuno-sorpresa-bellos-momentos-or-desayunos-sorpresa-personalizados-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-premium-rosas-and-fresas-deluxe-ramos-en-caja-or-floristeria-pereira-lovely-moments",
+      "tapas-espanolas-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal-or-tapas-sevillanas",
+      "flores-san-valentin-or-flores-en-pereira-or-floristerias-a-domicilio",
+      "caja-valantine-or-valentines-gifts-pereira-or-flower-shop-in-pereira",
+      "ramo-de-flores-bonita-or-flores-en-pereira-or-flower-shop",
+      "combo-amore-mio-or-flores-de-amor-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "bouquet-lovely-moments-or-ramos-de-flores-en-pereira-or-floristeria-en-pereira-or-dosquebradas",
+      "velas-aromaticas-or-oso-ternura-or-velas-pereira",
+      "oso-teddy-con-vela-adicional-or-velas-pereira-or-velas-artesanales-dosquebradas",
+      "velas-ramo-de-tulipanes-or-velas-aromaticas-or-velas-artesanales",
+      "vela-corazon-or-velas-pereira-or-velas-artesanales-dosquebradas",
+      "desayuno-sorpresa-hermosa-or-desayunos-sorpresa-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-corazon-romance-or-caja-de-rosas-en-forma-de-corazon-or-regalos-amory-amistad",
+      "desayuno-sorpresa-carta-de-amor-or-desayunos-sorpresa-elegantes-amor-y-amistad",
+      "arreglo-floral-cuadro-de-amor-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/whatsapp-image-2022-11-10-at-10.40.28-mP4wDRZVaBfe3q5L.jpeg",
+    "imageAlt": "Regalos para mujer",
+    "group": "Regalos",
+    "source": "https://lovelymoments.com.co/regalos-para-mujer-en-pereira"
+  },
+  {
+    "slug": "regalos-para-el-dia-de-la-mujer-en-pereira-or-dosquebradas",
+    "title": "Día de la Mujer",
+    "kind": "collection",
+    "intro": "Fresas decoradas, flores y cajas de chocolate que la tienda reúne para el 8 de marzo.",
+    "sections": [
+      {
+        "heading": "Para una persona o un equipo",
+        "text": "Revisa las presentaciones individuales. Para una entrega empresarial, indica las unidades y el presupuesto al pedir la cotización.",
+        "links": [
+          {
+            "slug": "regalos-corporativos-pereira",
+            "label": "Regalos para empresas"
+          },
+          {
+            "slug": "fresas-con-chocolate-en-pereira",
+            "label": "Fresas con chocolate"
+          },
+          {
+            "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+            "label": "Arreglos florales"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "regalos-corporativos-pereira",
+        "label": "Regalos para empresas"
+      },
+      {
+        "slug": "fresas-con-chocolate-en-pereira",
+        "label": "Fresas con chocolate"
+      },
+      {
+        "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+        "label": "Arreglos florales"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01JNEHXCKXBR87RF6DN5HNWNW7"
+    ],
+    "productSlugs": [
+      "caja-de-fresas-con-chocolate-or-dia-de-la-mujer-en-pereira",
+      "bouquet-mujeres-divinas-or-ramos-de-flores-en-pereira-or-floristerias-a-domicilio",
+      "regalos-para-empresas-en-pereira",
+      "rosas-y-chocolates-pereira",
+      "regalos-corporativos-pereira-dosquebradas",
+      "chocolates-de-amor-y-amistad-or-bombones-pasion-de-chocolate-en-pereira",
+      "ramos-de-flores-pereira",
+      "combo-conquista-flores-y-peluches-pereira-dosquebradas",
+      "bouquet-arcoiris-bouquet-de-flores-a-domicilio-en-pereira",
+      "arreglos-con-rosas-pereira",
+      "combo-empresarial-or-tabla-de-queso-or-detalles-empresariales",
+      "bouquet-lovely-moments-or-ramos-de-flores-en-pereira-or-floristeria-en-pereira-or-dosquebradas",
+      "velas-aromaticas-or-oso-ternura-or-velas-pereira",
+      "oso-teddy-con-vela-adicional-or-velas-pereira-or-velas-artesanales-dosquebradas",
+      "velas-ramo-de-tulipanes-or-velas-aromaticas-or-velas-artesanales",
+      "vela-corazon-or-velas-pereira-or-velas-artesanales-dosquebradas",
+      "caja-de-flores-ternura-arreglos-con-chocolates-en-pereira",
+      "arreglo-de-flores-fantasia-floral-con-fresas-arreglos-de-flores-en-pereira",
+      "regalos-pereira-a-domicilio",
+      "desayuno-sorpresa-hermosa-or-desayunos-sorpresa-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "bouquet-de-girasoles-pereira",
+      "arreglo-floral-romance-arreglos-con-orquideas-en-pereira",
+      "caja-corazon-romance-or-caja-de-rosas-en-forma-de-corazon-or-regalos-amory-amistad",
+      "arreglo-floral-cuadro-de-amor-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/dm-03---fresas-dia-de-la-mujer-b-m7V5lNK5JoseGwko.jpg",
+    "imageAlt": "Día de la Mujer",
+    "group": "Fechas especiales",
+    "source": "https://lovelymoments.com.co/regalos-para-el-dia-de-la-mujer-en-pereira-or-dosquebradas"
+  },
+  {
+    "slug": "regalos-de-amor-y-amistad-en-pereira-dosquebradas-y-santa-rosa-de-cabal",
+    "title": "Amor y Amistad",
+    "kind": "collection",
+    "intro": "La selección de septiembre reúne desayunos para compartir, cajas de corazón, flores y fresas decoradas.",
+    "sections": [
+      {
+        "heading": "La celebración en Colombia",
+        "text": "La campaña publicada para el 19 de septiembre de 2026 incluyó desayunos, anchetas y detalles de pareja. Consulta qué diseños se preparan para tu fecha.",
+        "links": [
+          {
+            "slug": "regalos-dia-del-amor-y-la-amistad-en-pereira",
+            "label": "Regalos para dos"
+          },
+          {
+            "slug": "fresas-con-chocolate-en-pereira",
+            "label": "Fresas con chocolate"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "regalos-dia-del-amor-y-la-amistad-en-pereira",
+        "label": "Regalos para dos"
+      },
+      {
+        "slug": "fresas-con-chocolate-en-pereira",
+        "label": "Fresas con chocolate"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01M23P3JK29H3M8AECNS9TMDYC"
+    ],
+    "productSlugs": [
+      "desayuno-sorpresa-carta-de-amor-or-desayunos-sorpresa-elegantes-amor-y-amistad",
+      "caja-corazon-romance-or-caja-de-rosas-en-forma-de-corazon-or-regalos-amory-amistad",
+      "caja-de-fresas-san-valentin-or-fresas-con-chocolate-pereira-dosquebradas",
+      "caja-serenata-con-vino-rosas-y-fresas-recubiertas-con-chocolate-cajas-regalo-con-vino-pereira",
+      "caja-de-flores-y-chocolates-i-love-you-or-detalles-pereira",
+      "arreglos-con-rosas-pereira",
+      "flores-san-valentin-or-flores-en-pereira-or-floristerias-a-domicilio",
+      "bouquet-de-lujo-en-pereira-dosquebradas",
+      "floristeria-economica-pereira",
+      "ramos-de-rosas-y-chocolates",
+      "flores-de-amor-y-amistad-en-pereira-dosquebradas",
+      "ramos-de-rosas-en-pereira",
+      "arreglo-floral-con-globos-pereira",
+      "bouquet-amor-genuino-or-ramos-de-rosas-en-pereira",
+      "ancheta-amor-y-amistad-or-peluche-y-ferrerros-or-detalles-pereira",
+      "ancheta-san-valentin-con-fresas-recubiertas-con-chocolate-or-anchetas-y-detalles-pereira-dosquebradas",
+      "arreglo-floral-cuadro-de-amor-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-de-bombones-de-chocolate-regalos-de-amor-y-amistad-en-pereira"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/caja-corazan-romance-mkCpSYuetbb24aiN.jpg",
+    "imageAlt": "regalos de amor y amistad en Pereira",
+    "group": "Fechas especiales",
+    "source": "https://lovelymoments.com.co/regalos-de-amor-y-amistad-en-pereira-dosquebradas-y-santa-rosa-de-cabal"
+  },
+  {
+    "slug": "regalos-dia-del-amor-y-la-amistad-en-pereira",
+    "title": "Regalos para dos",
+    "kind": "collection",
+    "intro": "Flores, fresas y chocolates para un aniversario, una declaración o un detalle de Amor y Amistad.",
+    "sections": [
+      {
+        "heading": "Un mensaje para la ocasión",
+        "text": "Puedes escoger un ramo por su color, acompañarlo con algo dulce o consultar la personalización de una caja.",
+        "links": [
+          {
+            "slug": "regalos-de-san-valentin-en-pereira-dosquebradas-y-santa-rosa-de-cabal",
+            "label": "San Valentín"
+          },
+          {
+            "slug": "bouquets-de-flores-en-pereira",
+            "label": "Bouquets de flores"
+          },
+          {
+            "slug": "bombones-de-chocolate-en-pereira",
+            "label": "Bombones de chocolate"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "regalos-de-san-valentin-en-pereira-dosquebradas-y-santa-rosa-de-cabal",
+        "label": "San Valentín"
+      },
+      {
+        "slug": "bouquets-de-flores-en-pereira",
+        "label": "Bouquets de flores"
+      },
+      {
+        "slug": "bombones-de-chocolate-en-pereira",
+        "label": "Bombones de chocolate"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01KGFFAGSRGMP1JDM71QES74KN"
+    ],
+    "productSlugs": [
+      "caja-de-fresas-san-valentin-or-fresas-con-chocolate-pereira-dosquebradas",
+      "arreglos-con-rosas-pereira",
+      "caja-serenata-con-vino-rosas-y-fresas-recubiertas-con-chocolate-cajas-regalo-con-vino-pereira",
+      "caja-de-flores-y-chocolates-i-love-you-or-detalles-pereira",
+      "desayuno-sorpresa-amor-y-amistad-con-amor-siempre-floristeria-lovely-moments-pereira",
+      "bouquet-de-lujo-en-pereira-dosquebradas",
+      "floristeria-economica-pereira",
+      "ramos-de-rosas-y-chocolates",
+      "flores-de-amor-y-amistad-en-pereira-dosquebradas",
+      "ramos-de-rosas-en-pereira",
+      "arreglo-floral-con-globos-pereira",
+      "bouquet-amor-genuino-or-ramos-de-rosas-en-pereira",
+      "combo-conquista-flores-y-peluches-pereira-dosquebradas",
+      "caja-valantine-or-valentines-gifts-pereira-or-flower-shop-in-pereira",
+      "flores-san-valentin-or-flores-en-pereira-or-floristerias-a-domicilio",
+      "ramo-de-flores-bonita-or-flores-en-pereira-or-flower-shop",
+      "combo-amore-mio-or-flores-de-amor-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-de-bombones-de-chocolate-regalos-de-amor-y-amistad-en-pereira",
+      "velas-aromaticas-or-oso-ternura-or-velas-pereira",
+      "velas-ramo-de-tulipanes-or-velas-aromaticas-or-velas-artesanales",
+      "vela-corazon-or-velas-pereira-or-velas-artesanales-dosquebradas"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/b16---coraza3n-AoPNlVW36ZT09Zow.jpg",
+    "imageAlt": "Regalos para dos",
+    "group": "Regalos",
+    "source": "https://lovelymoments.com.co/regalos-dia-del-amor-y-la-amistad-en-pereira"
+  },
+  {
+    "slug": "regalos-de-san-valentin-en-pereira-dosquebradas-y-santa-rosa-de-cabal",
+    "title": "San Valentín",
+    "kind": "collection",
+    "intro": "Rosas, cajas de corazón, fresas y desayunos que Lovely Moments reúne para el 14 de febrero.",
+    "sections": [
+      {
+        "heading": "Planea la entrega",
+        "text": "Elige la referencia y comparte la dedicatoria con el equipo. Para fechas de alta demanda, confirma con anticipación la disponibilidad del diseño.",
+        "links": [
+          {
+            "slug": "regalos-dia-del-amor-y-la-amistad-en-pereira",
+            "label": "Regalos para dos"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "regalos-dia-del-amor-y-la-amistad-en-pereira",
+        "label": "Regalos para dos"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01KGFFAGSRGMP1JDM71QES74KN"
+    ],
+    "productSlugs": [
+      "caja-de-fresas-san-valentin-or-fresas-con-chocolate-pereira-dosquebradas",
+      "arreglos-con-rosas-pereira",
+      "caja-serenata-con-vino-rosas-y-fresas-recubiertas-con-chocolate-cajas-regalo-con-vino-pereira",
+      "caja-de-flores-y-chocolates-i-love-you-or-detalles-pereira",
+      "desayuno-sorpresa-amor-y-amistad-con-amor-siempre-floristeria-lovely-moments-pereira",
+      "bouquet-de-lujo-en-pereira-dosquebradas",
+      "floristeria-economica-pereira",
+      "ramos-de-rosas-y-chocolates",
+      "flores-de-amor-y-amistad-en-pereira-dosquebradas",
+      "ramos-de-rosas-en-pereira",
+      "arreglo-floral-con-globos-pereira",
+      "bouquet-amor-genuino-or-ramos-de-rosas-en-pereira",
+      "combo-conquista-flores-y-peluches-pereira-dosquebradas",
+      "caja-valantine-or-valentines-gifts-pereira-or-flower-shop-in-pereira",
+      "flores-san-valentin-or-flores-en-pereira-or-floristerias-a-domicilio",
+      "ramo-de-flores-bonita-or-flores-en-pereira-or-flower-shop",
+      "combo-amore-mio-or-flores-de-amor-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-de-bombones-de-chocolate-regalos-de-amor-y-amistad-en-pereira",
+      "velas-aromaticas-or-oso-ternura-or-velas-pereira",
+      "velas-ramo-de-tulipanes-or-velas-aromaticas-or-velas-artesanales",
+      "vela-corazon-or-velas-pereira-or-velas-artesanales-dosquebradas"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/af08---bella-x-dOqZrL8JgnHLoZ2L.jpg",
+    "imageAlt": "San Valentín",
+    "group": "Fechas especiales",
+    "source": "https://lovelymoments.com.co/regalos-de-san-valentin-en-pereira-dosquebradas-y-santa-rosa-de-cabal"
+  },
+  {
+    "slug": "regalos-de-pascua-pereira",
+    "title": "Pascua de chocolate",
+    "kind": "collection",
+    "intro": "Huevos de chocolate, huevitos sorpresa y canastas pensadas para regalar en Pascua.",
+    "sections": [
+      {
+        "heading": "Para la búsqueda de huevos",
+        "text": "Escoge entre piezas individuales y canastas con varias sorpresas. La ficha muestra los dulces y la presentación de cada regalo.",
+        "links": [
+          {
+            "slug": "regalos-para-ninos-en-pereira",
+            "label": "Regalos para niñas y niños"
+          },
+          {
+            "slug": "chocolates-pereira",
+            "label": "Chocolates artesanales"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "regalos-para-ninos-en-pereira",
+        "label": "Regalos para niñas y niños"
+      },
+      {
+        "slug": "chocolates-pereira",
+        "label": "Chocolates artesanales"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWS86J6CGVPC2D49WMWG6W6"
+    ],
+    "productSlugs": [
+      "postres-de-chocolate-a-domicilio-en-pereira",
+      "postres-a-domicilio-en-pereira",
+      "canasta-huevos-de-pascua-pereira",
+      "huevo-de-pascua-de-chocolate-pereira-dosquebradas"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/p04-YbNZ60rlv7HKGn4R.jpg",
+    "imageAlt": "Pascua de chocolate",
+    "group": "Fechas especiales",
+    "source": "https://lovelymoments.com.co/regalos-de-pascua-pereira"
+  },
+  {
+    "slug": "regalos-de-halloween",
+    "title": "Dulces de Halloween",
+    "kind": "collection",
+    "intro": "Fresas, bombones y figuras de chocolate preparados con motivos de Halloween.",
+    "sections": [
+      {
+        "heading": "Para entregar o compartir",
+        "text": "Hay piezas con formas de temporada y cajas con varias fresas decoradas. Confirma qué diseños se preparan para la fecha de tu celebración.",
+        "links": [
+          {
+            "slug": "regalos-para-ninos-en-pereira",
+            "label": "Regalos para niñas y niños"
+          },
+          {
+            "slug": "fresas-con-chocolate-en-pereira",
+            "label": "Fresas con chocolate"
+          },
+          {
+            "slug": "chocolates-pereira",
+            "label": "Chocolates artesanales"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "regalos-para-ninos-en-pereira",
+        "label": "Regalos para niñas y niños"
+      },
+      {
+        "slug": "fresas-con-chocolate-en-pereira",
+        "label": "Fresas con chocolate"
+      },
+      {
+        "slug": "chocolates-pereira",
+        "label": "Chocolates artesanales"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWSB5PJMNDRFEP54Q7ER65P"
+    ],
+    "productSlugs": [
+      "oso-sorpresa-de-halloween-pereira",
+      "caja-de-fresas-de-halloween-triki-triki-x-12-dia-de-brujas-pereira",
+      "regalos-para-halloween-en-pereira-y-dosquebradas",
+      "regalos-para-fiestas-infantiles-pereira",
+      "regalos-de-halloween-para-ninos-pereira",
+      "fresas-para-ninos-pereira"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/hw05-YKbaVgVBbwU0VVNe.jpg",
+    "imageAlt": "Dulces de Halloween",
+    "group": "Fechas especiales",
+    "source": "https://lovelymoments.com.co/regalos-de-halloween"
+  },
+  {
+    "slug": "regalos-de-navidad-en-pereira",
+    "title": "Navidad",
+    "kind": "collection",
+    "intro": "Anchetas navideñas, fresas decoradas, figuras de chocolate, tablas para compartir y velas de regalo.",
+    "sections": [
+      {
+        "heading": "Para la familia o la empresa",
+        "text": "La colección publicada para Navidad de 2025 muestra varias presentaciones de fin de año. Consulta con el taller la disponibilidad de la temporada actual.",
+        "links": [
+          {
+            "slug": "regalos-corporativos-pereira",
+            "label": "Regalos para empresas"
+          },
+          {
+            "slug": "anchetas-pereira",
+            "label": "Anchetas"
+          },
+          {
+            "slug": "tablas-de-quesos-en-pereira-dosquebradas",
+            "label": "Tablas de quesos"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "regalos-corporativos-pereira",
+        "label": "Regalos para empresas"
+      },
+      {
+        "slug": "anchetas-pereira",
+        "label": "Anchetas"
+      },
+      {
+        "slug": "tablas-de-quesos-en-pereira-dosquebradas",
+        "label": "Tablas de quesos"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01K9QRKSZ3PNQNSAQW9XWT5VQW"
+    ],
+    "productSlugs": [
+      "fresas-navidenas-para-novenas-en-pereira",
+      "chocobombas-pereira-dosquebradas",
+      "oso-de-chocolate-de-papa-noel-pereira",
+      "trio-navideno-caja-x-3-unidades-de-fresas-recubiertas-con-chocolate-regalos-corporativos-navidenos-pereira",
+      "choco-bombas-de-navidad-en-pereira",
+      "chocobombas-pereira-dosquebradas-santa-rosa-de-cabal",
+      "fresas-navidenas-pereira",
+      "regalos-de-navidad-pereira",
+      "chocolates-navidenos-pereira-dosquebradas",
+      "regalos-originales-para-navidad-en-pereira",
+      "fresas-recubiertas-de-chocolate-navidenas-pereira",
+      "tabla-de-quesos-toscana-tablas-de-queso-pereira-tablas-de-queso-pereira",
+      "tabla-de-quesos-navidena-pereira",
+      "anchetas-navidenas-pereira-or-ancheta-merry-christmas",
+      "anchetas-navidenas-pereira-or-anchetas-de-lujo-en-pereira",
+      "chocobombas-pereira-or-detalles-para-empresas-en-pereira-dosquebradas",
+      "kit-ano-viejo-pereira-dosquebradas-or-munecos-de-ano-viejo",
+      "tabla-de-quesos-provenza-or-tablas-de-quesos-en-pereira",
+      "tabla-de-quesos-en-pereira-y-dosquebradas-tabla-mediterranea",
+      "caja-feliz-navidad-or-anchetas-navidenas-or-anchetas-de-navidad",
+      "ancheta-brindis-navideno-or-anchetas-de-lujo-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ancheta-navidena-dulce-armonia-or-anchetas-navidenas-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-de-velas-navidenas-or-velas-personalizadas-pereira",
+      "set-de-velas-artesanales-navidenas-or-combo-1-or-velas-aromaticas-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "velas-personalizadas-pereira-or-combo-2-or-velas-artesanales-",
+      "velas-artesanales-en-pereira-or-combo-3-or-pereira-or-dosquebradas-or-velas-navidenas",
+      "set-de-velas-or-combo-4-or-velas-aromaticas-pereira-or-dosquebradas-or-santa-rosa-de-cabal-",
+      "vela-artesanal-copo-de-nieve-or-velas-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "vela-navidena-angel-de-luz-or-velas-navidenas-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ancheta-de-lujo-royal-or-anchetas-navidenas-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "kit-chocobombas-x-2-chocobombs-pereira",
+      "anchetas-navidenas-para-empresas",
+      "chocolates-pereira-a-domicilio",
+      "tabla-de-quesos-gourmet-or-tablas-de-queso-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-navidena-sorpresa-or-torre-navidena-or-tapas-espanolas-pereira",
+      "combo-empresarial-or-tabla-de-queso-or-detalles-empresariales",
+      "tapas-espanolas-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal-or-tapas-sevillanas"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/na-23b---ancheta-merry-christmas-YZ9VO0lB8JfX8vbZ.jpg",
+    "imageAlt": "Navidad",
+    "group": "Fechas especiales",
+    "source": "https://lovelymoments.com.co/regalos-de-navidad-en-pereira"
+  },
+  {
+    "slug": "regalos-para-el-dia-de-las-madres-pereira",
+    "title": "Día de la Madre",
+    "kind": "collection",
+    "intro": "Desayunos, flores, velas y chocolates escogidos para el Día de la Madre.",
+    "sections": [
+      {
+        "heading": "Así se organizó la campaña de 2026",
+        "text": "Para el 10 de mayo la tienda agrupó las entregas por rutas y tipo de producto. Consulta los horarios del próximo pedido directamente con el equipo.",
+        "links": [
+          {
+            "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+            "label": "Desayunos sorpresa"
+          },
+          {
+            "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+            "label": "Arreglos florales"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+        "label": "Desayunos sorpresa"
+      },
+      {
+        "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+        "label": "Arreglos florales"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01KQN27239AERFGQJT3C33BBMD"
+    ],
+    "productSlugs": [
+      "kit-de-autocuidado-lovely-moments-regalos-para-mama-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayuno-sorpresa-mama-hermosa-or-desayunos-saludables-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-inmortal-or-flores-preservadas-para-mama-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-sonrisas-para-mama-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "bouquet-dulzura-or-ramos-de-flores-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ramo-de-velas-aromatizadas-lovely-moments-or-velas-aromaticas-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-mama-consentida-or-flores-de-lujo-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayuno-sorpresa-queen-or-desayunos-sorpresa-para-mama-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-jardin-del-sol-naciente-arreglos-florales-en-pereira-dosquebradas",
+      "arreglo-floral-dia-de-las-madres-or-arreglos-florales-en-pereira",
+      "desayunos-en-pereira-dia-de-las-madres-dosquebradas-santa-rosa"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/bouquet-mama-NMYDUf5M0uNpkPfU.jpg",
+    "imageAlt": "regalos para el día de la madre en Pereira",
+    "group": "Fechas especiales",
+    "source": "https://lovelymoments.com.co/regalos-para-el-dia-de-las-madres-pereira"
+  },
+  {
+    "slug": "regalos-para-el-dia-de-la-madre-en-pereira",
+    "title": "Día de la Madre de 2024",
+    "kind": "collection",
+    "intro": "Archivo de la campaña de mayo de 2024 con arreglos florales y desayunos para mamá.",
+    "sections": [
+      {
+        "heading": "Volver a la colección",
+        "text": "Los plazos de reserva correspondían a mayo de 2024. El catálogo que se muestra ahora en esta página corresponde a la selección de 2026. Puedes preguntar por un diseño similar.",
+        "links": [
+          {
+            "slug": "regalos-para-el-dia-de-las-madres-pereira",
+            "label": "Día de la Madre"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "regalos-para-el-dia-de-las-madres-pereira",
+        "label": "Día de la Madre"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01KQN27239AERFGQJT3C33BBMD"
+    ],
+    "productSlugs": [
+      "kit-de-autocuidado-lovely-moments-regalos-para-mama-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayuno-sorpresa-mama-hermosa-or-desayunos-saludables-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-inmortal-or-flores-preservadas-para-mama-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-sonrisas-para-mama-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "bouquet-dulzura-or-ramos-de-flores-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ramo-de-velas-aromatizadas-lovely-moments-or-velas-aromaticas-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-mama-consentida-or-flores-de-lujo-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "desayuno-sorpresa-queen-or-desayunos-sorpresa-para-mama-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-jardin-del-sol-naciente-arreglos-florales-en-pereira-dosquebradas",
+      "arreglo-floral-dia-de-las-madres-or-arreglos-florales-en-pereira",
+      "desayunos-en-pereira-dia-de-las-madres-dosquebradas-santa-rosa"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/desayuno-sorpresa-ba-sico-dm---01-YrDaQJWP8Oikng4O.jpg",
+    "imageAlt": "Día de la Madre de 2024",
+    "group": "Fechas especiales",
+    "source": "https://lovelymoments.com.co/regalos-para-el-dia-de-la-madre-en-pereira",
+    "archiveYear": 2024
+  },
+  {
+    "slug": "regalos-para-el-dia-del-padre",
+    "title": "Día del Padre",
+    "kind": "collection",
+    "intro": "Desayunos, cajas de regalo, anchetas y chocolates que la tienda preparó para celebrar a papá en 2026.",
+    "sections": [
+      {
+        "heading": "Para regalar a papá",
+        "text": "Compara las opciones para la mañana con las cajas de chocolates o con bebidas. Para otro día, consulta la preparación del diseño elegido.",
+        "links": [
+          {
+            "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+            "label": "Desayunos sorpresa"
+          },
+          {
+            "slug": "regalos-para-hombres-pereira",
+            "label": "Regalos para hombres"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+        "label": "Desayunos sorpresa"
+      },
+      {
+        "slug": "regalos-para-hombres-pereira",
+        "label": "Regalos para hombres"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01KTYRJPWEZM970F21F1HTEHAW"
+    ],
+    "productSlugs": [
+      "caja-regalo-the-one-para-hombres-regalos-de-aniversario-para-hombres-pereira",
+      "anchetas-dia-del-padre-en-pereira",
+      "chocolates-de-amor-y-amistad-or-bombones-pasion-de-chocolate-en-pereira",
+      "regalos-para-el-dia-del-padre-en-pereira-dosquebradas-y-santa-rosa-de-cabal1",
+      "ancheta-dia-del-padre-or-arquitecto-de-suenos-or-pereria",
+      "desayuno-sorpresa-para-hombres-desayuno-sorpresa-arriero",
+      "desayuno-sorpresa-para-el-dia-del-padre-desayuno-sorpresa-papa-de-lujo"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/dp25---02-caja-super-papa-02-YNq250WX8lf1Vr8q.jpg",
+    "imageAlt": "regalos día del padre en Pereira",
+    "group": "Fechas especiales",
+    "source": "https://lovelymoments.com.co/regalos-para-el-dia-del-padre"
+  },
+  {
+    "slug": "regalos-para-el-dia-del-padre-en-pereira-dosquebradas-y-santa-rosa-de-cabal",
+    "title": "Día del Padre de 2024",
+    "kind": "collection",
+    "intro": "La campaña de junio de 2024 reunió anchetas, desayunos y regalos para papá.",
+    "sections": [
+      {
+        "heading": "Otras referencias",
+        "text": "La página de la campaña conserva su enlace al catálogo, que hoy muestra la selección de 2026. Para encargar una caja en otra fecha, consulta qué diseños se pueden preparar.",
+        "links": [
+          {
+            "slug": "regalos-para-el-dia-del-padre",
+            "label": "Día del Padre"
+          },
+          {
+            "slug": "regalos-para-hombres-pereira",
+            "label": "Regalos para hombres"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "regalos-para-el-dia-del-padre",
+        "label": "Día del Padre"
+      },
+      {
+        "slug": "regalos-para-hombres-pereira",
+        "label": "Regalos para hombres"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01KTYRJPWEZM970F21F1HTEHAW"
+    ],
+    "productSlugs": [
+      "caja-regalo-the-one-para-hombres-regalos-de-aniversario-para-hombres-pereira",
+      "anchetas-dia-del-padre-en-pereira",
+      "chocolates-de-amor-y-amistad-or-bombones-pasion-de-chocolate-en-pereira",
+      "regalos-para-el-dia-del-padre-en-pereira-dosquebradas-y-santa-rosa-de-cabal1",
+      "ancheta-dia-del-padre-or-arquitecto-de-suenos-or-pereria",
+      "desayuno-sorpresa-para-hombres-desayuno-sorpresa-arriero",
+      "desayuno-sorpresa-para-el-dia-del-padre-desayuno-sorpresa-papa-de-lujo"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/pe09-mjEQjw1LlpTN19qj.jpg",
+    "imageAlt": "Día del Padre de 2024",
+    "group": "Fechas especiales",
+    "source": "https://lovelymoments.com.co/regalos-para-el-dia-del-padre-en-pereira-dosquebradas-y-santa-rosa-de-cabal",
+    "archiveYear": 2024
+  },
+  {
+    "slug": "floristerias-a-domicilio-en-pereira-colombia",
+    "title": "Flores a domicilio en Pereira",
+    "kind": "landing",
+    "intro": "Encarga ramos, bouquets o canastas desde Pereira o desde el exterior para entregar en la ciudad.",
+    "sections": [
+      {
+        "heading": "Escoge tu arreglo",
+        "text": "Mira las flores y el tipo de base. Cuando tengas una referencia, envía el nombre, la fecha y el sector de entrega por WhatsApp.",
+        "links": [
+          {
+            "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+            "label": "Arreglos florales"
+          },
+          {
+            "slug": "bouquets-de-flores-en-pereira",
+            "label": "Bouquets de flores"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      },
+      {
+        "heading": "Otros destinos cercanos",
+        "text": "La tienda también cubre Dosquebradas y Santa Rosa de Cabal.",
+        "links": [
+          {
+            "slug": "floristerias-a-domicilio-en-dosquebradas",
+            "label": "Flores a domicilio en Dosquebradas"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-santa-rosa-de-cabal",
+            "label": "Flores a domicilio en Santa Rosa de Cabal"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+        "label": "Arreglos florales"
+      },
+      {
+        "slug": "bouquets-de-flores-en-pereira",
+        "label": "Bouquets de flores"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-dosquebradas",
+        "label": "Flores a domicilio en Dosquebradas"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-santa-rosa-de-cabal",
+        "label": "Flores a domicilio en Santa Rosa de Cabal"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWX76QVFRZG74KTJJETM4X1"
+    ],
+    "productSlugs": [
+      "ramos-de-flores-pereira-dosquebradas",
+      "arreglos-de-rosas-en-pereira",
+      "arreglo-floral-con-rosas-pereira-y-el-eje-cafetero",
+      "canasta-sorpresa-pereira",
+      "floristeria-economica-pereira",
+      "regalos-para-conquistar-en-pereira",
+      "caja-de-flores-ternura-arreglos-con-chocolates-en-pereira",
+      "arreglo-de-rosas-pereira-dosquebradas",
+      "caja-en-forma-de-corazon-con-fresas-y-rosas-en-pereira-dosquebradas",
+      "arreglo-floral-garden-arreglos-florales-de-cumpleanos-en-pereira-",
+      "arreglo-floral-con-fresas-de-chocolate-en-pereira",
+      "arreglo-floral-con-globos-pereira",
+      "flores-de-cumpleanos-a-domicilio-en-pereira-dosquebradas",
+      "canasta-de-flores-de-lujo-romance-arreglo-floral-a-domicilio-pereira",
+      "canasta-de-flores-pereira",
+      "arreglo-floral-para-enamorar-en-pereira-dosquebradas",
+      "arreglo-floral-en-caja-de-corazon-en-pereira",
+      "arreglo-floral-con-girasoles-en-pereira-dosquebradas",
+      "arreglo-floral-magia-arreglo-floral-corazon-pereira",
+      "arreglo-floral-frescura",
+      "arreglo-floral-dulces-15-regalos-para-15-anos-en-pereira",
+      "arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "arreglo-floral-de-lujo-en-pereira",
+      "arreglos-florales-a-domicilio-en-pereira",
+      "arreglo-floral-celestial",
+      "arreglos-con-rosas-pereira",
+      "girasoles-a-domicilio-en-pereira-dosquebradas",
+      "bouquet-de-girasoles-en-pereira",
+      "floristerias-en-pereira-rosas-y-fresas",
+      "bouquet-mas-bombones-de-chocolate-combo-dulzura-chocolates-rellenos-pereira-",
+      "ramos-de-rosas-y-chocolates",
+      "bouquet-de-lujo-happy-bouquet-de-rosas-pereira",
+      "arreglo-de-flores-para-enviar-a-pereira-dosquebradas",
+      "regalos-pereira-a-domicilio",
+      "bouquet-arcoiris-bouquet-de-flores-a-domicilio-en-pereira",
+      "bouquet-eterno-bouquet-de-flores-pereira",
+      "ramos-de-chocolates-y-flores-pereira-dosquebradas",
+      "bouquet-de-girasoles-pereira",
+      "floristeria-pereira-a-domicilio",
+      "bouquet-jp-con-fresas-recubiertas-de-chocolate-floristerias-en-pereira-centro",
+      "bouquet-joya-flores-con-licores-en-pereira",
+      "bouquet-de-lujo-en-pereira-dosquebradas",
+      "arreglo-de-flores-pereira-dosquebradas-con-frutas",
+      "mini-donuts-decoradas-pereira",
+      "cajas-de-flores-pereira-con-fresas-grande-arreglos-florales-en-pereira",
+      "bouquet-de-flores-navideno-pereira-dosquebradas",
+      "arreglo-floral-navideno-pereira-dosquebradas",
+      "arreglo-floral-con-girasoles-pereira-dosquebradas-santa-rosa-de-cabal",
+      "flores-a-domicilio-en-pereira-colombia",
+      "ramo-buchon-en-pereira-dosquebradas",
+      "ramos-buchones-pereira-dosquebradas-santa-rosa-de-cabal",
+      "flores-san-valentin-pereira-or-flores-en-pereira",
+      "arreglo-de-flores-fantasia-floral-con-fresas-arreglos-de-flores-en-pereira",
+      "ancheta-dulce-armonia-anchetas-sorpresa-en-pereira",
+      "arreglo-floral-romance-arreglos-con-orquideas-en-pereira",
+      "floristerias-a-domicilio-en-pereira-dosquebradas-santa-rosa-de-cabal",
+      "arreglos-florales-catolicos",
+      "centros-de-mesa-en-pereira-y-dosquebradas-centro-de-mesa-primaveral",
+      "arreglos-florales-dia-de-las-madres-pereira",
+      "detalles-dia-de-las-madres-en-pereira-y-dosquebradas",
+      "ancheta-orquidea-orquideas-en-pereira",
+      "arreglo-floral-dia-de-las-madres-or-arreglos-florales-en-pereira",
+      "regalos-para-el-dia-de-las-madres-en-pereira-y-dosquebradas",
+      "arreglo-floral-jardin-del-sol-naciente-arreglos-florales-en-pereira-dosquebradas",
+      "bouquet-amor-genuino-or-ramos-de-rosas-en-pereira",
+      "regalos-de-amor-y-amistad-para-mujer-en-pereira-arreglos-florales-a-domicilio",
+      "flores-de-amor-y-amistad-en-pereira-dosquebradas",
+      "floristerias-en-pereira-amor-y-amistad-2024",
+      "arreglo-floral-san-valentin-pereira-dosquebradas",
+      "caja-de-flores-y-chocolates-i-love-you-or-detalles-pereira",
+      "arreglo-floral-lovely-moments-or-arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "fresas-con-crema-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-nostalgia-or-flores-a-domicilio-dia-de-las-madres-pereira-dosquebradas",
+      "arreglo-floral-del-campo-or-flores-en-pereira-or-flores-a-domicilio",
+      "flores-a-domicilio-en-pereira-dia-de-la-madre",
+      "arreglo-floral-only-you-detalles-de-amor-y-amistad-en-pereira",
+      "combo-conquista-flores-y-peluches-pereira-dosquebradas",
+      "caja-premium-rosas-and-fresas-deluxe-ramos-en-caja-or-floristeria-pereira-lovely-moments",
+      "caja-valantine-or-valentines-gifts-pereira-or-flower-shop-in-pereira",
+      "flores-san-valentin-or-flores-en-pereira-or-floristerias-a-domicilio",
+      "combo-amore-mio-or-flores-de-amor-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-inmortal-or-flores-preservadas-para-mama-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-sonrisas-para-mama-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ramo-de-velas-aromatizadas-lovely-moments-or-velas-aromaticas-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-mama-consentida-or-flores-de-lujo-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-corazon-romance-or-caja-de-rosas-en-forma-de-corazon-or-regalos-amory-amistad",
+      "arreglo-floral-cuadro-de-amor-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/af20-Yg2aEMWMq4f9g6O4.jpg",
+    "imageAlt": "Flores a domicilio en Pereira",
+    "group": "Domicilios",
+    "source": "https://lovelymoments.com.co/floristerias-a-domicilio-en-pereira-colombia"
+  },
+  {
+    "slug": "floristerias-a-domicilio-en-dosquebradas",
+    "title": "Flores a domicilio en Dosquebradas",
+    "kind": "landing",
+    "intro": "Entregamos en Dosquebradas ramos de flores, canastas y arreglos preparados bajo pedido.",
+    "sections": [
+      {
+        "heading": "Organiza el envío",
+        "text": "Abre la ficha del arreglo y consulta con la tienda la fecha y la dirección de entrega en Dosquebradas. También puedes elegir fresas o un desayuno.",
+        "links": [
+          {
+            "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+            "label": "Arreglos florales"
+          },
+          {
+            "slug": "fresas-con-chocolate-en-pereira",
+            "label": "Fresas con chocolate"
+          },
+          {
+            "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+            "label": "Desayunos sorpresa"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+        "label": "Arreglos florales"
+      },
+      {
+        "slug": "fresas-con-chocolate-en-pereira",
+        "label": "Fresas con chocolate"
+      },
+      {
+        "slug": "desayunos-sorpresa-a-domicilio-en-pereira",
+        "label": "Desayunos sorpresa"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWX76QVFRZG74KTJJETM4X1"
+    ],
+    "productSlugs": [
+      "ramos-de-flores-pereira-dosquebradas",
+      "arreglos-de-rosas-en-pereira",
+      "arreglo-floral-con-rosas-pereira-y-el-eje-cafetero",
+      "canasta-sorpresa-pereira",
+      "floristeria-economica-pereira",
+      "regalos-para-conquistar-en-pereira",
+      "caja-de-flores-ternura-arreglos-con-chocolates-en-pereira",
+      "arreglo-de-rosas-pereira-dosquebradas",
+      "caja-en-forma-de-corazon-con-fresas-y-rosas-en-pereira-dosquebradas",
+      "arreglo-floral-garden-arreglos-florales-de-cumpleanos-en-pereira-",
+      "arreglo-floral-con-fresas-de-chocolate-en-pereira",
+      "arreglo-floral-con-globos-pereira",
+      "flores-de-cumpleanos-a-domicilio-en-pereira-dosquebradas",
+      "canasta-de-flores-de-lujo-romance-arreglo-floral-a-domicilio-pereira",
+      "canasta-de-flores-pereira",
+      "arreglo-floral-para-enamorar-en-pereira-dosquebradas",
+      "arreglo-floral-en-caja-de-corazon-en-pereira",
+      "arreglo-floral-con-girasoles-en-pereira-dosquebradas",
+      "arreglo-floral-magia-arreglo-floral-corazon-pereira",
+      "arreglo-floral-frescura",
+      "arreglo-floral-dulces-15-regalos-para-15-anos-en-pereira",
+      "arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "arreglo-floral-de-lujo-en-pereira",
+      "arreglos-florales-a-domicilio-en-pereira",
+      "arreglo-floral-celestial",
+      "arreglos-con-rosas-pereira",
+      "girasoles-a-domicilio-en-pereira-dosquebradas",
+      "bouquet-de-girasoles-en-pereira",
+      "floristerias-en-pereira-rosas-y-fresas",
+      "bouquet-mas-bombones-de-chocolate-combo-dulzura-chocolates-rellenos-pereira-",
+      "ramos-de-rosas-y-chocolates",
+      "bouquet-de-lujo-happy-bouquet-de-rosas-pereira",
+      "arreglo-de-flores-para-enviar-a-pereira-dosquebradas",
+      "regalos-pereira-a-domicilio",
+      "bouquet-arcoiris-bouquet-de-flores-a-domicilio-en-pereira",
+      "bouquet-eterno-bouquet-de-flores-pereira",
+      "ramos-de-chocolates-y-flores-pereira-dosquebradas",
+      "bouquet-de-girasoles-pereira",
+      "floristeria-pereira-a-domicilio",
+      "bouquet-jp-con-fresas-recubiertas-de-chocolate-floristerias-en-pereira-centro",
+      "bouquet-joya-flores-con-licores-en-pereira",
+      "bouquet-de-lujo-en-pereira-dosquebradas",
+      "arreglo-de-flores-pereira-dosquebradas-con-frutas",
+      "mini-donuts-decoradas-pereira",
+      "cajas-de-flores-pereira-con-fresas-grande-arreglos-florales-en-pereira",
+      "bouquet-de-flores-navideno-pereira-dosquebradas",
+      "arreglo-floral-navideno-pereira-dosquebradas",
+      "arreglo-floral-con-girasoles-pereira-dosquebradas-santa-rosa-de-cabal",
+      "flores-a-domicilio-en-pereira-colombia",
+      "ramo-buchon-en-pereira-dosquebradas",
+      "ramos-buchones-pereira-dosquebradas-santa-rosa-de-cabal",
+      "flores-san-valentin-pereira-or-flores-en-pereira",
+      "arreglo-de-flores-fantasia-floral-con-fresas-arreglos-de-flores-en-pereira",
+      "ancheta-dulce-armonia-anchetas-sorpresa-en-pereira",
+      "arreglo-floral-romance-arreglos-con-orquideas-en-pereira",
+      "floristerias-a-domicilio-en-pereira-dosquebradas-santa-rosa-de-cabal",
+      "arreglos-florales-catolicos",
+      "centros-de-mesa-en-pereira-y-dosquebradas-centro-de-mesa-primaveral",
+      "arreglos-florales-dia-de-las-madres-pereira",
+      "detalles-dia-de-las-madres-en-pereira-y-dosquebradas",
+      "ancheta-orquidea-orquideas-en-pereira",
+      "arreglo-floral-dia-de-las-madres-or-arreglos-florales-en-pereira",
+      "regalos-para-el-dia-de-las-madres-en-pereira-y-dosquebradas",
+      "arreglo-floral-jardin-del-sol-naciente-arreglos-florales-en-pereira-dosquebradas",
+      "bouquet-amor-genuino-or-ramos-de-rosas-en-pereira",
+      "regalos-de-amor-y-amistad-para-mujer-en-pereira-arreglos-florales-a-domicilio",
+      "flores-de-amor-y-amistad-en-pereira-dosquebradas",
+      "floristerias-en-pereira-amor-y-amistad-2024",
+      "arreglo-floral-san-valentin-pereira-dosquebradas",
+      "caja-de-flores-y-chocolates-i-love-you-or-detalles-pereira",
+      "arreglo-floral-lovely-moments-or-arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "fresas-con-crema-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-nostalgia-or-flores-a-domicilio-dia-de-las-madres-pereira-dosquebradas",
+      "arreglo-floral-del-campo-or-flores-en-pereira-or-flores-a-domicilio",
+      "flores-a-domicilio-en-pereira-dia-de-la-madre",
+      "arreglo-floral-only-you-detalles-de-amor-y-amistad-en-pereira",
+      "combo-conquista-flores-y-peluches-pereira-dosquebradas",
+      "caja-premium-rosas-and-fresas-deluxe-ramos-en-caja-or-floristeria-pereira-lovely-moments",
+      "caja-valantine-or-valentines-gifts-pereira-or-flower-shop-in-pereira",
+      "flores-san-valentin-or-flores-en-pereira-or-floristerias-a-domicilio",
+      "combo-amore-mio-or-flores-de-amor-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-inmortal-or-flores-preservadas-para-mama-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-sonrisas-para-mama-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ramo-de-velas-aromatizadas-lovely-moments-or-velas-aromaticas-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-mama-consentida-or-flores-de-lujo-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-corazon-romance-or-caja-de-rosas-en-forma-de-corazon-or-regalos-amory-amistad",
+      "arreglo-floral-cuadro-de-amor-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/af37-mp86BLvL95cVr0Nb.jpg",
+    "imageAlt": "Flores a domicilio en Dosquebradas",
+    "group": "Domicilios",
+    "source": "https://lovelymoments.com.co/floristerias-a-domicilio-en-dosquebradas"
+  },
+  {
+    "slug": "floristerias-a-domicilio-en-santa-rosa-de-cabal",
+    "title": "Flores a domicilio en Santa Rosa de Cabal",
+    "kind": "landing",
+    "intro": "Puedes encargar desde otra ciudad o país un arreglo de flores para entregar en Santa Rosa de Cabal.",
+    "sections": [
+      {
+        "heading": "Flores y detalles",
+        "text": "Elige un ramo o una canasta en el catálogo. Para coordinar el domicilio, facilita la referencia y los datos de la persona que recibe.",
+        "links": [
+          {
+            "slug": "bouquets-de-flores-en-pereira",
+            "label": "Bouquets de flores"
+          },
+          {
+            "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+            "label": "Arreglos florales"
+          },
+          {
+            "slug": "floristerias-a-domicilio-en-pereira",
+            "label": "Habla con Lovely Moments"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "bouquets-de-flores-en-pereira",
+        "label": "Bouquets de flores"
+      },
+      {
+        "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+        "label": "Arreglos florales"
+      },
+      {
+        "slug": "floristerias-a-domicilio-en-pereira",
+        "label": "Habla con Lovely Moments"
+      }
+    ],
+    "categoryIds": [
+      "pcol_01HCWX76QVFRZG74KTJJETM4X1"
+    ],
+    "productSlugs": [
+      "ramos-de-flores-pereira-dosquebradas",
+      "arreglos-de-rosas-en-pereira",
+      "arreglo-floral-con-rosas-pereira-y-el-eje-cafetero",
+      "canasta-sorpresa-pereira",
+      "floristeria-economica-pereira",
+      "regalos-para-conquistar-en-pereira",
+      "caja-de-flores-ternura-arreglos-con-chocolates-en-pereira",
+      "arreglo-de-rosas-pereira-dosquebradas",
+      "caja-en-forma-de-corazon-con-fresas-y-rosas-en-pereira-dosquebradas",
+      "arreglo-floral-garden-arreglos-florales-de-cumpleanos-en-pereira-",
+      "arreglo-floral-con-fresas-de-chocolate-en-pereira",
+      "arreglo-floral-con-globos-pereira",
+      "flores-de-cumpleanos-a-domicilio-en-pereira-dosquebradas",
+      "canasta-de-flores-de-lujo-romance-arreglo-floral-a-domicilio-pereira",
+      "canasta-de-flores-pereira",
+      "arreglo-floral-para-enamorar-en-pereira-dosquebradas",
+      "arreglo-floral-en-caja-de-corazon-en-pereira",
+      "arreglo-floral-con-girasoles-en-pereira-dosquebradas",
+      "arreglo-floral-magia-arreglo-floral-corazon-pereira",
+      "arreglo-floral-frescura",
+      "arreglo-floral-dulces-15-regalos-para-15-anos-en-pereira",
+      "arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "arreglo-floral-de-lujo-en-pereira",
+      "arreglos-florales-a-domicilio-en-pereira",
+      "arreglo-floral-celestial",
+      "arreglos-con-rosas-pereira",
+      "girasoles-a-domicilio-en-pereira-dosquebradas",
+      "bouquet-de-girasoles-en-pereira",
+      "floristerias-en-pereira-rosas-y-fresas",
+      "bouquet-mas-bombones-de-chocolate-combo-dulzura-chocolates-rellenos-pereira-",
+      "ramos-de-rosas-y-chocolates",
+      "bouquet-de-lujo-happy-bouquet-de-rosas-pereira",
+      "arreglo-de-flores-para-enviar-a-pereira-dosquebradas",
+      "regalos-pereira-a-domicilio",
+      "bouquet-arcoiris-bouquet-de-flores-a-domicilio-en-pereira",
+      "bouquet-eterno-bouquet-de-flores-pereira",
+      "ramos-de-chocolates-y-flores-pereira-dosquebradas",
+      "bouquet-de-girasoles-pereira",
+      "floristeria-pereira-a-domicilio",
+      "bouquet-jp-con-fresas-recubiertas-de-chocolate-floristerias-en-pereira-centro",
+      "bouquet-joya-flores-con-licores-en-pereira",
+      "bouquet-de-lujo-en-pereira-dosquebradas",
+      "arreglo-de-flores-pereira-dosquebradas-con-frutas",
+      "mini-donuts-decoradas-pereira",
+      "cajas-de-flores-pereira-con-fresas-grande-arreglos-florales-en-pereira",
+      "bouquet-de-flores-navideno-pereira-dosquebradas",
+      "arreglo-floral-navideno-pereira-dosquebradas",
+      "arreglo-floral-con-girasoles-pereira-dosquebradas-santa-rosa-de-cabal",
+      "flores-a-domicilio-en-pereira-colombia",
+      "ramo-buchon-en-pereira-dosquebradas",
+      "ramos-buchones-pereira-dosquebradas-santa-rosa-de-cabal",
+      "flores-san-valentin-pereira-or-flores-en-pereira",
+      "arreglo-de-flores-fantasia-floral-con-fresas-arreglos-de-flores-en-pereira",
+      "ancheta-dulce-armonia-anchetas-sorpresa-en-pereira",
+      "arreglo-floral-romance-arreglos-con-orquideas-en-pereira",
+      "floristerias-a-domicilio-en-pereira-dosquebradas-santa-rosa-de-cabal",
+      "arreglos-florales-catolicos",
+      "centros-de-mesa-en-pereira-y-dosquebradas-centro-de-mesa-primaveral",
+      "arreglos-florales-dia-de-las-madres-pereira",
+      "detalles-dia-de-las-madres-en-pereira-y-dosquebradas",
+      "ancheta-orquidea-orquideas-en-pereira",
+      "arreglo-floral-dia-de-las-madres-or-arreglos-florales-en-pereira",
+      "regalos-para-el-dia-de-las-madres-en-pereira-y-dosquebradas",
+      "arreglo-floral-jardin-del-sol-naciente-arreglos-florales-en-pereira-dosquebradas",
+      "bouquet-amor-genuino-or-ramos-de-rosas-en-pereira",
+      "regalos-de-amor-y-amistad-para-mujer-en-pereira-arreglos-florales-a-domicilio",
+      "flores-de-amor-y-amistad-en-pereira-dosquebradas",
+      "floristerias-en-pereira-amor-y-amistad-2024",
+      "arreglo-floral-san-valentin-pereira-dosquebradas",
+      "caja-de-flores-y-chocolates-i-love-you-or-detalles-pereira",
+      "arreglo-floral-lovely-moments-or-arreglo-floral-de-lujo-en-pereira-dosquebradas",
+      "fresas-con-crema-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-nostalgia-or-flores-a-domicilio-dia-de-las-madres-pereira-dosquebradas",
+      "arreglo-floral-del-campo-or-flores-en-pereira-or-flores-a-domicilio",
+      "flores-a-domicilio-en-pereira-dia-de-la-madre",
+      "arreglo-floral-only-you-detalles-de-amor-y-amistad-en-pereira",
+      "combo-conquista-flores-y-peluches-pereira-dosquebradas",
+      "caja-premium-rosas-and-fresas-deluxe-ramos-en-caja-or-floristeria-pereira-lovely-moments",
+      "caja-valantine-or-valentines-gifts-pereira-or-flower-shop-in-pereira",
+      "flores-san-valentin-or-flores-en-pereira-or-floristerias-a-domicilio",
+      "combo-amore-mio-or-flores-de-amor-en-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-inmortal-or-flores-preservadas-para-mama-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-sonrisas-para-mama-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "ramo-de-velas-aromatizadas-lovely-moments-or-velas-aromaticas-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "arreglo-floral-mama-consentida-or-flores-de-lujo-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal",
+      "caja-corazon-romance-or-caja-de-rosas-en-forma-de-corazon-or-regalos-amory-amistad",
+      "arreglo-floral-cuadro-de-amor-or-arreglos-florales-or-pereira-or-dosquebradas-or-santa-rosa-de-cabal"
+    ],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/af28-A1aQV3wWkrHWZKnR.jpg",
+    "imageAlt": "Flores a domicilio en Santa Rosa de Cabal",
+    "group": "Domicilios",
+    "source": "https://lovelymoments.com.co/floristerias-a-domicilio-en-santa-rosa-de-cabal"
+  },
+  {
+    "slug": "como-elegir-el-ramo-perfecto-guia-de-regalos-florales",
+    "title": "Cómo elegir un ramo de flores",
+    "kind": "article",
+    "intro": "La ocasión, la persona y el lugar donde va a poner el ramo ayudan a elegir las flores y el tamaño.",
+    "sections": [
+      {
+        "heading": "Empieza por quien lo recibe",
+        "text": "Piensa en las flores que reconoce, los colores que suele elegir y si disfruta los aromas intensos. Un ramo pequeño puede acompañar un agradecimiento y uno más amplio puede ocupar el centro de una celebración.",
+        "links": [
+          {
+            "slug": "bouquets-de-flores-en-pereira",
+            "label": "Bouquets de flores"
+          }
+        ]
+      },
+      {
+        "heading": "Escoge flores y colores",
+        "text": "Rosas, lirios y girasoles dan siluetas y tonos distintos. Los pasteles forman un conjunto suave. Los colores vivos llaman más la atención. Una cinta, un florero o una tarjeta pueden completar la presentación.",
+        "links": [
+          {
+            "slug": "el-lenguaje-de-las-flores-significado-de-los-colores-y-tipos",
+            "label": "El significado de los colores y las flores"
+          }
+        ]
+      },
+      {
+        "heading": "Antes y después de la entrega",
+        "text": "Revisa fotos de los arreglos de la floristería y pregunta por las flores disponibles. Para un ramo natural, recorta los tallos en diagonal, renueva el agua y evita el sol directo y las corrientes de aire.",
+        "links": [
+          {
+            "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+            "label": "Arreglos florales"
+          },
+          {
+            "slug": "flores-en-pereira",
+            "label": "Cuaderno de la floristería"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "bouquets-de-flores-en-pereira",
+        "label": "Bouquets de flores"
+      },
+      {
+        "slug": "el-lenguaje-de-las-flores-significado-de-los-colores-y-tipos",
+        "label": "El significado de los colores y las flores"
+      },
+      {
+        "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+        "label": "Arreglos florales"
+      },
+      {
+        "slug": "flores-en-pereira",
+        "label": "Cuaderno de la floristería"
+      }
+    ],
+    "categoryIds": [],
+    "productSlugs": [],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/af39-AGB30l8R2oUE6Wxw.jpg",
+    "imageAlt": "flores Pereira",
+    "group": "Cuaderno del taller",
+    "source": "https://lovelymoments.com.co/como-elegir-el-ramo-perfecto-guia-de-regalos-florales",
+    "date": "2023-11-07",
+    "author": "Lovely Moments"
+  },
+  {
+    "slug": "10-ideas-de-regalos-florales-para-todas-ocasion",
+    "title": "Diez ideas para regalar flores",
+    "kind": "article",
+    "intro": "Hay más de una forma de acompañar una celebración con flores. Estas diez propuestas van del ramo clásico a una planta para cuidar.",
+    "sections": [
+      {
+        "heading": "Para una fecha de pareja",
+        "text": "Un ramo de rosas rojas expresa afecto en un aniversario. Las rosas eternas permiten conservar el recuerdo durante más tiempo.",
+        "links": [
+          {
+            "slug": "rosas-eternas",
+            "label": "Rosas eternas de cinta"
+          }
+        ]
+      },
+      {
+        "heading": "Para alegrar un día cotidiano",
+        "text": "Un ramo de flores silvestres da un aire campestre. Los girasoles aportan amarillo y un cesto de margaritas funciona como gesto de amistad.",
+        "links": [
+          {
+            "slug": "bouquets-de-flores-en-pereira",
+            "label": "Bouquets de flores"
+          }
+        ]
+      },
+      {
+        "heading": "Para una casa",
+        "text": "Una orquídea puede ocupar un sitio especial en la sala. Una suculenta en una maceta decorativa es una opción pequeña para agradecer.",
+        "links": []
+      },
+      {
+        "heading": "Para un gesto personal",
+        "text": "Los lirios blancos pueden acompañar un momento de consuelo. Para un cumpleaños, elige las flores favoritas de la persona y añade una nota. Un ramo mixto permite combinar varias de estas ideas en una misma entrega.",
+        "links": [
+          {
+            "slug": "regalos-de-cumpleanos-a-domicilio-en-pereira",
+            "label": "Regalos de cumpleaños"
+          },
+          {
+            "slug": "flores-en-pereira",
+            "label": "Cuaderno de la floristería"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "rosas-eternas",
+        "label": "Rosas eternas de cinta"
+      },
+      {
+        "slug": "bouquets-de-flores-en-pereira",
+        "label": "Bouquets de flores"
+      },
+      {
+        "slug": "regalos-de-cumpleanos-a-domicilio-en-pereira",
+        "label": "Regalos de cumpleaños"
+      },
+      {
+        "slug": "flores-en-pereira",
+        "label": "Cuaderno de la floristería"
+      }
+    ],
+    "categoryIds": [],
+    "productSlugs": [],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/whatsapp-image-2022-12-02-at-11.20.05-m7VqjkK9RJcQR66k.jpeg",
+    "imageAlt": "flores en Pereira a domicilio",
+    "group": "Cuaderno del taller",
+    "source": "https://lovelymoments.com.co/10-ideas-de-regalos-florales-para-todas-ocasion",
+    "date": "2023-11-07",
+    "author": "Lovely Moments"
+  },
+  {
+    "slug": "el-lenguaje-de-las-flores-significado-de-los-colores-y-tipos",
+    "title": "El significado de los colores y las flores",
+    "kind": "article",
+    "intro": "La floriografía recoge asociaciones tradicionales entre flores, colores y mensajes. Puedes usarlas como punto de partida para una dedicatoria.",
+    "sections": [
+      {
+        "heading": "Rosas y lirios",
+        "text": "En la guía del taller, el rojo de las rosas se asocia al romance, el rosa claro al agradecimiento y el amarillo a la amistad. Entre los lirios, el blanco se vincula con la pureza y el naranja con la confianza.",
+        "links": [
+          {
+            "slug": "bouquets-de-flores-en-pereira",
+            "label": "Bouquets de flores"
+          }
+        ]
+      },
+      {
+        "heading": "Gerberas, girasoles y margaritas",
+        "text": "Una gerbera amarilla o un girasol pueden comunicar alegría. Las margaritas sugieren sencillez y las orquídeas rosadas, aprecio. Elige asociaciones que tengan sentido para la persona que recibirá el ramo.",
+        "links": []
+      },
+      {
+        "heading": "Combina el color con la forma",
+        "text": "Las rosas y los lirios pueden compartir un arreglo. Repite un tono para unir las flores o alterna especies de formas diferentes para que se distingan. Una tarjeta explica el sentido que tú le das al regalo.",
+        "links": [
+          {
+            "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+            "label": "Arreglos florales"
+          },
+          {
+            "slug": "flores-en-pereira",
+            "label": "Cuaderno de la floristería"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "bouquets-de-flores-en-pereira",
+        "label": "Bouquets de flores"
+      },
+      {
+        "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+        "label": "Arreglos florales"
+      },
+      {
+        "slug": "flores-en-pereira",
+        "label": "Cuaderno de la floristería"
+      }
+    ],
+    "categoryIds": [],
+    "productSlugs": [],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/b05-AR07p838bbCl1DoB.jpg",
+    "imageAlt": "El significado de los colores y las flores",
+    "group": "Cuaderno del taller",
+    "source": "https://lovelymoments.com.co/el-lenguaje-de-las-flores-significado-de-los-colores-y-tipos",
+    "date": "2023-11-09",
+    "author": "Lovely Moments"
+  },
+  {
+    "slug": "consejos-para-elegir-el-regalo-perfecto",
+    "title": "Cómo escoger un regalo personal",
+    "kind": "article",
+    "intro": "Antes de mirar las opciones, recuerda algo que la persona haya dicho, hecho o esperado con ilusión.",
+    "sections": [
+      {
+        "heading": "Busca las pistas",
+        "text": "Una afición, un color o una pequeña necesidad dicen mucho. También sirven las listas de deseos y la ocasión por la que vas a regalar.",
+        "links": []
+      },
+      {
+        "heading": "Dale un detalle propio",
+        "text": "Una fecha importante, un nombre de chocolate o una nota pueden convertir un diseño conocido en un gesto personal. Consulta qué variantes admite la referencia elegida.",
+        "links": [
+          {
+            "slug": "chocolates-pereira",
+            "label": "Chocolates artesanales"
+          }
+        ]
+      },
+      {
+        "heading": "Cuatro formas de empezar",
+        "text": "Puedes encargar un ramo con sus colores, una caja de chocolates, fresas cubiertas o rosas de cinta. Para una boda, pregunta por un arreglo que combine con las flores de la celebración.",
+        "links": [
+          {
+            "slug": "fresas-con-chocolate-en-pereira",
+            "label": "Fresas con chocolate"
+          },
+          {
+            "slug": "rosas-eternas",
+            "label": "Rosas eternas de cinta"
+          },
+          {
+            "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+            "label": "Arreglos florales"
+          },
+          {
+            "slug": "flores-en-pereira",
+            "label": "Cuaderno de la floristería"
+          }
+        ]
+      }
+    ],
+    "links": [
+      {
+        "slug": "chocolates-pereira",
+        "label": "Chocolates artesanales"
+      },
+      {
+        "slug": "fresas-con-chocolate-en-pereira",
+        "label": "Fresas con chocolate"
+      },
+      {
+        "slug": "rosas-eternas",
+        "label": "Rosas eternas de cinta"
+      },
+      {
+        "slug": "arreglos-florales-a-domicilio-en-pereira-colombia",
+        "label": "Arreglos florales"
+      },
+      {
+        "slug": "flores-en-pereira",
+        "label": "Cuaderno de la floristería"
+      }
+    ],
+    "categoryIds": [],
+    "productSlugs": [],
+    "image": "https://assets.zyrosite.com/A1aoyoBE32FMvyZk/ds18-m7VMzG4WbKcogzxB.jpg",
+    "imageAlt": "Cómo escoger un regalo personal",
+    "group": "Cuaderno del taller",
+    "source": "https://lovelymoments.com.co/consejos-para-elegir-el-regalo-perfecto",
+    "date": "2023-11-09",
+    "author": "Lovely Moments"
+  }
+]

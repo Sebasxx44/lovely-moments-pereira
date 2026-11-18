@@ -1,0 +1,152 @@
+.lovely-box {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.lovely-box__frame {
+  position: absolute;
+  width: 540px;
+  height: 410px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(var(--lb-fit, 1));
+  perspective: 1400px;
+}
+
+.lovely-box__world,
+.lovely-box__object {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+.lovely-box__world {
+  width: 354px;
+  height: 234px;
+  left: calc(50% - 177px);
+  top: calc(50% - 103px);
+}
+
+.lovely-box__object {
+  width: 100%;
+  height: 100%;
+}
+
+.lovely-box__face {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.lovely-box__tray { --thick: 26px; --half: 13px; }
+.lovely-box__lid { --thick: 19px; --half: 9.5px; }
+.lovely-box__top {
+  /* Chromium paints a CSS 3D face before applying the camera. Paint each
+     photograph at its intrinsic dimensions so the camera samples native texels. */
+  width: var(--lb-texture-width, 2120px);
+  height: var(--lb-texture-height, 1400px);
+  transform-origin: top left;
+  transform: translateZ(var(--half)) scale(var(--lb-texture-x, .16703), var(--lb-texture-y, .16720));
+  image-rendering: auto;
+}
+.lovely-box__tray .lovely-box__top {
+  background-image: url('./tray.webp');
+  background-color: #e2dde1;
+}
+.lovely-box__lid .lovely-box__top {
+  background-image: url('./lid.webp');
+  background-color: #d5c9e4;
+}
+.lovely-box__top::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 0 .4px rgb(64 33 21 / 22%);
+}
+.lovely-box__tray .lovely-box__top::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 18% -9%, rgb(46 20 11 / 63%) 0%, rgb(64 29 14 / 27%) 38%, transparent 68%);
+  opacity: var(--lb-cast, .18);
+}
+.lovely-box__bottom {
+  transform: rotateX(180deg) translateZ(var(--half));
+  background-color: #c8c2c6;
+}
+.lovely-box__lid .lovely-box__bottom { background-color: #d9c5d7; }
+.lovely-box__front,
+.lovely-box__back {
+  height: var(--thick);
+  transform-origin: center top;
+}
+.lovely-box__front {
+  top: 100%;
+  transform: translateZ(var(--half)) rotateX(-90deg);
+}
+.lovely-box__back {
+  transform: translateZ(calc(0px - var(--half))) rotateX(90deg);
+}
+.lovely-box__right,
+.lovely-box__left {
+  width: var(--thick);
+  transform-origin: left center;
+}
+.lovely-box__right {
+  left: 100%;
+  transform: translateZ(var(--half)) rotateY(90deg);
+}
+.lovely-box__left {
+  transform: translateZ(calc(0px - var(--half))) rotateY(-90deg);
+}
+.lovely-box__tray :is(.lovely-box__front,.lovely-box__back,.lovely-box__right,.lovely-box__left) {
+  background-image: url('./trayFront.webp');
+  background-color: #dcd7db;
+}
+.lovely-box__lid :is(.lovely-box__front,.lovely-box__back) {
+  background-image: url('./lidFront.webp');
+  background-color: #ab8ea2;
+}
+.lovely-box__lid :is(.lovely-box__right,.lovely-box__left) {
+  background-image: url('./lidSide.webp');
+  background-color: #b598ac;
+}
+.lovely-box__front::after,
+.lovely-box__right::after,
+.lovely-box__back::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgb(56 27 24 / 14%);
+}
+.lovely-box__front::after { background: rgb(56 27 24 / 8%); }
+
+.lovely-box__shadow {
+  position: absolute;
+  left: -7%;
+  top: -2%;
+  width: 114%;
+  height: 104%;
+  border-radius: 38%;
+  background: radial-gradient(ellipse, rgb(64 35 27 / 29%) 3%, rgb(67 37 31 / 15%) 45%, transparent 71%);
+  backface-visibility: hidden;
+}
+.lovely-box__shadow--lid {
+  background: radial-gradient(ellipse, rgb(62 31 30 / 22%) 5%, rgb(67 37 31 / 8%) 45%, transparent 72%);
+}
+.lovely-box__shadow--tray::after {
+  content: '';
+  position: absolute;
+  inset: 6% 5%;
+  background: rgb(59 35 27 / 14%);
+  border-radius: 8%;
+  filter: blur(10px);
+}

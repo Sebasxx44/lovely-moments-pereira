@@ -1,0 +1,7 @@
+dist/
+node_modules/
+.git/
+.vercel/
+.lovely-build-*
+.env
+.env.*
