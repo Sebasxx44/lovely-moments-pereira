@@ -5,8 +5,6 @@
   const board = runway.querySelector(".showcase-board");
   const rail = board.querySelector(".product-rail");
   const backdrop = board.querySelector(".set-backdrop");
-  const ornaments = board.querySelector(".heart-ornaments");
-  const ribbon = board.querySelector(".wrapping-ribbon");
   const masthead = document.querySelector(".masthead");
   const themeColor = document.querySelector('meta[name="theme-color"]');
   const detail = board.querySelector("[data-hero-detail]");
@@ -15,16 +13,14 @@
   const fine = matchMedia("(hover: hover) and (pointer: fine)");
   const gifts = [...rail.querySelectorAll(".rail-object")].map((button, index) => {
     const card = document.querySelector('.product[data-id="' + button.dataset.id + '"]');
-    const wash = index ? document.createElement("span") : backdrop;
+    const wash = backdrop.querySelector('[data-scene="' + button.dataset.id + '"]');
+    const props = board.querySelector('[data-props="' + button.dataset.id + '"]');
     const paper = button.dataset.paper;
     wash.style.setProperty("--set-paper", paper);
     wash.style.setProperty("--set-light", button.dataset.light);
-    if (index) {
-      wash.className = "set-wash";
-      backdrop.append(wash);
-    }
     return {
-      button, wash, paper,
+      button, wash, props, paper, prepared: index === 0,
+      photo: button.querySelector(".object-figure > img"),
       figure: button.querySelector(".object-figure"),
       title: button.dataset.title,
       description: card.querySelector(".product-description").textContent,
@@ -61,7 +57,6 @@
     active = index;
     const gift = gifts[index];
     runway.dataset.active = index;
-    ribbon.classList.toggle("is-gold", index === heartIndex);
     themeColor.content = gift.paper;
     hint.textContent = index === last ? "Sigue al catálogo" : "Desliza para recorrer";
     detail.dataset.heroDetail = gift.button.dataset.id;
@@ -109,31 +104,46 @@
     queue();
   }
 
-  function lightSet(heartFocus) {
+  function prepareArt(gift) {
+    gift.prepared = true;
+    for (const holder of [gift.wash, gift.props]) {
+      const template = holder.querySelector("template");
+      if (template) template.replaceWith(template.content);
+    }
+    if (gift.photo.dataset.srcset) {
+      gift.photo.fetchPriority = "auto";
+      gift.photo.srcset = gift.photo.dataset.srcset;
+    }
+  }
+
+  function lightSet() {
     if (position === paintedPosition) return;
     paintedPosition = position;
     const lower = Math.floor(position);
     const upper = Math.min(last, lower + 1);
     const mix = smoothstep(position - lower);
     // Crossfade two prepainted backdrops. The lower layer remains opaque.
-    for (let i = 1; i <= last; i++) {
+    for (let i = 0; i <= last; i++) {
+      const gift = gifts[i];
+      const offset = i - position;
+      const focus = 1 - smoothstep(clamp(Math.abs(offset)));
+      if (!gift.prepared && Math.abs(offset) < 1) prepareArt(gift);
       const alpha = i === lower ? 1 : i === upper ? mix : 0;
-      gifts[i].wash.style.opacity = alpha.toFixed(3);
+      gift.wash.style.opacity = alpha.toFixed(3);
+      gift.props.style.opacity = focus.toFixed(3);
+      gift.props.toggleAttribute("data-floating", focus > .01);
+      if (focus) gift.props.style.transform = reduced.matches ? "none"
+        : `translate3d(${(offset * 6).toFixed(2)}%, ${((1 - focus) * 10).toFixed(2)}px, 0)`;
     }
     masthead.style.setProperty("--set-paper", mix
       ? `color-mix(in srgb, ${gifts[upper].paper} ${(mix * 100).toFixed(2)}%, ${gifts[lower].paper})`
       : gifts[lower].paper);
-    ornaments.style.opacity = heartFocus.toFixed(3);
-    ornaments.toggleAttribute("data-floating", heartFocus > .01);
-    ornaments.style.transform = reduced.matches ? "none"
-      : `translate3d(${((heartIndex - position) * 7).toFixed(2)}%, ${((1 - heartFocus) * 12).toFixed(2)}px, 0)`;
-    ribbon.style.opacity = (.46 + heartFocus * .36).toFixed(3);
   }
 
   function draw(opening) {
     if (Math.abs(position - active) > .54) select(Math.round(position));
     const heartFocus = 1 - smoothstep(clamp(Math.abs(position - heartIndex)));
-    lightSet(heartFocus);
+    lightSet();
     gifts.forEach(({ button, figure }, index) => {
       // The side gifts exchange edges only after they have completely faded out.
       const count = gifts.length;
@@ -143,16 +153,15 @@
       const depth = squared / (.68 + squared);
       const focus = 1 - smoothstep(Math.min(1, distance));
       const isHeart = index === heartIndex;
-      const visibility = (1 - depth * .28) * (1 - smoothstep(clamp((distance - 1.17) / .48)));
-      const opacity = visibility * (isHeart ? 1 : 1 - .67 * heartFocus);
+      const opacity = (.16 + .84 * focus) * (1 - smoothstep(clamp((distance - 1.17) / .48)));
       button.style.opacity = opacity.toFixed(3);
       button.style.pointerEvents = opacity > .05 ? "auto" : "none";
       if (opacity === 0) return;
 
-      const x = offset * (spacing + (isHeart ? 0 : width * .045 * heartFocus)) + aimX * focus * 3;
+      const x = offset * spacing + aimX * focus * 3;
       const lift = isHeart ? Math.min(18, height * .035) * heartFocus : 0;
       const y = depth * Math.min(height * .105, 58) + aimY * focus * 2 - lift;
-      const scale = (1 - depth * .43) * (isHeart ? 1 + heartBoost * heartFocus : 1 - .12 * heartFocus);
+      const scale = (1 - depth * .50) * (isHeart ? 1 + heartBoost * heartFocus : 1);
       button.style.transform = "translate(-50%, -50%) translate3d(" + x.toFixed(2) + "px," + y.toFixed(2) + "px,0) scale(" + scale.toFixed(4) + ")";
       button.style.zIndex = String(10 - Math.round(distance * 4));
       const turn = -offset * 10 + aimX * focus * 3;
@@ -161,8 +170,6 @@
       figure.style.transform = "perspective(1200px) rotateY(" + turn.toFixed(2) + "deg) rotateX(" + pitch.toFixed(2) + "deg) rotateZ(" + roll.toFixed(2) + "deg)";
     });
 
-    const path = reduced.matches ? 0 : position / last;
-    ribbon.style.transform = "translate3d(" + (path * 5 - 2.5).toFixed(3) + "%," + (path * 3 - 1.5).toFixed(3) + "%,0) rotate(" + (path * 3 - 1.5).toFixed(3) + "deg)";
     if (box && position < 1.65) {
       const focus = 1 - smoothstep(Math.min(1, position));
       const lift = reduced.matches ? 0 : .03 + .27 * opening + .46 * (1 - focus);

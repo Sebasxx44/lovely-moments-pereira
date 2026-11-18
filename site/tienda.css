@@ -7,16 +7,31 @@
   font-style: normal; font-weight: 100 1000; font-display: swap;
 }
 :root {
-  --ink: #382320; --wine: #762e3b; --muted: #68534e; --paper: #fcf9f3;
-  --blush: #f3dfda; --line: #d6c7bd; --serif: "Instrument Serif", Georgia, serif;
+  --serif: "Instrument Serif", Georgia, serif;
   --rail: max(24px, 5.55vw); --head: 76px; --ease: cubic-bezier(.2,.72,.24,1);
   color-scheme: light; color: var(--ink); background: var(--paper);
   font: 400 16px/1.55 "DM Sans", Arial, sans-serif; font-synthesis: none;
   -webkit-font-smoothing: antialiased; scroll-behavior: smooth; scroll-padding-top: calc(var(--head) + 8px);
 }
+:root, .palette-orquidea {
+  --paper: #f6e9f3; --blush: #e9cbe1; --line: #c9a8be; --wine: #783877;
+  --ink: #351d36; --muted: #62465c; --deep: #43213f;
+}
+.palette-cacao {
+  --paper: #ffebe2; --blush: #f3c6b5; --line: #ceaa98; --wine: #943e32;
+  --ink: #3c211e; --muted: #70483f; --deep: #522a28;
+}
+.palette-rubi {
+  --paper: #fde9ee; --blush: #f5c3cf; --line: #d4a8b3; --wine: #ac1231;
+  --ink: #411b29; --muted: #724452; --deep: #60162d;
+}
+.palette-miel {
+  --paper: #fff0c9; --blush: #f2d38e; --line: #cdb379; --wine: #825315;
+  --ink: #382712; --muted: #695136; --deep: #503611;
+}
 *, *::before, *::after { box-sizing: border-box; }
 body, figure, h1, h2, h3, p, ul { margin: 0; }
-body { min-width: 280px; }
+body { min-width: 280px; background: var(--paper); color: var(--ink); }
 h1, h2, h3 { font-weight: 400; }
 img { display: block; max-width: 100%; }
 .ui-icon {
@@ -27,8 +42,8 @@ button, a { font: inherit; color: inherit; -webkit-tap-highlight-color: transpar
 a { text-decoration: none; }
 button { cursor: pointer; border: 0; background: none; padding: 0; }
 button:disabled { cursor: auto; }
-:focus-visible { outline: 2px solid #8c3543; outline-offset: 4px; }
-::selection { background: #e2a9a8; color: #382320; }
+:focus-visible { outline: 2px solid var(--wine); outline-offset: 4px; }
+::selection { background: var(--wine); color: #fff8ee; }
 [hidden], html:not(.has-js) .enhanced { display: none !important; }
 .wrap { width: min(calc(100% - 2 * var(--rail)), 1480px); margin-inline: auto; }
 .skip { position: fixed; top: 12px; left: 16px; z-index: 20; padding: 12px 20px; color: white; background: var(--wine); transform: translateY(-180%); }
@@ -44,7 +59,7 @@ button:disabled { cursor: auto; }
 .bag-count > span { display: inline-block; min-width: 1ch; }
 .bag-trigger .ui-icon { width: 18px; height: 18px; }
 .primary { min-height: 48px; display: inline-flex; align-items: center; justify-content: space-between; gap: 26px; padding: 12px 20px; background: var(--wine); color: #fff8ee; font-size: 14px; font-weight: 500; border-radius: 4px; transition: background-color 160ms; }
-.primary:hover, .primary:focus-visible { background: #57202a; }
+.primary:hover, .primary:focus-visible { background: var(--deep); }
 .primary .ui-icon, .close-dialog .ui-icon { width: 18px; height: 18px; }
 .catalogue { padding: clamp(72px,7.3vw,128px) 0 clamp(80px,8vw,144px); }
 h2 { font: 400 clamp(56px,6.3vw,100px)/.97 var(--serif); letter-spacing: -.047em; }
@@ -59,11 +74,11 @@ h2 { font: 400 clamp(56px,6.3vw,100px)/.97 var(--serif); letter-spacing: -.047em
 .products { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 44px 24px; }
 .product { position: relative; min-width: 0; }
 .product-link { display: block; }
-.product-photo { overflow: hidden; background: #e6dad2; }
+.product-photo { overflow: hidden; background: var(--blush); }
 .product-photo img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; }
-.quick-add { position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: #fffcf3; color: var(--wine); border: 1px solid #b59e97; transition: background-color 160ms, color 160ms; }
+.quick-add { position: absolute; top: 12px; right: 12px; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; background: var(--paper); color: var(--wine); border: 1px solid var(--line); transition: background-color 160ms, color 160ms; }
 .quick-add .ui-icon { width: 20px; height: 20px; }
-.quick-add:hover, .quick-add.is-added { background: var(--wine); color: var(--paper); }
+.quick-add:hover { background: var(--wine); color: #fff8ee; }
 .product-meta { display: flex; gap: 8px; justify-content: space-between; font-size: 12px; color: var(--muted); margin: 16px 0 4px; }
 .product-price { color: var(--ink); font-variant-numeric: tabular-nums; font-weight: 500; }
 .product h3 { font: 400 clamp(24px,2.4vw,38px)/1.12 var(--serif); letter-spacing: -.025em; }
@@ -71,7 +86,8 @@ h2 { font: 400 clamp(56px,6.3vw,100px)/.97 var(--serif); letter-spacing: -.047em
 .text-link { width: fit-content; display: inline-flex; min-height: 40px; align-items: center; gap: 16px; padding: 4px 0; border-bottom: 1px solid currentColor; font-size: 14px; }
 .text-link:hover { color: var(--wine); }
 .official-catalogue { margin-top: 40px; }
-.delivery { background: #55232d; color: #fbebe1; }
+.collection-band { color: var(--ink); background: var(--blush); }
+.delivery { background: var(--wine); color: #fff2ec; }
 .delivery-grid { padding-block: clamp(64px,7vw,116px); display: grid; grid-template-columns: 1.04fr 1fr; gap: 8%; }
 .delivery-label { margin-bottom: 24px; font-size: 14px; color: #f1c9c3; }
 .delivery h2 { font-size: clamp(72px,7.8vw,128px); }
@@ -97,8 +113,8 @@ dialog[open] { animation: arrive 200ms var(--ease); }
 .close-dialog:hover { border-color: var(--ink); }
 .product-dialog { width: min(820px,calc(100% - 40px)); max-width: none; max-height: 88dvh; }
 .detail-layout { display: grid; grid-template-columns: 46% 54%; min-height: 390px; position: relative; }
-.detail-photo { position: relative; background: #eadbd3; }
-.photo-full { position: absolute; left: 12px; bottom: 12px; padding: 8px 12px; color: #462434; background: #fffaef; border-radius: 3px; font-size: 13px; }
+.detail-photo { position: relative; background: var(--blush); }
+.photo-full { position: absolute; left: 12px; bottom: 12px; padding: 8px 12px; color: var(--ink); background: var(--paper); border-radius: 3px; font-size: 13px; }
 .detail-photo img { height: 100%; width: 100%; object-fit: cover; }
 .detail-copy { padding: 64px clamp(24px,3.5vw,56px) 36px; }
 .detail-copy h2, .bag-sheet h2 { font-size: clamp(40px,4vw,66px); }
@@ -109,6 +125,13 @@ dialog[open] { animation: arrive 200ms var(--ease); }
 .detail-copy .text-link { margin-top: 12px; font-size: 13px; }
 .bag-dialog { position: fixed; inset: 0 0 0 auto; margin: 0; width: min(460px,100%); max-width: 100%; height: 100dvh; max-height: 100dvh; }
 .bag-sheet { position: relative; padding: 68px clamp(24px,3vw,44px) 40px; }
+#bag-title { display: flex; align-items: center; gap: .22em; }
+#bag-title .ui-icon { width: .58em; height: .58em; color: var(--wine); }
+.bag-flight {
+  position: fixed; inset: 0 auto auto 0; z-index: 30; object-fit: cover;
+  border-radius: 50%; border: 2px solid #fff6ed; box-shadow: 0 5px 15px #35152640;
+  pointer-events: none; visibility: visible; will-change: transform, opacity;
+}
 .bag-intro { margin: 16px 0 28px; }
 .bag-line { display: grid; grid-template-columns: 56px 1fr auto; align-items: center; gap: 12px; padding: 16px 0; border-top: 1px solid var(--line); }
 .bag-line img { width: 56px; height: 72px; object-fit: cover; }
@@ -126,9 +149,7 @@ dialog[open] { animation: arrive 200ms var(--ease); }
 .notice { position: fixed; bottom: 24px; left: 50%; transform: translate(-50%,8px); opacity: 0; pointer-events: none; background: var(--ink); color: #fff8ef; padding: 10px 18px; border-radius: 4px; font-size: 13px; text-align: center; max-width: calc(100% - 24px); width: max-content; transition: opacity 150ms, transform 150ms; z-index: 5; }
 .notice.show { opacity: 1; transform: translate(-50%,0); }
 @media (prefers-reduced-motion: no-preference) {
-  .is-added .ui-icon use { stroke-dasharray: 1; animation: write-check 280ms var(--ease); }
   .count-in { animation: count-in 260ms var(--ease); }
-  @keyframes write-check { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
   @keyframes count-in { from { opacity: .55; transform: translateY(3px); } to { opacity: 1; transform: translateY(0); } }
 }
 @media (max-width: 900px) {

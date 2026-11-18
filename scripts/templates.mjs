@@ -31,12 +31,14 @@ export function shellParts(home) {
     bag: find(/<dialog id="bag-dialog"[\s\S]*?<\/dialog>/),
   };
 }
-export function layout(parts, title, desc, main, theme = "rose", tone = "") {
+export function layout(parts, title, desc, main, theme = "orquidea", tone = "") {
+  const palette = tone || theme;
+  const swatches = { orquidea: "#783877", cacao: "#943e32", rubi: "#ac1231", miel: "#825315" };
   const sceneAssets = tone ? '<link rel="preload" href="/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/escenas.css"><script src="/escenas.js" defer></script>' : "";
-  return `<!doctype html><html lang="es-CO"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#fcf9f3"><title>${esc(title)} · Lovely Moments</title><meta name="description" content="${esc(desc)}"><link rel="icon" href="${base}assets/sello.webp"><link rel="preload" href="${base}fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="${base}tienda.css"><link rel="stylesheet" href="${base}escaparate.css"><link rel="stylesheet" href="${base}interiores.css">${sceneAssets}<script src="${base}inventario.js" defer></script><script src="${base}tienda.js" defer></script><script src="${base}interiores.js" defer></script></head><body class="store-interior theme-${theme}${tone ? " scene-page scene-at-top tono-"+tone : ""}"><a class="skip" href="#${tone ? "contenido-seccion" : "contenido"}">Saltar al contenido</a>${parts.header}<main id="contenido">${main}</main>${parts.footer}${parts.bag}<p class="notice" role="status" aria-live="polite"></p></body></html>`;
+  return `<!doctype html><html lang="es-CO"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="${swatches[palette]}"><title>${esc(title)} · Lovely Moments</title><meta name="description" content="${esc(desc)}"><link rel="icon" href="${base}assets/sello.webp"><link rel="preload" href="${base}fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="${base}tienda.css"><link rel="stylesheet" href="${base}escaparate.css"><link rel="stylesheet" href="${base}interiores.css">${sceneAssets}<script src="${base}inventario.js" defer></script><script src="${base}tienda.js" defer></script><script src="${base}interiores.js" defer></script></head><body class="store-interior palette-${palette}${tone ? " scene-page scene-at-top tono-"+tone : ""}"><a class="skip" href="#${tone ? "contenido-seccion" : "contenido"}">Saltar al contenido</a>${parts.header}<main id="contenido">${main}</main>${parts.footer}${parts.bag}<p class="notice" role="status" aria-live="polite"></p></body></html>`;
 }
 export function card(item) {
-  return `<article class="s-card" data-slug="${esc(item.slug)}"><a href="${url(item.slug)}"><figure>${image(item.thumb,item.name,'width="384" height="480" loading="lazy"')}</figure><div class="s-card-copy"><h3>${esc(item.name)}</h3><span>${peso(item.price)}</span></div></a></article>`;
+  return `<article class="s-card" data-slug="${esc(item.slug)}"><a href="${url(item.slug)}"><figure>${image(item.thumb,item.name,'width="384" height="480" loading="lazy"')}</figure><div class="s-card-copy"><h3>${esc(item.name)}</h3><span>${peso(item.price)}</span></div></a><button type="button" class="quick-add enhanced" aria-label="Guardar ${esc(item.name)} en mi selección">${icon("plus")}</button></article>`;
 }
 export function grid(items, label = "Regalos", withSearch = true) {
   if (!items.length) return "";
@@ -71,8 +73,12 @@ export function textBlocks(page, known) {
     return `<section>${s.heading ? `<h2>${esc(s.heading)}</h2>` : ""}${texts.filter(Boolean).map(t=>`<p>${esc(t)}</p>`).join("")}${links.length ? `<div class="prose-links">${links.join("")}</div>` : ""}</section>`;
   }).join("")}</div>`;
 }
-export function sectionLayout(parts, page, label, content, { tools = "", next, theme = "rose" }) {
+export function sectionLayout(parts, page, label, content, { tools = "", next, theme = "orquidea" }) {
   const { mode, tone, photo: subject } = sceneFor(page, theme);
+  const accent = { orquidea: "orquidea", cacao: "viruta", miel: "hoja" }[tone];
+  const decoration = accent
+    ? `<div class="scene-ribbon scene-prop" aria-hidden="true"><img src="/assets/hero/${accent}.webp" alt="" decoding="async" fetchpriority="low"></div>`
+    : '<div class="scene-ribbon" aria-hidden="true"><img src="/assets/escenas/liston-800.webp" srcset="/assets/escenas/liston-800.webp 800w, /assets/escenas/liston-1600.webp 1600w" sizes="(max-width: 720px) 112vw, 68vw" alt="" decoding="async" fetchpriority="low"></div>';
   const sizes = "(max-width: 720px) 82vw, (min-width: 2000px) 850px, 47vw";
   const imageAttrs = subject.srcset ? `srcset="${esc(subject.srcset)}" sizes="${sizes}" width="${subject.width}" height="${subject.height}"` : "";
   const title = page.slug === paths.all ? '<span class="title-line">Todos los</span> <span class="title-line">regalos</span>' : esc(page.title);
@@ -82,7 +88,7 @@ export function sectionLayout(parts, page, label, content, { tools = "", next, t
       ${crumbs([[null,label]])}
       <div class="scene-copy"><h1 id="titulo-seccion"${page.title.length > 27 ? ' class="title-long"' : ''}>${title}</h1>${page.intro ? `<p>${esc(page.intro)}</p>` : ""}${tools}</div>
       <div class="scene-set">
-        <div class="scene-ribbon" aria-hidden="true"><img src="/assets/escenas/liston-800.webp" srcset="/assets/escenas/liston-800.webp 800w, /assets/escenas/liston-1600.webp 1600w" sizes="(max-width: 720px) 112vw, 68vw" alt="" decoding="async"></div>
+        ${decoration}
         ${mode === "objeto" ? '<div class="scene-ground" aria-hidden="true"></div>' : ""}
         <figure class="scene-subject"><div class="scene-arrival"><div class="scene-piece">${image(subject.src,subject.alt,imageAttrs+' fetchpriority="high"')}</div></div></figure>
       </div>

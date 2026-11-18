@@ -1,12 +1,11 @@
 .scene-page {
-  --scene-paper: #fff8ed;
-  --scene-ink: #392821;
-  --paper-mix: multiply;
+  --scene-paper: var(--wine);
+  --scene-ink: #fff5e7;
 }
-.tono-petalo { --scene-paper: #ffdedb; --scene-ink: #4a1d2b; }
-.tono-salvia { --scene-paper: #e1ead1; --scene-ink: #253b2d; }
-.tono-miel { --scene-paper: #ffdfaa; --scene-ink: #4d291c; }
-.tono-vino { --scene-paper: #5d253a; --scene-ink: #fff3e1; --paper-mix: soft-light; }
+.tono-orquidea { --plate: url("assets/hero/papel-orquidea.webp"); --mobile-plate: url("assets/hero/papel-orquidea-movil.webp"); }
+.tono-cacao { --plate: url("assets/hero/cacao.webp"); --mobile-plate: url("assets/hero/cacao-movil.webp"); }
+.tono-miel { --plate: url("assets/hero/canasta.webp"); --mobile-plate: url("assets/hero/canasta-movil.webp"); }
+.tono-rubi { --plate: url("assets/escenas/papel-1672.webp"); --mobile-plate: url("assets/escenas/papel-800.webp"); }
 
 .scene-page .masthead {
   position: fixed; inset: 0 0 auto;
@@ -27,9 +26,11 @@
 .scene-backdrop { position: absolute; z-index: -1; inset: -4%; overflow: hidden; pointer-events: none; }
 .scene-light {
   position: absolute; inset: -3%;
-  background: var(--scene-paper) url("assets/escenas/papel-1672.webp") 50% 52% / cover no-repeat;
-  background-blend-mode: var(--paper-mix);
+  background: var(--scene-paper) var(--plate) 50% 52% / cover no-repeat;
+  mask-image: linear-gradient(105deg, #0005, #0009 42%, #000 80%);
 }
+.tono-rubi .scene-light { background-blend-mode: soft-light; }
+.scene-backdrop::after { content: ""; position: absolute; inset: 0; background: linear-gradient(155deg, rgb(45 10 26 / 19%), transparent 72%); }
 .scene-inner {
   position: relative; display: grid; min-height: inherit;
   grid-template: "crumb crumb" auto "copy art" minmax(min-content, 1fr) "foot foot" auto / minmax(0, .97fr) minmax(0, 1.03fr);
@@ -119,7 +120,7 @@
   .scene-copy p { max-width: 34ch; }
 }
 @media (max-width: 720px) {
-  .scene-light { background-image: url("assets/escenas/papel-800.webp"); background-position: 70% 50%; }
+  .scene-light { background-image: var(--mobile-plate); background-position: center; mask-image: linear-gradient(0deg, #0002, #0005 33%, #000 70%, #0007); }
   .scene-inner {
     grid-template: "crumb" auto "art" minmax(180px, 1fr) "copy" auto "foot" auto / minmax(0,1fr);
     padding-block: calc(var(--head) + 12px) max(12px, env(safe-area-inset-bottom));
@@ -159,4 +160,11 @@
   .scene-copy .shop-search input { height: 40px; }
   .scene-foot { padding-top: 0; }
   .escena-postal .scene-piece { width: min(70%, 41svh); height: auto; }
+}
+.studio-scene .scene-set .scene-prop {
+  inset: 11% 0 auto auto; width: clamp(54px, 9vw, 166px); height: auto; aspect-ratio: 1; rotate: 14deg;
+}
+.escena-postal .scene-set .scene-prop { inset: auto 0 12% auto; }
+@media (max-width: 720px) {
+  .studio-scene .scene-set .scene-prop { inset: 8% 1% auto auto; width: clamp(44px, 15vw, 85px); }
 }

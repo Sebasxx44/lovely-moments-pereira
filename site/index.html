@@ -47,44 +47,58 @@
   <main>
     <section class="showcase-runway" id="inicio" aria-label="Regalos de Lovely Moments en Pereira">
       <div class="showcase-board" data-arrival role="region" aria-roledescription="carrusel" aria-label="Escaparate de cuatro regalos">
-        <div class="set-backdrop" aria-hidden="true"></div>
+        <div class="set-backdrop" aria-hidden="true">
+          <div class="set-wash" data-scene="amor-infinito"><picture class="set-photo"><source media="(max-width: 650px) and (orientation: portrait)" srcset="assets/hero/papel-orquidea-movil.webp"><img src="assets/hero/papel-orquidea.webp" alt="" decoding="async" fetchpriority="low"></picture></div>
+          <div class="set-wash" data-scene="bombonita"><template><picture class="set-photo"><source media="(max-width: 650px) and (orientation: portrait)" srcset="assets/hero/cacao-movil.webp"><img src="assets/hero/cacao.webp" alt="" decoding="async" fetchpriority="low"></picture></template></div>
+          <div class="set-wash" data-scene="corazon-sorpresa"></div>
+          <div class="set-wash" data-scene="ancheta-deluxe"><template><picture class="set-photo"><source media="(max-width: 650px) and (orientation: portrait)" srcset="assets/hero/canasta-movil.webp"><img src="assets/hero/canasta.webp" alt="" decoding="async" fetchpriority="low"></picture></template></div>
+        </div>
         <div class="set-heading wrap">
           <p>Floristería y chocolatería</p><p>Pereira, Colombia</p>
         </div>
         <div class="product-set" aria-label="Productos en el escaparate">
-          <picture class="wrapping-ribbon" aria-hidden="true">
-            <source media="(max-width: 650px) and (orientation: portrait)" srcset="assets/hero/cinta-vertical.webp">
-            <img src="assets/hero/cinta.webp" alt="" decoding="async">
-          </picture>
           <div class="set-floor" aria-hidden="true"></div>
-          <div class="heart-ornaments" aria-hidden="true">
-            <span class="gold-key"><img src="assets/hero/llave-dorada.webp" width="560" height="550" alt="" decoding="async" fetchpriority="low"></span>
-            <span class="gold-truffle"><img src="assets/hero/trufa-dorada.webp" width="320" height="329" alt="" decoding="async" fetchpriority="low"></span>
+          <div class="gift-props" data-props="amor-infinito" aria-hidden="true">
+            <span class="prop prop-a"><img src="assets/hero/orquidea.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-b"><img src="assets/hero/corazon.webp" alt="" decoding="async" fetchpriority="low"></span>
+          </div>
+          <div class="gift-props" data-props="bombonita" aria-hidden="true">
+            <template><span class="prop prop-a"><img src="assets/hero/viruta.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-b"><img src="assets/hero/fresa.webp" alt="" decoding="async" fetchpriority="low"></span></template>
+          </div>
+          <div class="gift-props heart-ornaments" data-props="corazon-sorpresa" aria-hidden="true">
+            <template><picture class="wrapping-ribbon"><source media="(max-width: 650px) and (orientation: portrait)" srcset="assets/hero/cinta-vertical.webp"><img src="assets/hero/cinta.webp" alt="" decoding="async" fetchpriority="low"></picture>
+              <span class="prop prop-a gold-key"><img src="assets/hero/llave-dorada.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-b gold-truffle"><img src="assets/hero/trufa-dorada.webp" alt="" decoding="async" fetchpriority="low"></span></template>
+          </div>
+          <div class="gift-props" data-props="ancheta-deluxe" aria-hidden="true">
+            <template><span class="prop prop-a"><img src="assets/hero/naranja.webp" alt="" decoding="async" fetchpriority="low"></span>
+              <span class="prop prop-b"><img src="assets/hero/hoja.webp" alt="" decoding="async" fetchpriority="low"></span></template>
           </div>
           <div class="product-rail">
               <button class="rail-object" type="button" data-id="amor-infinito" data-title="Amor infinito" data-paper="#783877" data-light="#e096c4" aria-label="Ver Amor Infinito">
                 <span class="object-ground" aria-hidden="true"></span>
                 <span class="object-figure">
-                  <img src="assets/hero/amor-infinito-900.webp" srcset="assets/hero/amor-infinito-900.webp 900w, assets/hero/amor-infinito-hd.webp 2790w" sizes="(max-width: 650px) 76vw, (max-width: 800px) 53vw, (min-width: 2000px) min(45vw, 1450px), 44vw" alt="Estuche de bombones de corazón y tapa floral de Lovely Moments" fetchpriority="high">
+                  <img src="assets/hero/amor-infinito-900.webp" srcset="assets/hero/amor-infinito-900.webp 900w, assets/escenas/amor-infinito-1440.webp 1440w, assets/hero/amor-infinito-hd.webp 2790w" sizes="(max-width: 650px) 76vw, (max-width: 800px) 53vw, (min-width: 2000px) min(45vw, 1450px), 44vw" alt="Estuche de bombones de corazón y tapa floral de Lovely Moments" fetchpriority="high">
                   <span id="hero-box" class="object-model" aria-hidden="true"></span>
                 </span>
               </button>
               <button class="rail-object" type="button" data-id="bombonita" data-title="Fresas Bombonita" data-paper="#943e32" data-light="#f39878" aria-label="Ver Caja Bombonita">
                 <span class="object-ground" aria-hidden="true"></span>
                 <span class="object-figure">
-                  <img src="assets/hero/bombonita-900.webp" srcset="assets/hero/bombonita-900.webp 900w, assets/hero/bombonita-hd.webp 1092w" sizes="(max-width: 650px) 76vw, (max-width: 800px) 53vw, (min-width: 2000px) min(45vw, 1450px), 44vw" alt="Fresas Bombonita recubiertas de chocolate" decoding="async">
+                  <img src="assets/hero/bombonita-lateral.webp" fetchpriority="low" data-srcset="assets/hero/bombonita-900.webp 900w, assets/hero/bombonita-hd.webp 1092w" sizes="(max-width: 650px) 76vw, (max-width: 800px) 53vw, (min-width: 2000px) min(45vw, 1450px), 44vw" alt="Fresas Bombonita recubiertas de chocolate" decoding="async">
                 </span>
               </button>
               <button class="rail-object" type="button" data-id="corazon-sorpresa" data-title="Corazón sorpresa" data-paper="#ac1231" data-light="#fa5558" aria-label="Ver Corazón Sorpresa de Chocolate">
                 <span class="object-ground" aria-hidden="true"></span>
                 <span class="object-figure">
-                  <img src="assets/hero/corazon-sorpresa-900.webp" srcset="assets/hero/corazon-sorpresa-900.webp 900w, assets/hero/corazon-sorpresa-hd.webp 2875w" sizes="(max-width: 650px) 94vw, (max-width: 800px) 70vw, (min-width: 2000px) min(60vw, 1940px), 57vw" width="2875" height="2009" alt="Corazón de chocolate rojo facetado con llave dorada y lazo de Lovely Moments" decoding="async">
+                  <img src="assets/hero/corazon-sorpresa-lateral.webp" fetchpriority="low" data-srcset="assets/hero/corazon-sorpresa-900.webp 900w, assets/escenas/corazon-sorpresa-1440.webp 1440w, assets/hero/corazon-sorpresa-hd.webp 2875w" sizes="(max-width: 650px) 94vw, (max-width: 800px) 70vw, (min-width: 2000px) min(60vw, 1940px), 57vw" width="2875" height="2009" alt="Corazón de chocolate rojo facetado con llave dorada y lazo de Lovely Moments" decoding="async">
                 </span>
               </button>
               <button class="rail-object" type="button" data-id="ancheta-deluxe" data-title="Ancheta Deluxe" data-paper="#825315" data-light="#eeba58" aria-label="Ver Ancheta Deluxe">
                 <span class="object-ground" aria-hidden="true"></span>
                 <span class="object-figure">
-                  <img src="assets/hero/ancheta-deluxe-900.webp" srcset="assets/hero/ancheta-deluxe-900.webp 755w, assets/hero/ancheta-deluxe-hd.webp 2846w" sizes="(max-width: 650px) 76vw, (max-width: 800px) 53vw, (min-width: 2000px) min(45vw, 1450px), 44vw" alt="Ancheta con rosas rojas, fruta y lazo dorado" decoding="async">
+                  <img src="assets/hero/ancheta-deluxe-lateral.webp" fetchpriority="low" data-srcset="assets/hero/ancheta-deluxe-900.webp 755w, assets/escenas/ancheta-deluxe-1440.webp 1440w, assets/hero/ancheta-deluxe-hd.webp 2846w" sizes="(max-width: 650px) 76vw, (max-width: 800px) 53vw, (min-width: 2000px) min(45vw, 1450px), 44vw" alt="Ancheta con rosas rojas, fruta y lazo dorado" decoding="async">
                 </span>
               </button>
           </div>
@@ -182,12 +196,14 @@
       </div>
       <a class="text-link official-catalogue" href="/flores-pereira-a-domicilio/">Ver los 317 regalos <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/iconos.svg#arrow-up-right"></use></svg></a>
     </section>
+    <div class="collection-band palette-miel">
     <section class="home-directory wrap" aria-labelledby="home-sections"><div class="directory-head"><h2 id="home-sections">Por tipo de regalo</h2><a class="text-link" href="/colecciones/">Todas las colecciones <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/iconos.svg#arrow-up-right"></use></svg></a></div><div class="tile-grid">
       <a class="page-tile" href="/chocolates-pereira/"><img src="assets/amor-infinito.webp" alt="" width="900" height="1200" loading="lazy"><span>Chocolates artesanales <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/iconos.svg#arrow-up-right"></use></svg></span></a>
       <a class="page-tile" href="/bouquets-de-flores-en-pereira/"><img src="assets/arcoiris.webp" alt="" width="900" height="1200" loading="lazy"><span>Bouquets de flores <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/iconos.svg#arrow-up-right"></use></svg></span></a>
       <a class="page-tile" href="/desayunos-sorpresa-a-domicilio-en-pereira/"><img src="assets/abrazo-matutino.webp" alt="" width="900" height="1200" loading="lazy"><span>Desayunos sorpresa <svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/iconos.svg#arrow-up-right"></use></svg></span></a>
       </div></section>
-    <section class="delivery" id="entregas" aria-labelledby="delivery-title">
+    </div>
+    <section class="delivery palette-rubi" id="entregas" aria-labelledby="delivery-title">
       <div class="wrap delivery-grid">
         <div><p class="delivery-label">Domicilios Lovely Moments</p><h2 id="delivery-title">De Pereira<br>a su puerta</h2></div>
         <div class="delivery-details">
@@ -215,7 +231,7 @@
   <dialog id="bag-dialog" class="bag-dialog" aria-labelledby="bag-title">
     <div class="bag-sheet">
       <button class="close-dialog" type="button" data-close aria-label="Cerrar selección"><svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/iconos.svg#close"></use></svg></button>
-      <h2 id="bag-title">Mi selección</h2>
+      <h2 id="bag-title"><svg class="ui-icon" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/iconos.svg#bag"></use></svg>Mi selección</h2>
       <p class="bag-intro">Reúne tus regalos y consulta disponibilidad con Lovely Moments.</p>
       <template id="quantity-button"><button type="button"><svg class="ui-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><use href="/assets/iconos.svg#plus"></use></svg></button></template>
       <div id="bag-lines"></div>

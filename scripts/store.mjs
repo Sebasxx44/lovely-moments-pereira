@@ -3,6 +3,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { paths, base, esc, url, peso, fold, photo, sectionLink, icon, image, crumbs, searchForm, shellParts, layout, sectionLayout, card, grid, pageTiles, linkList, textBlocks } from "./templates.mjs";
 import { courseForm, filmStrip, externalLinks, leadTime } from "./extras.mjs";
+import { paletteFor } from "./escenas.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const data = path.join(here, "data");
@@ -17,7 +18,6 @@ const gallery = (slug, i) => base + "media/galeria/" + slug + "-" + (i+1) + ".we
 const groupLinks = rows => `<div class="s-related-links">${rows.map(row=>`<a href="${url(row.slug)}">${esc(row.title)}</a>`).join("")}</div>`;
 const collectionKind = p => ["collection", "category", "occasion"].includes(p.kind);
 const articleKind = p => ["article","post"].includes(p.kind);
-const decoration = slug => /chocolate|fresas|bombon|san-valentin|amor/.test(slug) ? "cocoa" : /flor|bouquet|girasol|etern|rosa/.test(slug) ? "leaf" : "rose";
 function bagFacts(status) {
   if (status === "InStock") return "La tienda indica disponibilidad. Confirma la fecha y el domicilio antes de reservar.";
   if (status === "OutOfStock") return "Agotado en el catálogo de la tienda. Puedes consultar si volverá a estar disponible.";
@@ -121,7 +121,7 @@ export function prepare() {
     if (item) {
       const linkPages = [...new Set(item.categories.map(id=>groupPage.get(id)).filter(Boolean))];
       const related = [...new Set(item.categories.flatMap(id=>byGroup.get(id) || []))].filter(i=>i!==item).slice(0,4);
-      return layout(parts,item.name,item.description,productView(item,linkPages,related),decoration(slug));
+      return layout(parts,item.name,item.description,productView(item,linkPages,related),paletteFor(fold(item.name) + " " + slug));
     }
     const page = pages.get(slug);
     if (!page) return null;
@@ -160,7 +160,7 @@ export function prepare() {
     else if (label === "Nosotros") next = "Conocer la historia";
     else if (page.items.length) next = page.items.length === 1 ? "Ver el regalo" : `Ver los ${page.items.length} regalos`;
     else if (page.kind === "course") next = "Ver la capacitación";
-    return sectionLayout(parts,page,label,main,{next,theme:decoration(slug)});
+    return sectionLayout(parts,page,label,main,{next,theme:paletteFor(slug)});
   }
   return { supported, renderPage, js:"window.LovelyInventory="+JSON.stringify(inventory).replace(/</g,"\\u003c")+";\n" };
 }

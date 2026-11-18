@@ -10,7 +10,7 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
 .showcase-runway {
   --board-h: calc(100svh - var(--head));
   --stride: clamp(320px, 75svh, 820px);
-  --gift-spacing: .43;
+  --gift-spacing: .455;
   position: relative;
   /* Reserve the pin before first paint, including when restoring browser history. */
   height: calc(var(--board-h) + 3 * var(--stride));
@@ -39,6 +39,17 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
 }
 .set-backdrop { z-index: -1; overflow: hidden; }
 .set-wash { opacity: 0; }
+.set-wash:first-child { opacity: 1; }
+.set-photo, .set-photo img { display: block; width: 100%; height: 100%; }
+.set-photo {
+  position: absolute; inset: 0; opacity: .83;
+  mask-image: linear-gradient(180deg, transparent, #000 21%, #000 66%, transparent 100%);
+}
+.set-photo img { object-fit: cover; }
+.set-wash::after {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(0deg, rgb(41 8 26 / 42%), transparent 44%);
+}
 .set-heading, .set-caption, .set-navigation { position: relative; z-index: 2; }
 .set-heading {
   display: flex; align-items: center; justify-content: space-between;
@@ -46,14 +57,22 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
   font-size: 13px; color: #fff0dd;
 }
 .product-set { position: relative; min-height: 0; }
-.wrapping-ribbon { position: absolute; inset: -5% -8%; pointer-events: none; opacity: .46; }
-.wrapping-ribbon img { width: 100%; height: 100%; max-width: none; transition: filter 360ms var(--ease); }
-.wrapping-ribbon.is-gold img { filter: sepia(.95) saturate(2.2) brightness(1.13); }
-.heart-ornaments { position: absolute; inset: 0; pointer-events: none; opacity: 0; }
-.heart-ornaments > span { display: block; position: absolute; }
-.heart-ornaments img { width: 100%; height: auto; }
+.gift-props { position: absolute; inset: 0; pointer-events: none; opacity: 0; }
+.gift-props[data-props="amor-infinito"] { opacity: 1; }
+.wrapping-ribbon { position: absolute; inset: -5% -8%; opacity: .68; }
+.wrapping-ribbon img { width: 100%; height: 100%; max-width: none; filter: sepia(.95) saturate(2.2) brightness(1.13); }
+.prop { display: block; position: absolute; }
+.prop img { width: 100%; height: auto; }
+.prop-a { left: 19%; top: 13%; width: clamp(63px, 7.4vw, 142px); }
+.prop-b { right: 21%; bottom: 14%; width: clamp(40px, 4.2vw, 82px); }
+[data-props="amor-infinito"] .prop-a { rotate: -16deg; }
+[data-props="amor-infinito"] .prop-b { rotate: 14deg; }
+[data-props="bombonita"] .prop-a { left: auto; right: 20%; top: 9%; rotate: 18deg; }
+[data-props="bombonita"] .prop-b { right: auto; left: 22%; rotate: -18deg; }
+[data-props="ancheta-deluxe"] .prop-a { top: 57%; rotate: -23deg; }
+[data-props="ancheta-deluxe"] .prop-b { bottom: auto; top: 12%; width: clamp(52px, 6vw, 112px); rotate: 20deg; }
 .gold-key { left: 15%; top: 10%; width: clamp(60px, 7.7vw, 148px); }
-.gold-truffle { right: 19%; top: 63%; width: clamp(38px, 4.6vw, 92px); }
+.gold-truffle { right: 19%; bottom: 16%; width: clamp(38px, 4.6vw, 92px); }
 .set-floor {
   pointer-events: none; position: absolute; left: -14%; right: -14%; bottom: -4%; height: 36%;
   border-radius: 50%;
@@ -71,6 +90,7 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
 .rail-object:nth-child(2) { --offset: calc(100vw * var(--gift-spacing)); --scale: .74; --turn: -10deg; --roll: 3deg; }
 .rail-object:nth-child(3) { --offset: 100vw; opacity: 0; pointer-events: none; }
 .rail-object:nth-child(4) { --offset: calc(-100vw * var(--gift-spacing)); --scale: .74; --turn: 10deg; --roll: -3deg; }
+.rail-object:is(:nth-child(2), :nth-child(4)) { opacity: .16; --scale: .70; }
 .object-figure {
   position: absolute; inset: 4% 1% 7%; display: block;
   transform: perspective(1200px) rotateY(var(--turn,0deg)) rotateZ(var(--roll,0deg));
@@ -127,13 +147,17 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
   .set-caption h1 { font-size: clamp(56px,9.4vw,78px); }
 }
 @media (max-width: 650px) {
-  .showcase-runway { --stride: clamp(260px, 59svh, 510px); --gift-spacing: .65; }
+  .showcase-runway { --stride: clamp(260px, 59svh, 510px); --gift-spacing: .56; }
   .set-heading { font-size: 11px; min-height: 42px; }
   .rail-object { width: 76vw; }
   .object-figure { inset: 4% 0 6%; }
   .object-ground { bottom: 5.5%; }
-  .gold-key { left: 5%; top: 12%; width: clamp(45px, 13vw, 72px); }
-  .gold-truffle { right: 6%; top: 76%; width: clamp(30px, 8.5vw, 46px); }
+  .prop-a { left: 7%; top: 10%; width: clamp(46px, 13vw, 72px); }
+  .prop-b { right: 9%; bottom: 10%; width: clamp(32px, 8.5vw, 46px); }
+  [data-props="bombonita"] .prop-a { right: 9%; top: 11%; }
+  [data-props="bombonita"] .prop-b { left: 10%; }
+  [data-props="ancheta-deluxe"] .prop-a { top: auto; bottom: 8%; }
+  [data-props="ancheta-deluxe"] .prop-b { top: 10%; width: clamp(39px, 11vw, 68px); }
   .set-caption { gap: 8px; padding: 4px 0 16px; }
   .set-caption h1 { margin-top: 4px; font-size: clamp(39px, 10.3vw, 64px); }
   .set-description { font-size: 14px; max-width: 43ch; }
@@ -156,17 +180,17 @@ body.in-showcase .masthead-inner { border-bottom: 1px solid rgb(255 239 221 / 29
 .product h3 { font-family: "Bricolage Grotesque", sans-serif; font-weight: 530; font-size: clamp(21px,1.9vw,33px); letter-spacing: -.04em; }
 .showcase-board :focus-visible, body.in-showcase .masthead :focus-visible { outline-color: #fff4de; }
 @media (prefers-reduced-motion: no-preference) {
-  .in-showcase .rail-object, .in-showcase .object-figure, .in-showcase .wrapping-ribbon { will-change: transform; }
-  .in-showcase .heart-ornaments[data-floating] .gold-key img { animation: gold-key-float 5.5s ease-in-out infinite alternate; }
-  .in-showcase .heart-ornaments[data-floating] .gold-truffle img { animation: gold-truffle-float 6.5s ease-in-out infinite alternate; }
+  .in-showcase .rail-object, .in-showcase .object-figure { will-change: transform; }
+  .in-showcase .gift-props[data-floating] .prop-a img { animation: prop-drift 5.5s ease-in-out -1s infinite alternate; }
+  .in-showcase .gift-props[data-floating] .prop-b img { animation: prop-turn 6.5s ease-in-out -2.5s infinite alternate; }
   [data-arrival] .product-set { animation: unwrap-set 760ms var(--ease) both; }
   [data-arrival] .set-caption { animation: unwrap-caption 580ms 70ms var(--ease) both; }
 }
-@keyframes gold-key-float {
+@keyframes prop-drift {
   from { transform: translate3d(0, 3px, 0) rotate(-5deg); }
   to { transform: translate3d(3px, -6px, 0) rotate(3deg); }
 }
-@keyframes gold-truffle-float {
+@keyframes prop-turn {
   from { transform: translate3d(0, -3px, 0) rotate(4deg); }
   to { transform: translate3d(-3px, 5px, 0) rotate(-3deg); }
 }

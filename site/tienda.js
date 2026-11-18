@@ -28,7 +28,8 @@
   const count = $(".bag-count", trigger);
   const unitTemplate = $("#quantity-button", bag).content.firstElementChild;
   const icons = "/assets/iconos.svg#";
-  const confirmationTimers = new WeakMap();
+  const motion = matchMedia("(prefers-reduced-motion: reduce)");
+  const flights = new Map();
   const storageKey = "lovely-moments/selection/v1";
   function read() {
     const selection = new Map();
@@ -61,15 +62,69 @@
     count.replaceChildren(element("span", n, added ? "count-in" : undefined));
     trigger.setAttribute("aria-label",`Mi selección, ${n} ${n === 1 ? "regalo" : "regalos"}`);
   }
-  function announce(message) {
+  function announce(message, visible = true) {
     const status = $(".notice");
     status.textContent = message;
-    status.classList.add("show");
+    status.classList.toggle("show", visible);
     clearTimeout(timer);
     timer=setTimeout(()=>status.classList.remove("show"),2200);
   }
+  function endFlights() {
+    for (const animation of flights.values()) animation.cancel();
+  }
+  function flyToBag(button, photo, target, layer) {
+    if (motion.matches || !button.animate || !photo?.src || (photo.complete && !photo.naturalWidth)) return false;
+    const from = button.getBoundingClientRect();
+    const to = target.getBoundingClientRect();
+    const startX = from.left + from.width / 2, startY = from.top + from.height / 2;
+    const endX = to.left + to.width / 2, endY = to.top + to.height / 2;
+    if (endY < 0 || endY > innerHeight || !to.width) return false;
+    if (flights.size >= 3) {
+      const [oldPhoto, oldFlight] = flights.entries().next().value;
+      oldFlight.cancel();
+      oldPhoto.remove();
+      flights.delete(oldPhoto);
+    }
+    const img = element("img", undefined, "bag-flight");
+    img.alt = "";
+    img.setAttribute("aria-hidden", "true");
+    img.src = photo.currentSrc || photo.src;
+    const size = Math.min(72, Math.max(54, innerWidth * .059));
+    img.style.width = img.style.height = size + "px";
+    const dx = endX - startX, dy = endY - startY;
+    const distance = Math.hypot(dx, dy);
+    const bendX = dx * .26 - Math.min(62, distance * .13);
+    const bendY = Math.min(-36, dy * .82);
+    const frames = Array.from({ length: 13 }, (_, i) => {
+      const t = i / 12, arc = 2 * t * (1 - t);
+      const x = startX + arc * bendX + t * t * dx - size / 2;
+      const y = startY + arc * bendY + t * t * dy - size / 2;
+      const scale = 1 - .86 * t * t;
+      return { offset: t, transform: `translate3d(${x}px,${y}px,0) scale(${scale})`, opacity: Math.min(1, (1 - t) * 3.6) };
+    });
+    layer.append(img);
+    const animation = img.animate(frames, {
+      duration: Math.min(720, 420 + distance * .25), easing: "cubic-bezier(.32,.03,.36,1)", fill: "both"
+    });
+    flights.set(img, animation);
+    let timeout;
+    animation.onfinish = animation.oncancel = () => { clearTimeout(timeout); img.remove(); flights.delete(img); };
+    if (!photo.complete) {
+      img.style.visibility = "hidden";
+      animation.pause();
+      timeout = setTimeout(() => animation.cancel(), 900);
+      img.decode().then(() => {
+        if (animation.playState === "idle") return;
+        clearTimeout(timeout);
+        img.style.visibility = "";
+        animation.play();
+      }).catch(() => animation.cancel());
+    }
+    return true;
+  }
   function add(button) {
-    const id = canonical(button.dataset.add || button.closest(".product").dataset.id);
+    const card = button.closest(".product,.s-card");
+    const id = canonical(button.dataset.add || card?.dataset.slug || card?.dataset.id);
     const product = products.get(id);
     if (!product) return;
     if (selection.get(id) === 99) {
@@ -78,16 +133,9 @@
     }
 
     const quantity = change(id, 1);
-    announce(`${product.name} · ${quantity} en tu selección`);
-    const glyph = $("use", button);
-    glyph.setAttribute("href", icons + "check");
-    button.classList.add("is-added");
-    clearTimeout(confirmationTimers.get(button));
-    confirmationTimers.set(button, setTimeout(() => {
-      button.classList.remove("is-added");
-      glyph.setAttribute("href", icons + "plus");
-      confirmationTimers.delete(button);
-    }, 1200));
+    const photo = card ? $("figure img", card) : $("#full-product-photo");
+    const flying = flyToBag(button, photo, $(".ui-icon", trigger), document.body);
+    announce(`${product.name} · ${quantity} en tu selección`, !flying);
   }
   function element(tag, text, className) {
     const node=document.createElement(tag);
@@ -136,12 +184,17 @@
     const control=event.target.closest("button[data-by]");
     if (!control) return;
     const delta = Number(control.dataset.by);
+    if (delta > 0) flyToBag(control, $("img", control.closest(".bag-line")), $("#bag-title .ui-icon", bag), bag);
     change(control.dataset.id,delta);
     renderBag(delta > 0 ? control.dataset.id : undefined);
     const next=all("button[data-by]",bag).find(el=>!el.disabled && el.dataset.id===control.dataset.id && el.dataset.by===control.dataset.by);
     (next || $("[data-close]",bag)).focus({preventScroll:true});
   });
-  trigger.addEventListener("click",()=>{ renderBag(); bag.showModal(); });
+  trigger.addEventListener("click",()=>{ endFlights(); renderBag(); bag.showModal(); });
+  bag.addEventListener("close", endFlights);
+  window.addEventListener("pagehide", endFlights);
+  window.addEventListener("resize", endFlights);
+  motion.addEventListener("change", endFlights);
   all("[data-close]",bag).forEach(button=>button.addEventListener("click",()=>bag.close()));
   bag.addEventListener("click",e=>{
     const r=bag.getBoundingClientRect();

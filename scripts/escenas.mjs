@@ -21,28 +21,35 @@ const berries = cutout("Tres fresas Bombonita bañadas en chocolate cobre, rojo 
 
 // Art-direct each photographic still life. Other collections use their own editorial print.
 const scenes = new Map([
-  ["flores-pereira-a-domicilio", [basket, "petalo"]],
-  ["floristeria-a-domicilio-en-pereira", [bouquet, "salvia"]],
-  ["colecciones", [heart, "miel"]],
-  ["search", [bonbons, "marfil"]],
-  ["mapa-de-la-tienda", [bouquet, "marfil"]],
-  ["floristerias-a-domicilio-en-pereira", [bouquet, "petalo"]],
-  ["chocolates-pereira", [heart, "vino"]],
-  ["bombones-de-chocolate-en-pereira", [bonbons, "miel"]],
-  ["fresas-con-chocolate-en-pereira", [berries, "petalo"]],
-  ["anchetas-pereira", [basket, "miel"]],
-  ["desayunos-sorpresa-a-domicilio-en-pereira", [breakfast, "miel"]],
-  ["bouquets-de-flores-en-pereira", [bouquet, "salvia"]],
-  ["regalos-de-san-valentin-en-pereira-dosquebradas-y-santa-rosa-de-cabal", [heart, "petalo"]],
-  ["regalos-de-amor-y-amistad-en-pereira-dosquebradas-y-santa-rosa-de-cabal", [bonbons, "vino"]]
+  ["flores-pereira-a-domicilio", basket],
+  ["floristeria-a-domicilio-en-pereira", bouquet],
+  ["colecciones", heart],
+  ["search", bonbons],
+  ["mapa-de-la-tienda", bouquet],
+  ["floristerias-a-domicilio-en-pereira", bouquet],
+  ["chocolates-pereira", heart],
+  ["bombones-de-chocolate-en-pereira", bonbons],
+  ["fresas-con-chocolate-en-pereira", berries],
+  ["anchetas-pereira", basket],
+  ["desayunos-sorpresa-a-domicilio-en-pereira", breakfast],
+  ["bouquets-de-flores-en-pereira", bouquet],
+  ["regalos-de-san-valentin-en-pereira-dosquebradas-y-santa-rosa-de-cabal", heart],
+  ["regalos-de-amor-y-amistad-en-pereira-dosquebradas-y-santa-rosa-de-cabal", bonbons]
 ]);
+const tones = new Map([[bouquet,"orquidea"], [bonbons,"orquidea"], [heart,"rubi"], [berries,"cacao"], [basket,"miel"], [breakfast,"miel"]]);
+
+export function paletteFor(name) {
+  if (/amor.infinito/.test(name)) return "orquidea";
+  if (/corazon|aniversario|valentin|amor.y.amistad|rosas? rojas?/.test(name)) return "rubi";
+  if (/ancheta|desayuno|fruta|girasol|miel|brunch|cerveza|vino|whisky/.test(name)) return "miel";
+  if (/cacao|chocolate|fresa|bombon|dulce|dona|brownie|trufa/.test(name)) return "cacao";
+  return "orquidea";
+}
 
 export function sceneFor(page, theme) {
   const still = scenes.get(page.slug);
-  if (still) return { mode: "objeto", tone: still[1], photo: still[0] };
+  if (still) return { mode: "objeto", tone: tones.get(still), photo: still };
   const src = page.editorialCover || page.cover;
-  if (!src) return { mode: "objeto", tone: "salvia", photo: bouquet };
-  const tone = page.kind === "article" || page.kind === "blog" ? "marfil"
-    : theme === "leaf" ? "salvia" : theme === "cocoa" ? "miel" : "petalo";
-  return { mode: "postal", tone, photo: { src, alt: page.imageAlt || page.title } };
+  if (!src) return { mode: "objeto", tone: tones.get(bouquet), photo: bouquet };
+  return { mode: "postal", tone: theme, photo: { src, alt: page.imageAlt || page.title } };
 }
